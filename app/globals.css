@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply text-main;
+  }
   .pageMargin {
     @apply container mx-auto;
+  }
+  .hero {
+    @apply text-[60px] font-bold text-main;
+  }
+  .headings {
+    @apply text-2xl text-main;
+  }
+  .body {
+    @apply text-base;
+  }
+  .service {
+    @apply text-lg;
   }
 }
