@@ -18,16 +18,17 @@ import Environment from "@/components/svg/whatwedo-environment";
 import Marketing from "@/components/svg/whatwedo-marketing";
 import Manpower from "@/components/svg/whatwedo-manpower";
 import Development from "@/components/svg/whatwedo-development";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
     <>
       <div>
         <div className="pt-[27px] min-h-screen max-w-full w-screen bg-[url('/banner.png')] bg-cover bg-no-repeat before:block before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/50">
-          <div className="pageMargin relative ">
-            <Navbar whiteShade={true} />
+          <div className="pageMargin relative h-full ">
+            <Navbar whiteShade={true} index={0} />
             <div id="caption" className="max-w-[660px] absolute space-y-[54px] left-0 top-1/2 translate-y-1/2 ">
-              <span className="flex gap-x-2 items-center ">
+              <span className="flex gap-x-2 items-center">
                 <svg width="29" height="8" viewBox="0 0 29 8" fill="none">
                   <circle cx="3.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
                   <circle cx="14.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
@@ -115,9 +116,9 @@ export default function Home() {
             <Titledash>WHO WE ARE</Titledash>
             <div className="space-y-16">
               <p className="text-body1">
-                Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the Oil & Gas
-                industry. Himalayas Energy is currently looking to spread its tentacles into the exploration and production terrain with its recent
-                participation in the Marginal Field BidRound.
+                Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the
+                Oil & Gas industry. Himalayas Energy is currently looking to spread its tentacles into the exploration and production terrain with its
+                recent participation in the Marginal Field BidRound.
               </p>
               <Button> Read more</Button>
             </div>
@@ -157,8 +158,9 @@ export default function Home() {
               <div className="space-y-[15px]">
                 <Titledash> OUR MISSION</Titledash>
                 <p className="text-body1">
-                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the efficient
-                  execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual improvement in quality.
+                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the
+                  efficient execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual
+                  improvement in quality.
                 </p>
               </div>
             </div>
@@ -174,8 +176,8 @@ export default function Home() {
               <div className="space-y-[15px]">
                 <Titledash> OUR VISSION</Titledash>
                 <p className="text-body1">
-                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the upstream and downstream oil and gas
-                  sector.
+                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the upstream and downstream
+                  oil and gas sector.
                 </p>
               </div>
             </div>
@@ -278,8 +280,8 @@ export default function Home() {
                   <h1 className="text-[32px]"> 01</h1>
                   <h2 className="text-lg">QUALITY POLICY</h2>
                   <p className="text-body1">
-                    We are committed to providing safe, dependable transportation service to our customers and to meet our goal, organization shall strive’
-                    Prompt & Positive response Team Performance On time delivery of goods To reduce customer complaints.
+                    We are committed to providing safe, dependable transportation service to our customers and to meet our goal, organization shall
+                    strive’ Prompt & Positive response Team Performance On time delivery of goods To reduce customer complaints.
                   </p>
                 </div>
               </div>
@@ -291,8 +293,8 @@ export default function Home() {
                   <h1 className="text-[32px] text-white"> 02</h1>
                   <h2 className="text-lg text-white">QUALITY POLICY</h2>
                   <p className="text-body2">
-                    Our goals are to understand and meet customer needs, constantly seeking customer opinions; to anticipate market trends; to be competitive;
-                    to create and deliver products and services that bring value to the customer.
+                    Our goals are to understand and meet customer needs, constantly seeking customer opinions; to anticipate market trends; to be
+                    competitive; to create and deliver products and services that bring value to the customer.
                   </p>
                 </div>
               </div>
@@ -301,17 +303,20 @@ export default function Home() {
               <div className="col-span-2">
                 <div className="max-w-[700px] space-y-[28px] pt-[91px] ">
                   <h1 className="text-2xl text-center">
-                    At Himalayas Energy Consults Limited we value the health and safety of our employees and all who come into contact with our business. We do
-                    not want to harm or damage the environment and are committed to supply high quality and safe products to our customers.
+                    At Himalayas Energy Consults Limited we value the health and safety of our employees and all who come into contact with our
+                    business. We do not want to harm or damage the environment and are committed to supply high quality and safe products to our
+                    customers.
                   </h1>
                   <p className="text-body1">
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its activities.
-                    Although many companies have their own safety standards with which we are obliged to comply during our operations, it is our policy to
-                    strive towards the improvement and provision of safe and healthy working conditions for all persons and environment.
+                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
+                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
+                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for all persons and
+                    environment.
                     <br />
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its activities.
-                    Although many companies have their own safety standards with which we are obliged to comply during our operations, it is our policy to
-                    strive towards the improvement and provision of safe and healthy working conditions for all persons and environment
+                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
+                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
+                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for all persons and
+                    environment
                   </p>
                   <div className="flex justify-end mt-10">
                     <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -328,8 +333,8 @@ export default function Home() {
                     <h1 className="text-[32px] text-white"> 03</h1>
                     <h2 className="text-lg text-white">PROCESS ENVIRONMENT</h2>
                     <p className="text-body2 pb-5">
-                      Our goals are to ensure processes are structured and executed to support business performance; to run world-class standardised processes;
-                      and to have a common understanding of excellent execution.
+                      Our goals are to ensure processes are structured and executed to support business performance; to run world-class standardised
+                      processes; and to have a common understanding of excellent execution.
                     </p>
                   </div>
                 </div>
@@ -338,8 +343,8 @@ export default function Home() {
                     <h1 className="text-[32px] text-white"> 04</h1>
                     <h2 className="text-lg text-white">PEOPLE EXCELLENCE</h2>
                     <p className="text-body2 pb-5">
-                      Our goals are to be an employer of choice; to have the right people in the right place; to think outside the box; to continuously learn,
-                      change and improve; to provide attractive careers and to develop management and leadership capabilities.
+                      Our goals are to be an employer of choice; to have the right people in the right place; to think outside the box; to
+                      continuously learn, change and improve; to provide attractive careers and to develop management and leadership capabilities.
                     </p>
                   </div>
                 </div>
@@ -348,105 +353,128 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <div className="relative">
+        <div className="absolute top-1/2 left-[10px]">
+          <PageNumber className="w-fit">05</PageNumber>
+        </div>
+        <section className="pageMargin pt-[100px] pb-[200px] space-y-10">
+          <Titledash> OUR CORE VALUES </Titledash>
+          <div className="flex gap-x-8">
+            <div className="col-span-5 relative w-full max-w-[520px] h-[320px]">
+              <Image src={values} alt="Himalayas Energy Core values" fill />
+            </div>
+            <div className="items-stretch p-[67px] ps-0">
+              <ul className="space-y-6 max-w-[500px]">
+                <li className="flex gap-x-1 items-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  </svg>
+                  <p>
+                    <span className="font-bold">Integrity:</span> The courage to maintain the right from the wrong without compromise.
+                  </p>
+                </li>
+                <li className="flex gap-x-1 items-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  </svg>
+                  <p>
+                    <span className="font-bold"> Reliability:</span>The ability to deliver on what we promise, without exception.
+                  </p>
+                </li>
+                <li className="flex gap-x-1 items-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  </svg>
+                  <p>
+                    <span className="font-bold"> Accountabilty:</span>The strength to be responsible for our actions and decision.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
 
-      <section className="pageMargin py-[90px] space-y-10">
-        <Titledash> OUR CORE VALUES </Titledash>
-        <div className="flex gap-x-8">
-          <div className="col-span-5 relative w-full max-w-[520px] h-[320px]">
-            <Image src={values} alt="Himalayas Energy Core values" fill />
-          </div>
-          <div className="items-stretch p-[67px] ps-0">
-            <ul className="space-y-6 max-w-[500px]">
-              <li className="flex gap-x-1 items-center">
-                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
-                </svg>
-                <p>
-                  <span className="font-bold">Integrity:</span> The courage to maintain the right from the wrong without compromise.
-                </p>
-              </li>
-              <li className="flex gap-x-1 items-center">
-                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
-                </svg>
-                <p>
-                  <span className="font-bold"> Reliability:</span>The ability to deliver on what we promise, without exception.
-                </p>
-              </li>
-              <li className="flex gap-x-1 items-center">
-                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
-                </svg>
-                <p>
-                  <span className="font-bold"> Accountabilty:</span>The strength to be responsible for our actions and decision.
-                </p>
-              </li>
-            </ul>
-          </div>
+      <div className="relative pb-[70px]">
+        <div className="absolute top-0 right-[10px]">
+          <PageNumber className="w-fit">06</PageNumber>
         </div>
-      </section>
-
-      <section className="pageMargin space-y-[36px]">
-        <div className="flex items-center justify-center flex-cols-1">
-          <Titledash span="mx-auto">WHAT WE DO</Titledash>
-        </div>
-        <div className="grid grid-cols-3 gap-x-[23px]">
-          <div className="col-span-1">
-            <div className="max-w-[370px] w-full ">
-              <div className="relative h-[370px] w-full ">
-                <Image src={skills} fill alt="Himalayas Energy Consults Limited offers education and training opportunities for advancement." />
+        <section className="pageMargin space-y-[36px] relative">
+          <div className="flex items-center justify-center flex-cols-1">
+            <Titledash span="mx-auto">WHAT WE DO</Titledash>
+          </div>
+          <div className="grid grid-cols-3 gap-x-[23px] overflow-y-hidden">
+            <div className="col-span-1">
+              <div className="max-w-[370px] w-full ">
+                <div className="relative h-[370px] w-full ">
+                  <Image src={skills} fill alt="Himalayas Energy Consults Limited offers education and training opportunities for advancement." />
+                </div>
+                <div className="px-[14px] relative top-[-117px]">
+                  <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
+                  <div className="bg-white px-[13px] py-[8px] space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+                    <SubTitleDash>SKILLS DEVELOPMENT</SubTitleDash>
+                    <p className="text-body1">
+                      Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the
+                      form of e learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house
+                      programmes are provided to improve productivity by equipping employees with behavioural skills
+                    </p>
+                  </div>
+                  <span className="block w-[51px] h-[3px] mx-auto bg-black"></span>
+                </div>
               </div>
-              <div className="px-[14px] relative top-[-117px]">
-                <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
-                <div className="bg-white px-[13px] py-[8px] space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
-                  <SubTitleDash>SKILLS DEVELOPMENT</SubTitleDash>
-                  <p className="text-body1">
-                    Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form of e
-                    learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house programmes are provided
-                    to improve productivity by equipping employees with behavioural skills
-                  </p>
+            </div>
+            <div className="col-span-1">
+              <div className="max-w-[370px] w-full">
+                <div className="relative h-[370px] w-full ">
+                  <Image src={social} fill alt="Himalayas Energy Consults Limited offers education and training opportunities for advancement." />
+                </div>
+                <div className="px-[14px] relative top-[-117px]">
+                  <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
+                  <div className="bg-white px-[13px] py-[8px] space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+                    <SubTitleDash>SOCIAL RESPONSIBILITY</SubTitleDash>
+                    <p className="text-body1">
+                      Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the
+                      environment. Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does
+                      business. Economically and socially strong communities enhance Himalayas Energy Consults Limited success.
+                    </p>
+                  </div>
+                  <span className="block w-[51px] h-[3px] mx-auto bg-black"></span>
+                </div>
+              </div>
+            </div>
+            <div className="col-span-1">
+              <div className="max-w-[370px] w-full ">
+                <div className="relative h-[370px] w-full ">
+                  <Image src={economic} fill alt="Himalayas Energy Consults Limited offers education and training opportunities for advancement." />
+                </div>
+                <div className="px-[14px] relative top-[-117px]">
+                  <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
+                  <div className="bg-white px-[13px] py-[8px] space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+                    <SubTitleDash>ECONOMIC EMPOWERMENT INITIATIVES</SubTitleDash>
+                    <p className="text-body1">
+                      Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
+                      activities. Although many companies have their own safety standards with which we are obliged to comply during our operations,
+                      it is our policy to strive towards the improvement and provision of safe and healthy working conditions for everyone.
+                    </p>
+                  </div>
+                  <span className="block w-[51px] h-[3px] mx-auto bg-black"></span>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-span-1">
-            <div className="max-w-[370px] w-full ">
-              <div className="relative h-[370px] w-full ">
-                <Image src={social} fill alt="Himalayas Energy Consults Limited offers education and training opportunities for advancement." />
-              </div>
-              <div className="px-[14px] relative top-[-117px]">
-                <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
-                <div className="bg-white px-[13px] py-[8px] space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
-                  <SubTitleDash>SOCIAL RESPONSIBILITY</SubTitleDash>
-                  <p className="text-body1">
-                    Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the environment.
-                    Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does business. Economically and
-                    socially strong communities enhance Himalayas Energy Consults Limited success.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="absolute bottom-[100px] right-[100px]">
+            <svg width="63" height="10" viewBox="0 0 63 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="4" cy="5" r="3" fill="#181818" stroke="#D9D9D9" />
+              <circle cx="15" cy="5" r="3" fill="#181818" stroke="#D9D9D9" />
+              <circle cx="26" cy="5" r="3" fill="#181818" stroke="#D9D9D9" />
+              <circle cx="37" cy="5" r="3.5" transform="rotate(90 37 5)" fill="white" stroke="#C00000" stroke-width="2" />
+              <circle cx="48" cy="5" r="3" fill="#181818" stroke="#D9D9D9" />
+              <circle cx="59" cy="5" r="3" fill="#181818" stroke="#D9D9D9" />
+            </svg>
           </div>
-          <div className="col-span-1">
-            <div className="max-w-[370px] w-full ">
-              <div className="relative h-[370px] w-full ">
-                <Image src={economic} fill alt="Himalayas Energy Consults Limited offers education and training opportunities for advancement." />
-              </div>
-              <div className="px-[14px] relative top-[-117px]">
-                <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
-                <div className="bg-white px-[13px] py-[8px] space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
-                  <SubTitleDash>ECONOMIC EMPOWERMENT INITIATIVES</SubTitleDash>
-                  <p className="text-body1">
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its activities.
-                    Although many companies have their own safety standards with which we are obliged to comply during our operations, it is our policy to
-                    strive towards the improvement and provision of safe and healthy working conditions for everyone.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      <Footer />
     </>
   );
 }

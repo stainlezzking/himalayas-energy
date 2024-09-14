@@ -1,31 +1,68 @@
-"use client";
 import Image from "next/image";
 import Blacklogo from "@/public/blacklogo.png";
 import Whitelogo from "@/public/whitelogo.png";
-import { usePathname } from "next/navigation";
 
-const Navbar = ({ whiteShade }) => {
-  const pathname = usePathname();
+const Navbar = ({ whiteShade, index = 0 }) => {
   return (
     <nav className="flex justify-between items-end h-[105px]">
       <div className="max-w-[162px]">
         <Image src={whiteShade ? Whitelogo : Blacklogo} width="162" className="w-full" />
       </div>
       <ul className={"flex py-4 px-8 gap-x-10 rounded-l-full rounded-r-full border border-white text-white bg-[#181818]/90"}>
-        <li className={`py-2 px-4 rounded-x-full ${pathname == "/" && "border-white bg-white rounded-l-full rounded-r-full text-main"} `}> Home</li>
-        <li className={`py-2 px-4 rounded-x-full ${pathname == "/about" && "border-white bg-white rounded-l-full rounded-r-full text-main"}`}>
-          About
+        <li>
+          <a
+            href="#"
+            className={`py-2 px-4 rounded-x-full transition-colors
+               hover:bg-white/60 hover:rounded-full hover:text-main ${
+                 index == 0 && "border-white border-b border-b-primary bg-white rounded-l-full rounded-r-full text-main"
+               } `}
+          >
+            Home
+          </a>
         </li>
-        <li className={`py-2 px-4 rounded-x-full ${pathname == "/services" && "border-white bg-white rounded-l-full rounded-r-full text-main"}`}>
-          Services
+        <li>
+          <a
+            href="/about"
+            className={`py-2 px-4 rounded-x-full transition-colors
+               hover:bg-white/60 hover:rounded-full hover:text-main ${
+                 index == 1 && "border-white border-b border-b-primary bg-white rounded-l-full rounded-r-full text-main"
+               }`}
+          >
+            About
+          </a>
         </li>
-        <li
-          className={`py-2 px-4 rounded-x-full ${pathname == "/sustainability" && "border-white bg-white rounded-l-full rounded-r-full text-main"}`}
-        >
-          Sustainability
+        <li>
+          <a
+            href="#"
+            className={`py-2 px-4 rounded-x-full transition-colors
+               hover:bg-white/60 hover:rounded-full hover:text-main ${
+                 index == 2 && "border-white border-b border-b-primary bg-white rounded-l-full rounded-r-full text-main"
+               }`}
+          >
+            Services
+          </a>
         </li>
-        <li className={`py-2 px-4 rounded-x-full ${pathname == "/contact" && "border-white bg-white rounded-l-full rounded-r-full text-main"}`}>
-          Contact
+        <li>
+          <a
+            href="#"
+            className={`py-2 px-4 rounded-x-full transition-colors
+               hover:bg-white/60 hover:rounded-full hover:text-main ${
+                 index == 3 && "border-white border-b border-b-primary bg-white rounded-l-full rounded-r-full text-main"
+               }`}
+          >
+            Sustainability
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            className={`py-2 px-4 rounded-x-full transition-colors
+               hover:bg-white/60 hover:rounded-full hover:text-main ${
+                 index == 4 && "border-white border-b border-b-primary bg-white rounded-l-full rounded-r-full text-main"
+               }`}
+          >
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
