@@ -4,35 +4,35 @@ const Footer = () => {
       <div className="pageMargin py-2 flex justify-between">
         <ul className="flex items-center gap-x-8 text-gray">
           <li>
-            <a href="">Home</a>
+            <a href="/home">Home</a>
           </li>
           <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
           </svg>
 
           <li>
-            <a href="">About</a>
+            <a href="/about">About</a>
           </li>
           <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
           </svg>
 
           <li>
-            <a href="">Services</a>
+            <a href="/services">Services</a>
           </li>
           <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
           </svg>
 
           <li>
-            <a href="">Sustainability</a>
+            <a href="/sustainability">Sustainability</a>
           </li>
           <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
           </svg>
 
           <li>
-            <a href="">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
           <li> &copy; 2024. All Rights Reserved</li>
         </ul>

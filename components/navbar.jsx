@@ -4,11 +4,11 @@ import Whitelogo from "@/public/whitelogo.png";
 
 const Navbar = ({ whiteShade, index = 0 }) => {
   return (
-    <nav className="flex justify-between items-end h-[105px]">
+    <nav className="flex justify-between items-center h-[105px]">
       <div className="max-w-[162px]">
         <Image src={whiteShade ? Whitelogo : Blacklogo} width="162" className="w-full" />
       </div>
-      <ul className={"flex py-4 px-8 gap-x-10 rounded-l-full rounded-r-full border border-white text-white bg-[#181818]/90"}>
+      <ul className={`flex py-4 px-8 gap-x-10 rounded-l-full rounded-r-full border border-white text-white bg-[#181818]/90`}>
         <li>
           <a
             href="/"
