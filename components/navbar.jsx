@@ -11,7 +11,7 @@ const Navbar = ({ whiteShade, index = 0 }) => {
       <ul className={"flex py-4 px-8 gap-x-10 rounded-l-full rounded-r-full border border-white text-white bg-[#181818]/90"}>
         <li>
           <a
-            href="#"
+            href="/"
             className={`py-2 px-4 rounded-x-full transition-colors
                hover:bg-white/60 hover:rounded-full hover:text-main ${
                  index == 0 && "border-white border-b border-b-primary bg-white rounded-l-full rounded-r-full text-main"
@@ -33,7 +33,7 @@ const Navbar = ({ whiteShade, index = 0 }) => {
         </li>
         <li>
           <a
-            href="#"
+            href="/services"
             className={`py-2 px-4 rounded-x-full transition-colors
                hover:bg-white/60 hover:rounded-full hover:text-main ${
                  index == 2 && "border-white border-b border-b-primary bg-white rounded-l-full rounded-r-full text-main"
@@ -44,7 +44,7 @@ const Navbar = ({ whiteShade, index = 0 }) => {
         </li>
         <li>
           <a
-            href="#"
+            href="/sustainability"
             className={`py-2 px-4 rounded-x-full transition-colors
                hover:bg-white/60 hover:rounded-full hover:text-main ${
                  index == 3 && "border-white border-b border-b-primary bg-white rounded-l-full rounded-r-full text-main"
@@ -55,7 +55,7 @@ const Navbar = ({ whiteShade, index = 0 }) => {
         </li>
         <li>
           <a
-            href="#"
+            href="/contact"
             className={`py-2 px-4 rounded-x-full transition-colors
                hover:bg-white/60 hover:rounded-full hover:text-main ${
                  index == 4 && "border-white border-b border-b-primary bg-white rounded-l-full rounded-r-full text-main"

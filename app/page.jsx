@@ -366,7 +366,7 @@ export default function Home() {
             <div className="items-stretch p-[67px] ps-0">
               <ul className="space-y-6 max-w-[500px]">
                 <li className="flex gap-x-1 items-center">
-                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
                     <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
                   </svg>
                   <p>
@@ -374,7 +374,7 @@ export default function Home() {
                   </p>
                 </li>
                 <li className="flex gap-x-1 items-center">
-                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
                     <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
                   </svg>
                   <p>
@@ -382,7 +382,7 @@ export default function Home() {
                   </p>
                 </li>
                 <li className="flex gap-x-1 items-center">
-                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
                     <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
                   </svg>
                   <p>

@@ -1,6 +1,8 @@
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Titledash from "@/components/title-dash";
 import aboutIntro from "@/public/about-intro.png";
+import values from "@/public/values.png";
 import Image from "next/image";
 
 const Page = () => {
@@ -108,6 +110,151 @@ const Page = () => {
           </div>
         </section>
       </div>
+      <div className="relative">
+        <section className="pageMargin pt-[100px] pb-[200px] space-y-10">
+          <Titledash> KEY VALUES </Titledash>
+          <div className="flex gap-x-8">
+            <div className="col-span-5 relative w-full max-w-[520px]">
+              <Image src={values} alt="Himalayas Energy Core values " fill />
+            </div>
+            <div className="items-stretch p-[54px] ps-0">
+              <ul className="space-y-6 max-w-[500px]">
+                <li className="flex gap-x-2 items-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  </svg>
+                  <p>Expanding into exploration and production with participation in the Marginal Field BidRound.</p>
+                </li>
+                <li className="flex gap-x-2 items-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  </svg>
+                  <p>Dedicated to growing the Oil & Gas sector in Africa.</p>
+                </li>
+                <li className="flex gap-x-2 items-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  </svg>
+                  <p>Collaborations with world-renowned industry leaders and experts.</p>
+                </li>
+                <li className="flex gap-x-2 items-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  </svg>
+                  <p>6 Years of Experience in the Oil and Gas Industry</p>
+                </li>
+                <li className="flex gap-x-2 items-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  </svg>
+                  <p>Providing first-class solutions to enhance client operational efficiency.</p>
+                </li>
+                <li className="flex gap-x-2 items-center">
+                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  </svg>
+                  <p>
+                    Commitment to high-quality project delivery within scheduled timeframes and compliance with client specifications and standards.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="space-y-[47px] pageMargin">
+        <div className="flex items-center justify-center flex-cols-1">
+          <Titledash span="mx-auto">WHAT WE DO</Titledash>
+        </div>
+        <ul className="space-y-[62px]">
+          <li className="space-y-3">
+            <span className="text-2xl pb-1 border-b border-b-primary">01</span>
+            <h1 className="font-bold">CORPORATE GOVERNANCE</h1>
+            <p className="text-body1">
+              Himalayas Energy Consults Limited is totally committed to sound corporate governance. It is recognised that, besides being a valid
+              expectation of investors, good governance is fundamentally advantageous to the company’s sustainability and functioning. Inextricably
+              linked to good corporate governance is the company’s Code of Ethics. Himalayas Energy Consults Limited has always aspired to the highest
+              ethical standards and is in full compliance with applicable laws, regulations and industry standards.
+            </p>
+          </li>
+          <li className="space-y-3">
+            <span className="text-2xl pb-1 border-b border-b-primary">02</span>
+            <h1 className="font-bold">SOCIAL INVOLVEMENT (LOCAL CONTENT POLICY)</h1>
+            <p className="text-body1">
+              Himalayas Energy Consults Limited strongly believes in and supports the Nigerian Local Content Act. Being an indigenous African company
+              Himalayas Energy understands the demands and laws in each country, and cultivates its alliances and joint ventures accordingly.
+              Himalayas Energy Consults Limited is effective in local participation by adopting the following principles in all procurement
+              activities:
+            </p>
+            <span className="flex gap-x-2 items-center text-body1">
+              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
+                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+              </svg>
+              Enhancement of local participation in all activities as possible.
+            </span>
+            <span className="flex gap-x-2 items-center text-body1">
+              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
+                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+              </svg>
+              Utilization of local resources and services in all measures possible.
+            </span>
+            <span className="flex gap-x-2 items-center text-body1">
+              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
+                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+              </svg>
+              Technology transfer to local companies.
+            </span>
+            <p className="text-body1">
+              Himalayas Energy Consults Limited is proud of the cultural diversity of its people. As set out in our Code of Conduct, the company
+              encourages tolerance and sensitivity to all cultures and is committed to maintaining a workplace free from discrimination for reasons of
+              race, creed, culture, nationality, gender, and sexual or marital status. Employees are selected on their ability to perform the job and
+              physical disability is not a barr
+            </p>
+          </li>
+          <li className="space-y-3">
+            <span className="text-2xl pb-1 border-b border-b-primary">03</span>
+            <h1 className="font-bold">SOCIAL INVOLVEMENT (LOCAL CONTENT POLICY)</h1>
+            <p className="text-body1">
+              Himalayas Energy Consults Limited is totally committed to sound corporate governance. It is recognised that, besides being a valid
+              expectation of investors, good governance is fundamentally advantageous to the company’s sustainability and functioning. Inextricably
+              linked to good corporate governance is the company’s Code of Ethics. Himalayas Energy Consults Limited has always aspired to the highest
+              ethical standards and is in full compliance with applicable laws, regulations and industry standards.
+            </p>
+          </li>
+          <li className="space-y-3">
+            <span className="text-2xl pb-1 border-b border-b-primary">04</span>
+            <h1 className="font-bold">SKILLS DEVELOPMENT</h1>
+            <p className="text-body1">
+              Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form of e
+              learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house programmes are
+              provided to improve productivity by equipping employees with behavioural skills. These courses include performance and change
+              management, recruitment and selection, industrial relations, stress management, and presentation skills. In addition, individual
+              development plans assist all employees. Himalayas Energy Consults Limited also offers leaderships and graduate training programmes in
+              all areas of the business.
+            </p>
+          </li>
+          <li className="space-y-3">
+            <span className="text-2xl pb-1 border-b border-b-primary">05</span>
+            <h1 className="font-bold">SOCIAL RESPONSIBILITY</h1>
+            <p className="text-body1">
+              Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the
+              environment. Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does business.
+              Economically and socially strong communities enhance Himalayas Energy Consults Limited success, and its evolving strategy is aligned to
+              long-term business objectives.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div className="my-[119px] flex justify-center">
+        <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="3.5" cy="4" r="3" transform="rotate(-90 3.5 4)" fill="#181818" stroke="#D9D9D9" />
+          <rect x="26" y="6" width="3" height="59" transform="rotate(-90 26 6)" fill="#181818" />
+          <rect x="43" y="8" width="8" height="39" transform="rotate(-90 43 8)" fill="black" />
+        </svg>
+      </div>
+      <Footer />
     </div>
   );
 };
