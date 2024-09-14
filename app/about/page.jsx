@@ -19,13 +19,13 @@ const Page = () => {
           <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
             <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
           </svg>
-          <p className="text-black text-xs">02/06</p>
+          <p className="text-black text-xs">02/05</p>
         </span>
         <div className="relative gap-x-6 items-center mb-[94px]">
           <span className="bg-primary block absolute top-1/2 -translate-y-1/2 w-2 h-[100px]"></span>
-          <div className="space-y-3 ps-6 w-[630px] font-bold">
+          <div className="space-y-3 ps-6 w-[630px]">
             <h4 className="text-main text-[14px]">WHO WE ARE</h4>
-            <h1 className="text-4xl">Leading the Charge in Africa's Oil & Gas Transformation</h1>
+            <h1 className="text-4xl font-bold">Leading the Charge in Africa's Oil & Gas Transformation</h1>
           </div>
         </div>
       </div>

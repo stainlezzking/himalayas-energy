@@ -25,6 +25,10 @@
     width: calc(100% + 500px);
     right: -500px;
   }
+  .sustainable-overlap {
+    width: calc(100% + 500px);
+    left: -500px;
+  }
   .about-intro-custom-width {
     width: calc(50% + 500px);
     left: -500px;

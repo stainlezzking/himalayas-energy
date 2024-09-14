@@ -37,7 +37,7 @@ export default function Home() {
                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
                   <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
                 </svg>
-                <p className="text-white text-xs">01/06</p>
+                <p className="text-white text-xs">01/05</p>
               </span>
               <div className="w-full p-8 relative before:block before:absolute before:bg-primary before:w-2 before:h-full before:left-0 before:top-0">
                 <h1 className="text-[40px]/[60px] font-bold text-white">DRIVING INNOVATION AND EXCELLENCE IN AFRICA'S OIL & GAS INDUSTRY</h1>
