@@ -100,7 +100,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="max-w-full overflow-x-hidden relative after:block after:absolute after:bg-primary after:w-1/4 after:right-0 after:z-10 after:h-[92px] after:top-1/2 after:-translate-1/2">
+      <div className="max-w-full overflow-x-hidden relative ">
         <div className="absolute top-1/2 left-[10px]">
           <PageNumber className="w-fit">01</PageNumber>
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
           <div className="col-span-7 relative aspect-square ">
             <Image src={whoAreWe1} width="554" height="462" className="w-[80%] aspect-square absolute bottom-0 left-0" />
-            <span className="absolute bg-primary w-full h-[92px] top-1/2 -translate-1/2"></span>
+            <span className="absolute bg-primary home-overlap h-[92px] top-1/2 -translate-1/2"></span>
             <Image src={whoAreWe2} width="554" height="462" className="w-[80%] aspect-square absolute top-0 right-0 z-20" />
           </div>
         </section>

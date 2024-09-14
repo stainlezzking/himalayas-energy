@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Page = () => {
   return (
-    <div>
+    <main>
       <div className="pageMargin">
         <Navbar index={1} />
         <span className="flex gap-x-2 items-center mt-[72px] mb-[43px]">
@@ -19,7 +19,7 @@ const Page = () => {
           <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
             <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
           </svg>
-          <p className="text-white text-xs">02/06</p>
+          <p className="text-black text-xs">02/06</p>
         </span>
         <div className="relative gap-x-6 items-center mb-[94px]">
           <span className="bg-primary block absolute top-1/2 -translate-y-1/2 w-2 h-[100px]"></span>
@@ -33,6 +33,7 @@ const Page = () => {
         <setcion className="pageMargin grid grid-cols-12 gap-x-[36px]">
           <div className="relative col-span-5">
             <Image src={aboutIntro} fill alt="" />
+            <span className="bg-primary h-[92px] absolute top-1/2 -translate-y-1/2 z-[-1] about-intro-custom-width"></span>
           </div>
           <div className="col-span-7 p-[40px] text-body1">
             Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the Oil &
@@ -255,7 +256,7 @@ const Page = () => {
         </svg>
       </div>
       <Footer />
-    </div>
+    </main>
   );
 };
 
