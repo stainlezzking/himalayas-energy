@@ -474,7 +474,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <Footer />
+      <Footer index={0} />
     </>
   );
 }

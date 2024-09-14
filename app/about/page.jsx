@@ -255,7 +255,7 @@ const Page = () => {
           <rect x="43" y="8" width="8" height="39" transform="rotate(-90 43 8)" fill="black" />
         </svg>
       </div>
-      <Footer />
+      <Footer index={0} />
     </main>
   );
 };
