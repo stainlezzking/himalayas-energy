@@ -35,12 +35,14 @@ export default function Home() {
                   <circle cx="25.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
                 </svg>
                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
-                  <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
+                  <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
                 </svg>
                 <p className="text-white text-xs">01/06</p>
               </span>
-              <div className="w-full p-8 relative before:block before:absolute before:bg-primary before:w-2 before:h-full before:left-0 before:top-0">
-                <h1 className="text-[40px]/[60px] font-bold text-white">DRIVING INNOVATION AND EXCELLENCE IN AFRICA'S OIL & GAS INDUSTRY</h1>
+              <div className="w-full px-5 py-[30px] sm:p-8 relative before:block before:absolute before:bg-primary before:w-2 before:h-full before:left-0 before:top-0">
+                <h1 className="text-2xl/[35px] sm:text-[40px]/[60px] font-bold text-white">
+                  DRIVING INNOVATION AND EXCELLENCE IN AFRICA'S OIL & GAS INDUSTRY
+                </h1>
               </div>
             </div>
           </div>
@@ -48,20 +50,20 @@ export default function Home() {
       </div>
       <div className="relative -top-[97px] ">
         <span className="block w-[110px] h-3 mx-auto bg-primary"></span>
-        <div className="bg-white px-[30px] py-[20px] w-fit mx-auto shadow-[0px_4px_4px_rgba(0,0,0,0.25)] relative">
+        <div className="bg-white px-[30px] max-w-[350px] py-[20px] w-fit mx-auto shadow-[0px_4px_4px_rgba(0,0,0,0.25)] relative">
           <span className="block absolute -left-[60px] top-1/2">
             <svg width="9" height="62" viewBox="0 0 9 62" fill="none">
               <circle cx="4.5" cy="58.5" r="3" transform="rotate(-90 4.5 58.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="47.5" r="3" transform="rotate(-90 4.5 47.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="36.5" r="3" transform="rotate(-90 4.5 36.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
+              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
               <circle cx="4.5" cy="14.5" r="3" transform="rotate(-90 4.5 14.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
             </svg>
           </span>
-          <div className="gap-x-[36px] grid grid-cols-3">
+          <div className="gap-x-[36px] grid grid-cols-3 ">
             <div className="col-span-1 space-y-3 ">
-              <Image src={oil} width="154" className="w-full mx-auto max-w-[154px]" />
+              <Image src={oil} width="154" alt="oil and gas company from Himalayas Energy" className="w-full mx-auto max-w-[154px]" />
               <div>
                 <h3 className="text-lg text-center">SERVICE OFFERING</h3>
                 <div className="pt-3">
@@ -70,28 +72,28 @@ export default function Home() {
               </div>
             </div>
             <div className="col-span-2 ps-[36px] py-8">
-              <ul className="space-y-6 text-lg">
+              <ul className="space-y-6 text-[14px] sm:text-lg">
                 <li className="flex items-center gap-x-2 ">
                   <svg className="w-[12px] h-[13px]" viewBox="0 0 13 14" fill="none">
-                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   Design & Build
                 </li>
                 <li className="flex items-center gap-x-2 ">
                   <svg className="w-[12px] h-[13px]" viewBox="0 0 13 14" fill="none">
-                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   Engineering Procurement
                 </li>
                 <li className="flex items-center gap-x-2 ">
                   <svg className="w-[12px] h-[13px]" viewBox="0 0 13 14" fill="none">
-                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   Construction
                 </li>
                 <li className="flex items-center gap-x-2 ">
                   <svg className="w-[12px] h-[13px]" viewBox="0 0 13 14" fill="none">
-                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   Commissioning (EPCC)
                 </li>
@@ -104,7 +106,7 @@ export default function Home() {
         <div className="absolute top-1/2 left-[10px]">
           <PageNumber className="w-fit">01</PageNumber>
         </div>
-        <section className="relative py-[55px] pageMargin grid grid-cols-12 justify-between gap-x-1 lg:gap-x-10 items-center ">
+        <section className="relative py-[55px] pageMargin grid grid-cols-6 space-y-[58px] md:grid-cols-12 justify-between gap-x-1 lg:gap-x-10 items-center ">
           <span className="block absolute top-0 right-0">
             <svg width="95" height="8" viewBox="0 0 95 8" fill="none">
               <circle cx="3.5" cy="4" r="3" transform="rotate(-90 3.5 4)" fill="#181818" stroke="#D9D9D9" />
@@ -116,17 +118,31 @@ export default function Home() {
             <Titledash>WHO WE ARE</Titledash>
             <div className="space-y-16">
               <p className="text-body1">
-                Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the Oil & Gas
-                industry. Himalayas Energy is currently looking to spread its tentacles into the exploration and production terrain with its recent
-                participation in the Marginal Field BidRound.
+                Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the
+                Oil & Gas industry. Himalayas Energy is currently looking to spread its tentacles into the exploration and production terrain with its
+                recent participation in the Marginal Field BidRound.
               </p>
               <Button className="max-lg:hidden"> Read more</Button>
             </div>
           </div>
           <div className="col-span-6 xl:col-span-7 relative aspect-square ">
-            <Image src={whoAreWe1} width="554" height="462" className="w-[80%] aspect-square absolute bottom-0 left-0" />
+            <Image
+              src={whoAreWe1}
+              alt="Who are Himalayas Energy Consults, Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the
+                Oil & Gas industry. "
+              width="554"
+              height="462"
+              className="w-[80%] max-md:max-w-[400px] aspect-square absolute bottom-0 left-0"
+            />
             <span className="absolute bg-primary home-who-are-we-overlap h-[92px] top-1/2 -translate-y-1/2"></span>
-            <Image src={whoAreWe2} width="554" height="462" className="w-[80%] aspect-square absolute top-0 right-0 z-20" />
+            <Image
+              src={whoAreWe2}
+              alt="Himalayas Energy is currently looking to spread its tentacles into the exploration and production terrain with its
+                recent participation in the Marginal Field BidRound."
+              width="554"
+              height="462"
+              className="w-[80%] max-md:max-w-[400px] aspect-square absolute bottom-20 right-10 md:top-0 md:right-0 z-20"
+            />
           </div>
           <div className="col-span-full mt-[62px] flex justify-center">
             <Button> Read more</Button>
@@ -143,7 +159,7 @@ export default function Home() {
               <circle cx="4.5" cy="58.5" r="3" transform="rotate(-90 4.5 58.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="47.5" r="3" transform="rotate(-90 4.5 47.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="36.5" r="3" transform="rotate(-90 4.5 36.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
+              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
               <circle cx="4.5" cy="14.5" r="3" transform="rotate(-90 4.5 14.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
             </svg>
@@ -161,8 +177,9 @@ export default function Home() {
               <div className="space-y-[15px]">
                 <Titledash> OUR MISSION</Titledash>
                 <p className="text-body1">
-                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the efficient
-                  execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual improvement in quality.
+                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the
+                  efficient execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual
+                  improvement in quality.
                 </p>
               </div>
             </div>
@@ -178,8 +195,8 @@ export default function Home() {
               <div className="space-y-[15px]">
                 <Titledash> OUR VISSION</Titledash>
                 <p className="text-body1">
-                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the upstream and downstream oil and gas
-                  sector.
+                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the upstream and downstream
+                  oil and gas sector.
                 </p>
               </div>
             </div>
@@ -202,7 +219,7 @@ export default function Home() {
               <Titledash span="mx-auto">WHAT WE DO</Titledash>
             </div>
             <div className="space-y-16">
-              <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-[62px] gap-y-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[62px] gap-y-[60px] md:gap-y-10">
                 <div className="col-span-1">
                   <WhatWeDoSections
                     title="ONSHORE & OFFSHORE PIPELINE INSTALLATION"
@@ -264,7 +281,7 @@ export default function Home() {
             <circle cx="4.5" cy="58.5" r="3" transform="rotate(-90 4.5 58.5)" fill="#181818" stroke="#D9D9D9" />
             <circle cx="4.5" cy="47.5" r="3" transform="rotate(-90 4.5 47.5)" fill="#181818" stroke="#D9D9D9" />
             <circle cx="4.5" cy="36.5" r="3" transform="rotate(-90 4.5 36.5)" fill="#181818" stroke="#D9D9D9" />
-            <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
+            <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
             <circle cx="4.5" cy="14.5" r="3" transform="rotate(-90 4.5 14.5)" fill="#181818" stroke="#D9D9D9" />
             <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
           </svg>
@@ -276,14 +293,14 @@ export default function Home() {
           <Titledash>WHY CHOOSE US</Titledash>
           <div>
             <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch relative">
-              <span className="bg-primary h-[92px] w-[1500px] absolute top-1/2 -translate-y-1/2 -left-[1000px] z-[-1] block"></span>
+              <span className="max-lg:hidden bg-primary h-[92px] w-[1500px] absolute top-1/2 -translate-y-1/2 -left-[1000px] z-[-1] block"></span>
               <div className="col-span-1 max-lg:h-[345px] max-lg:flex items-center justify-center bg-main lg:bg-white px-[67px] pb-[27px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center">
                 <div className="space-y-3 max-w-[385px] lg:max-w-[240px]">
                   <h1 className="text-[32px] max-lg:text-white"> 01</h1>
                   <h2 className="text-lg max-lg:text-white">QUALITY POLICY</h2>
                   <p className="text-body2">
-                    We are committed to providing safe, dependable transportation service to our customers and to meet our goal, organization shall strive’
-                    Prompt & Positive response Team Performance On time delivery of goods To reduce customer complaints.
+                    We are committed to providing safe, dependable transportation service to our customers and to meet our goal, organization shall
+                    strive’ Prompt & Positive response Team Performance On time delivery of goods To reduce customer complaints.
                   </p>
                 </div>
               </div>
@@ -295,8 +312,8 @@ export default function Home() {
                   <h1 className="text-[32px] text-white"> 02</h1>
                   <h2 className="text-lg text-white">QUALITY POLICY</h2>
                   <p className="text-body2">
-                    Our goals are to understand and meet customer needs, constantly seeking customer opinions; to anticipate market trends; to be competitive;
-                    to create and deliver products and services that bring value to the customer.
+                    Our goals are to understand and meet customer needs, constantly seeking customer opinions; to anticipate market trends; to be
+                    competitive; to create and deliver products and services that bring value to the customer.
                   </p>
                 </div>
               </div>
@@ -305,17 +322,20 @@ export default function Home() {
               <div className="col-span-2 max-lg:order-2 max-lg:mx-auto">
                 <div className="max-w-[700px] space-y-[28px] pt-[91px] ">
                   <h1 className="text-2xl text-center text-black">
-                    At Himalayas Energy Consults Limited we value the health and safety of our employees and all who come into contact with our business. We do
-                    not want to harm or damage the environment and are committed to supply high quality and safe products to our customers.
+                    At Himalayas Energy Consults Limited we value the health and safety of our employees and all who come into contact with our
+                    business. We do not want to harm or damage the environment and are committed to supply high quality and safe products to our
+                    customers.
                   </h1>
                   <p className="text-body1">
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its activities.
-                    Although many companies have their own safety standards with which we are obliged to comply during our operations, it is our policy to
-                    strive towards the improvement and provision of safe and healthy working conditions for all persons and environment.
+                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
+                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
+                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for all persons and
+                    environment.
                     <br />
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its activities.
-                    Although many companies have their own safety standards with which we are obliged to comply during our operations, it is our policy to
-                    strive towards the improvement and provision of safe and healthy working conditions for all persons and environment
+                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
+                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
+                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for all persons and
+                    environment
                   </p>
                   <div className="flex justify-end mt-10">
                     <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -332,8 +352,8 @@ export default function Home() {
                     <h1 className="text-[32px] text-white"> 03</h1>
                     <h2 className="text-lg text-white">PROCESS ENVIRONMENT</h2>
                     <p className="text-body2 pb-5">
-                      Our goals are to ensure processes are structured and executed to support business performance; to run world-class standardised processes;
-                      and to have a common understanding of excellent execution.
+                      Our goals are to ensure processes are structured and executed to support business performance; to run world-class standardised
+                      processes; and to have a common understanding of excellent execution.
                     </p>
                   </div>
                 </div>
@@ -342,8 +362,8 @@ export default function Home() {
                     <h1 className="text-[32px] text-white"> 04</h1>
                     <h2 className="text-lg text-white">PEOPLE EXCELLENCE</h2>
                     <p className="text-body2 pb-5">
-                      Our goals are to be an employer of choice; to have the right people in the right place; to think outside the box; to continuously learn,
-                      change and improve; to provide attractive careers and to develop management and leadership capabilities.
+                      Our goals are to be an employer of choice; to have the right people in the right place; to think outside the box; to
+                      continuously learn, change and improve; to provide attractive careers and to develop management and leadership capabilities.
                     </p>
                   </div>
                 </div>
@@ -354,16 +374,18 @@ export default function Home() {
       </div>
 
       <section className="pageMargin py-[90px] space-y-10">
-        <Titledash> OUR CORE VALUES </Titledash>
-        <div className="flex gap-x-8">
-          <div className=" relative w-full max-w-[520px] h-[320px]">
+        <div className="max-md:flex justify-center">
+          <Titledash span="max-md:mx-auto"> OUR CORE VALUES </Titledash>
+        </div>
+        <div className="md:flex space-y-8 gap-x-8">
+          <div className=" relative w-full max-w-[520px] h-[320px] max-md:mx-auto">
             <Image src={values} alt="Himalayas Energy Core values" fill />
           </div>
           <div className="items-stretch p-5 lg:p-[67px] ps-0">
-            <ul className="space-y-6 max-w-[500px]">
+            <ul className="space-y-6 max-w-[500px] max-md:mx-auto">
               <li className="flex gap-x-1 items-center">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 <p>
                   <span className="font-bold">Integrity:</span> The courage to maintain the right from the wrong without compromise.
@@ -371,7 +393,7 @@ export default function Home() {
               </li>
               <li className="flex gap-x-1 items-center">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 <p>
                   <span className="font-bold"> Reliability:</span>The ability to deliver on what we promise, without exception.
@@ -379,7 +401,7 @@ export default function Home() {
               </li>
               <li className="flex gap-x-1 items-center">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 <p>
                   <span className="font-bold"> Accountabilty:</span>The strength to be responsible for our actions and decision.
@@ -400,7 +422,7 @@ export default function Home() {
               <div className="relative max-lg:aspect-video lg:h-[370px]  w-full ">
                 <Image
                   src={skills}
-                  class="object-cover object-top "
+                  className="object-cover object-top "
                   fill
                   alt="Himalayas Energy Consults Limited offers education and training opportunities for advancement."
                 />
@@ -410,9 +432,9 @@ export default function Home() {
                 <div className="bg-white max-lg:max-w-[80%] mx-auto px-[13px] py-[8px] space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
                   <SubTitleDash>SKILLS DEVELOPMENT</SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
-                    Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form of e
-                    learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house programmes are provided
-                    to improve productivity by equipping employees with behavioural skills
+                    Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form
+                    of e learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house
+                    programmes are provided to improve productivity by equipping employees with behavioural skills
                   </p>
                 </div>
               </div>
@@ -423,7 +445,7 @@ export default function Home() {
               <div className="relative max-lg:aspect-video lg:h-[370px]  w-full ">
                 <Image
                   src={social}
-                  class="object-cover object-top "
+                  className="object-cover object-top "
                   fill
                   alt="Himalayas Energy Consults Limited offers education and training opportunities for advancement."
                 />
@@ -433,9 +455,9 @@ export default function Home() {
                 <div className="bg-white max-lg:max-w-[80%] mx-auto px-[13px] py-[8px] space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
                   <SubTitleDash>SOCIAL RESPONSIBILITY</SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
-                    Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the environment.
-                    Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does business. Economically and
-                    socially strong communities enhance Himalayas Energy Consults Limited success.
+                    Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the
+                    environment. Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does
+                    business. Economically and socially strong communities enhance Himalayas Energy Consults Limited success.
                   </p>
                 </div>
               </div>
@@ -446,7 +468,7 @@ export default function Home() {
               <div className="relative max-lg:aspect-video lg:h-[370px]  w-full ">
                 <Image
                   src={economic}
-                  class="object-cover object-top "
+                  className="object-cover object-top "
                   fill
                   alt="Himalayas Energy Consults Limited offers education and training opportunities for advancement."
                 />
@@ -456,9 +478,9 @@ export default function Home() {
                 <div className="bg-white max-lg:max-w-[80%] mx-auto px-[13px] py-[8px] space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
                   <SubTitleDash>ECONOMIC EMPOWERMENT INITIATIVES</SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its activities.
-                    Although many companies have their own safety standards with which we are obliged to comply during our operations, it is our policy to
-                    strive towards the improvement and provision of safe and healthy working conditions for everyone.
+                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
+                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
+                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for everyone.
                   </p>
                 </div>
               </div>

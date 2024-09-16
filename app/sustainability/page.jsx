@@ -16,7 +16,7 @@ const Page = () => {
             <circle cx="25.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
           </svg>
           <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
-            <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
+            <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
           </svg>
           <p className="text-xs text-black">04/05</p>
         </span>

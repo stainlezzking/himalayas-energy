@@ -18,7 +18,7 @@ const Page = () => {
               <circle cx="25.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
             </svg>
             <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
-              <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
+              <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
             </svg>
             <p className="text-xs text-black">03/05</p>
           </span>
@@ -36,7 +36,7 @@ const Page = () => {
               <circle cx="4.5" cy="58.5" r="3" transform="rotate(-90 4.5 58.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="47.5" r="3" transform="rotate(-90 4.5 47.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="36.5" r="3" transform="rotate(-90 4.5 36.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
+              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
               <circle cx="4.5" cy="14.5" r="3" transform="rotate(-90 4.5 14.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
             </svg>
@@ -91,55 +91,55 @@ const Page = () => {
               </p>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Civilwork
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Construction and Installation
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Decommissioning
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Heavy Lift Operations
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Hook-up and Commissioning
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Production Modules & Facility Maintenance
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Structural Repair & Facility Upgrades
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Constructability Planning and Reviews
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Turnkey installations
               </span>
@@ -157,37 +157,37 @@ const Page = () => {
               </p>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Facility Installation & Abandonment.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Pipeline Installation, Burial & Testing.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Pipeline Repair and Maintenance.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Pipeline Abandonment & Removal.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Subsea Well Plug & Abandonment Support;
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Exposed Pipeline Burial.
               </span>
@@ -201,25 +201,25 @@ const Page = () => {
               </p>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Fresh Water Treatment.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Desalination Systems and Accessories
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Domestic waste disposal
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Tank Cleaning
               </span>
@@ -229,13 +229,13 @@ const Page = () => {
               <h1 className="font-bold">PETROLEUM PRODUCTS HAULAGE AND MARKETING</h1>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Petroleum Products and Industrial Gases (Gas, Oils, Fuels).
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Automotive Gas Oil (AGO), Dual Purpose Kerosene (DPK) and Premium Motor Spirit (PMS) to Onshore and Offshore Locations /Facilities.
               </span>
@@ -274,55 +274,55 @@ const Page = () => {
               </p>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 <span className="font-medium text-main">Oil Field Assessment:</span> Assessing the volume of oil and gas in the reservoir.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Choosing a platform type (FPSO, Jacket, TLP, Semi) to operate.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Gas Evacuation and Monetization Strategy
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Stakeholder Assessment and Evaluation.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Consideration of Construction, Operation and Decommissioning
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Full Project Life Economics.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Broker Deals on Field Development Consortiums.
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Development of CAPEX Finance
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 EPCIC Development of the Field to First Oil
               </span>
@@ -338,79 +338,79 @@ const Page = () => {
               </p>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Steel / Piping / Mechanical Services / Electrical Services
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Subsea Construction Services
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Pipe fitting and Welding Services
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Compressors and Valve Supply Services
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Mobile Production & Floating Storage Units
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Transportation / Supply and Disposal
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Steel / Metal / Concrete Structures / Platforms
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Floating Facilities / Systems including Storage / Loading
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Early Production Facilities
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Process & Utility Modules / Packages
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Engineering, Procurement & Construction
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Pre-Commissioning & Commissioning
               </span>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 Maintenance Services.
               </span>

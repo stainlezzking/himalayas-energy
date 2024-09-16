@@ -17,7 +17,7 @@ const Page = () => {
             <circle cx="25.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
           </svg>
           <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
-            <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
+            <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
           </svg>
           <p className="text-black text-xs">02/05</p>
         </span>
@@ -67,7 +67,7 @@ const Page = () => {
               <circle cx="4.5" cy="58.5" r="3" transform="rotate(-90 4.5 58.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="47.5" r="3" transform="rotate(-90 4.5 47.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="36.5" r="3" transform="rotate(-90 4.5 36.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" stroke-width="2" />
+              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
               <circle cx="4.5" cy="14.5" r="3" transform="rotate(-90 4.5 14.5)" fill="#181818" stroke="#D9D9D9" />
               <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
             </svg>
@@ -122,37 +122,37 @@ const Page = () => {
               <ul className="space-y-6 max-w-[500px]">
                 <li className="flex gap-x-2 items-center">
                   <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   <p>Expanding into exploration and production with participation in the Marginal Field BidRound.</p>
                 </li>
                 <li className="flex gap-x-2 items-center">
                   <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   <p>Dedicated to growing the Oil & Gas sector in Africa.</p>
                 </li>
                 <li className="flex gap-x-2 items-center">
                   <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   <p>Collaborations with world-renowned industry leaders and experts.</p>
                 </li>
                 <li className="flex gap-x-2 items-center">
                   <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   <p>6 Years of Experience in the Oil and Gas Industry</p>
                 </li>
                 <li className="flex gap-x-2 items-center">
                   <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   <p>Providing first-class solutions to enhance client operational efficiency.</p>
                 </li>
                 <li className="flex gap-x-2 items-center">
                   <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
                   <p>
                     Commitment to high-quality project delivery within scheduled timeframes and compliance with client specifications and standards.
@@ -190,19 +190,19 @@ const Page = () => {
             </p>
             <span className="flex gap-x-2 items-center text-body1">
               <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
               </svg>
               Enhancement of local participation in all activities as possible.
             </span>
             <span className="flex gap-x-2 items-center text-body1">
               <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
               </svg>
               Utilization of local resources and services in all measures possible.
             </span>
             <span className="flex gap-x-2 items-center text-body1">
               <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" stroke-width="4" />
+                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
               </svg>
               Technology transfer to local companies.
             </span>
