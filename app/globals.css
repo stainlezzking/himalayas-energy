@@ -33,6 +33,10 @@
     width: calc(50% + 500px);
     left: -500px;
   }
+  .home-who-are-we-overlap {
+    width: calc(100% + 500px);
+    right: -500px;
+  }
 }
 
 @-webkit-keyframes bounceInUp {
