@@ -7,7 +7,7 @@
     @apply text-main;
   }
   .pageMargin {
-    @apply container mx-auto max-lg:px-8;
+    @apply container mx-auto max-sm:px-4 max-lg:px-8;
   }
   .hero {
     @apply text-[60px] font-bold text-main;

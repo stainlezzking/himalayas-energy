@@ -7,32 +7,32 @@ const Footer = ({ index }) => {
       <div className="bg-black  py-[26px]  text-gray">
         <div className="pageMargin space-y-6">
           <div className="py-2 flex justify-between">
-            <ul className="flex max-md:flex-wrap  items-center gap-x-8">
+            <ul className="max-sm:space-y-4 max-sm:list-disc max-sm:ps-4 sm:flex max-md:flex-wrap  items-center gap-x-8">
               <li>
                 <a href="/home">Home</a>
               </li>
-              <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
                 <a href="/about">About</a>
               </li>
-              <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
                 <a href="/services">Services</a>
               </li>
-              <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
                 <a href="/sustainability">Sustainability</a>
               </li>
-              <svg width="5" height="6" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 

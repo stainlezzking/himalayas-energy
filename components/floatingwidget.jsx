@@ -10,9 +10,10 @@ const FlotingWidget = ({ index }) => {
       // i want to cancle the event listner on unmount, i dont think its necessary since all links are a tags no Link
       // return null;
       function scrollMonitor() {
+        if (window.innerWidth < 768 && floating) return setFloating(false);
+        if (window.innerWidth < 768) return null;
         const scrollPosition = window.scrollY;
         if (scrollPosition > 1000 && !floating) {
-          console.log("displayed");
           setFloating(true);
           ref.current.classList.remove("hidden");
           ref.current.classList.add("animate__animated", "animate__bounceInUp");
@@ -32,7 +33,10 @@ const FlotingWidget = ({ index }) => {
     [floating]
   );
   return (
-    <div ref={ref} className="fixed  border border-white/30 hidden h-0 bottom-10 right-10 space-y-[21px] px-[10px] rounded-2xl py-4 bg-black/90 z-50">
+    <div
+      ref={ref}
+      className="fixed max-md:hidden  border border-white/30 hidden h-0 bottom-10 right-10 space-y-[21px] px-[10px] rounded-2xl py-4 bg-black/90 z-50"
+    >
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
         <a
           href="/home"
