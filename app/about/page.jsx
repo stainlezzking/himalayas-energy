@@ -33,7 +33,7 @@ const Page = () => {
         <setcion className="pageMargin grid lg:grid-cols-12 max-lg:space-y-[50px] gap-x-[36px]">
           <div className="relative max-lg:aspect-square col-span-full lg:col-span-5">
             <Image src={aboutIntro} fill alt="" />
-            <span className="bg-primary h-[92px] absolute top-1/2 -translate-y-1/2 z-[-1] about-intro-custom-width"></span>
+            <span className="bg-primary h-[126px] lg:h-[92px] absolute top-1/2 -translate-y-1/2 z-[-1] about-intro-custom-width"></span>
           </div>
           <div className="col-span-full lg:col-span-7 lg:p-[40px] text-body1">
             Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the Oil & Gas
