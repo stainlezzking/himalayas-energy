@@ -19,9 +19,9 @@ const Page = () => {
         </span>
         <div className="relative gap-x-6 items-center">
           <span className="bg-primary block absolute top-1/2 -translate-y-1/2 w-2 h-[100px]"></span>
-          <div className="space-y-3 ps-6 w-[630px]">
+          <div className="space-y-3 ps-6 w-[630px] max-w-full">
             <h4 className=" text-[14px]">CONTACT US</h4>
-            <h1 className="text-4xl font-bold">Connect with Us to Fuel Your Energy Needs</h1>
+            <h1 className="text-2xl sm:text-4xl font-bold">Connect with Us to Fuel Your Energy Needs</h1>
           </div>
         </div>
         <div className="mt-[38px] space-y-[62px]">
@@ -45,16 +45,12 @@ const Page = () => {
               <span className="bg-black block h-1 w-20"></span>
             </div>
             <div className="space-y-[49px] max-w-[665px]">
-              <div className="grid grid-cols-2 gap-x-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="col-span-1">
                   <input type="text" className="px-[10px] rounded-2xl w-full py-[20px] bg-[#F6F6F6] placeholder:text-body1" placeholder="Your Name" />
                 </div>
                 <div className="col-span-1">
-                  <input
-                    type="text"
-                    className="px-[10px] rounded-2xl w-full py-[20px] bg-[#F6F6F6] placeholder:text-body1"
-                    placeholder="Your Email"
-                  />
+                  <input type="text" className="px-[10px] rounded-2xl w-full py-[20px] bg-[#F6F6F6] placeholder:text-body1" placeholder="Your Email" />
                 </div>
               </div>
               <textarea

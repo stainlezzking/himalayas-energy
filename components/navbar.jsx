@@ -11,7 +11,9 @@ const Navbar = ({ whiteShade = false, index = 0 }) => {
     <nav className="max-lg:block flex justify-between items-center md:h-[210px] lg:h-[105px]">
       <div className="flex justify-between items-center">
         <div className="max-w-[162px]">
-          <Image src={whiteShade ? Whitelogo : Blacklogo} alt="The logo of Himalayas Consult" width="162" className="w-full max-sm:w-[100px]" />
+          <a href="/" className="block w-full">
+            <Image src={whiteShade ? Whitelogo : Blacklogo} alt="The logo of Himalayas Consult" width="162" className="w-full max-sm:w-[100px]" />
+          </a>
         </div>
         <span className="p-1 block cursor-pointer md:hidden" onClick={() => setOpen(true)}>
           <svg className="w-7" viewBox="0 0 18 12" fill="none">

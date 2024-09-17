@@ -27,7 +27,7 @@ export default function Home() {
         <div className="relative pt-[27px] pb-[120px] sm:min-h-screen max-w-full w-screen bg-[url('/banner.png')] bg-cover bg-no-repeat before:block before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/50">
           <div className="pageMargin relative">
             <Navbar whiteShade={true} />
-            <div id="caption" className="max-w-[660px] max-sm:my-28 max-lg:my-[73px] space-y-[54px]">
+            <div id="caption" className="max-w-[660px] max-sm:my-28 my-[73px] space-y-[54px]">
               <span className="flex gap-x-2 items-center ">
                 <svg width="29" height="8" viewBox="0 0 29 8" fill="none">
                   <circle cx="3.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
