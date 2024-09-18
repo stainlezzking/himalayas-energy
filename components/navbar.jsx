@@ -4,6 +4,7 @@ import Blacklogo from "@/public/blacklogo.png";
 import Whitelogo from "@/public/whitelogo.png";
 import { useState } from "react";
 import NavLink from "./navlinks";
+import ExportedImage from "next-image-export-optimizer";
 
 const Navbar = ({ whiteShade = false, index = 0 }) => {
   const [open, setOpen] = useState(false);
@@ -12,7 +13,12 @@ const Navbar = ({ whiteShade = false, index = 0 }) => {
       <div className="flex justify-between items-center">
         <div className="max-w-[162px]">
           <a href="/" className="block w-full">
-            <Image src={whiteShade ? Whitelogo : Blacklogo} alt="The logo of Himalayas Consult" width="162" className="w-full max-sm:w-[100px]" />
+            <ExportedImage
+              src={whiteShade ? Whitelogo : Blacklogo}
+              alt="The logo of Himalayas Consult"
+              width="162"
+              className="w-full max-sm:w-[100px]"
+            />
           </a>
         </div>
         <span className="p-1 block cursor-pointer md:hidden" onClick={() => setOpen(true)}>
@@ -45,27 +51,27 @@ const Navbar = ({ whiteShade = false, index = 0 }) => {
           className={` max-md:mt-16 max-md:space-y-8 md:flex py-6 px-8 gap-x-10 md:rounded-l-full md:rounded-r-full md:border md:border-white text-white md:bg-[#181818]/90`}
         >
           <li>
-            <NavLink path="/" index={index} elementIndex={0}>
+            <NavLink path="/index.html" index={index} elementIndex={0}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink path="/about" index={index} elementIndex={1}>
+            <NavLink path="/about.html" index={index} elementIndex={1}>
               About
             </NavLink>
           </li>
           <li>
-            <NavLink path="/services" index={index} elementIndex={2}>
+            <NavLink path="/services.html" index={index} elementIndex={2}>
               Services
             </NavLink>
           </li>
           <li>
-            <NavLink path="/sustainability" index={index} elementIndex={3}>
+            <NavLink path="/sustainability.html" index={index} elementIndex={3}>
               Sustainability
             </NavLink>
           </li>
           <li>
-            <NavLink path="/contact" index={index} elementIndex={4}>
+            <NavLink path="/contact.html" index={index} elementIndex={4}>
               Contact
             </NavLink>
           </li>

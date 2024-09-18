@@ -9,35 +9,35 @@ const Footer = ({ index }) => {
           <div className="py-2 flex justify-between">
             <ul className="max-sm:space-y-4 max-sm:list-disc max-sm:ps-4 sm:flex max-md:flex-wrap  items-center gap-x-8">
               <li>
-                <a href="/home">Home</a>
+                <a href="/index.html">Home</a>
               </li>
               <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
-                <a href="/about">About</a>
+                <a href="/about.html">About</a>
               </li>
               <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
-                <a href="/services">Services</a>
+                <a href="/services.html">Services</a>
               </li>
               <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
-                <a href="/sustainability">Sustainability</a>
+                <a href="/sustainability.html">Sustainability</a>
               </li>
               <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
-                <a href="/contact">Contact</a>
+                <a href="/contact.html">Contact</a>
               </li>
               <li className="max-lg:hidden"> &copy; 2024. All Rights Reserved</li>
             </ul>
