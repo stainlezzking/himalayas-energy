@@ -5,6 +5,7 @@ import Whitelogo from "@/public/whitelogo.png";
 import { useState } from "react";
 import NavLink from "./navlinks";
 import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
 
 const Navbar = ({ whiteShade = false, index = 0 }) => {
   const [open, setOpen] = useState(false);
@@ -12,9 +13,9 @@ const Navbar = ({ whiteShade = false, index = 0 }) => {
     <nav className="max-lg:block flex justify-between items-center md:h-[210px] lg:h-[105px]">
       <div className="flex justify-between items-center">
         <div className="max-w-[162px]">
-          <a href="/" className="block w-full">
+          <Link prefetch={false} href="/" className="block w-full">
             <Image src={whiteShade ? Whitelogo : Blacklogo} alt="The logo of Himalayas Consult" width="162" className="w-full max-sm:w-[100px]" />
-          </a>
+          </Link>
         </div>
         <span className="p-1 block cursor-pointer md:hidden" onClick={() => setOpen(true)}>
           <svg className="w-7" viewBox="0 0 18 12" fill="none">
@@ -46,7 +47,7 @@ const Navbar = ({ whiteShade = false, index = 0 }) => {
           className={` max-md:mt-16 max-md:space-y-8 md:flex py-6 px-8 gap-x-10 md:rounded-l-full md:rounded-r-full md:border md:border-white text-white md:bg-[#181818]/90`}
         >
           <li>
-            <NavLink path="/index" index={index} elementIndex={0}>
+            <NavLink path="/" index={index} elementIndex={0}>
               Home
             </NavLink>
           </li>

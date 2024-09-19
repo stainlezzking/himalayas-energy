@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const FlotingWidget = ({ index }) => {
@@ -38,12 +39,13 @@ const FlotingWidget = ({ index }) => {
       className="fixed max-md:hidden  border border-white/30 hidden h-0 bottom-10 right-10 space-y-[21px] px-[10px] rounded-2xl py-4 bg-black/90 z-50"
     >
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
-        <a
+        <Link
+          prefetch={false}
           href="/home"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-100px] top-1/2 -translate-y-1/2 group-hover:w-[100px] rounded-l-2xl "
         >
           Home
-        </a>
+        </Link>
         <div className={`flex gap-x-2 relative justify-center ${index == 0 && "px-[10px] py-2 bg-white  border-b border-b-primary rounded-full"} `}>
           <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -54,12 +56,13 @@ const FlotingWidget = ({ index }) => {
         </div>
       </div>
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
-        <a
+        <Link
+          prefetch={false}
           href="/about"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-110px] top-1/2 -translate-y-1/2 group-hover:w-[100px] rounded-l-2xl "
         >
           About
-        </a>
+        </Link>
         <div className={`flex gap-x-2 relative justify-center ${index == 1 && " px-[10px] py-2 bg-white  border-b border-b-primary rounded-full"} `}>
           <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -70,12 +73,13 @@ const FlotingWidget = ({ index }) => {
         </div>
       </div>
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
-        <a
+        <Link
+          prefetch={false}
           href="/services"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-110px] top-1/2 -translate-y-1/2 group-hover:w-[100px] rounded-l-2xl "
         >
           Services
-        </a>
+        </Link>
         <div className={`flex gap-x-2 relative justify-center ${index == 2 && " px-[10px] py-2 bg-white  border-b border-b-primary rounded-full"} `}>
           <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -87,12 +91,13 @@ const FlotingWidget = ({ index }) => {
         </div>
       </div>
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
-        <a
+        <Link
+          prefetch={false}
           href="/sustainability"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-155px] top-1/2 -translate-y-1/2 group-hover:w-[150px] rounded-l-2xl "
         >
           Sustainability
-        </a>
+        </Link>
         <div className={`flex gap-x-2 relative justify-center ${index == 3 && " px-[10px] py-2 bg-white  border-b border-b-primary rounded-full"} `}>
           <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

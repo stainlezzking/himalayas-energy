@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import TitleIntro from "@/components/intro";
 import Navbar from "@/components/navbar";
 
 const Page = () => {
@@ -17,13 +18,7 @@ const Page = () => {
           </svg>
           <p className="text-xs text-black">05/05</p>
         </span>
-        <div className="relative gap-x-6 items-center">
-          <span className="bg-primary block absolute top-1/2 -translate-y-1/2 w-2 h-[100px]"></span>
-          <div className="space-y-3 ps-6 w-[630px] max-w-full">
-            <h4 className=" text-[14px]">CONTACT US</h4>
-            <h1 className="text-2xl sm:text-4xl font-bold">Connect with Us to Fuel Your Energy Needs</h1>
-          </div>
-        </div>
+        <TitleIntro title="CONTACT US">Connect with Us to Fuel Your Energy Needs</TitleIntro>
         <div className="mt-[38px] space-y-[62px]">
           <div className="space-y-8">
             <div>

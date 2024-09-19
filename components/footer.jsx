@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FlotingWidget from "./floatingwidget";
 
 const Footer = ({ index }) => {
@@ -9,35 +10,45 @@ const Footer = ({ index }) => {
           <div className="py-2 flex justify-between">
             <ul className="max-sm:space-y-4 max-sm:list-disc max-sm:ps-4 sm:flex max-md:flex-wrap  items-center gap-x-8">
               <li>
-                <a href="/index">Home</a>
+                <Link prefetch={false} href="/index">
+                  Home
+                </Link>
               </li>
               <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
-                <a href="/about">About</a>
+                <Link prefetch={false} href="/about">
+                  About
+                </Link>
               </li>
               <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
-                <a href="/services">Services</a>
+                <Link prefetch={false} href="/services">
+                  Services
+                </Link>
               </li>
               <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
-                <a href="/sustainability">Sustainability</a>
+                <Link prefetch={false} href="/sustainability">
+                  Sustainability
+                </Link>
               </li>
               <svg className="w-[5px] max-sm:hidden" viewBox="0 0 5 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="2.5" cy="3" r="2.5" transform="rotate(-90 2.5 3)" fill="white" />
               </svg>
 
               <li>
-                <a href="/contact">Contact</a>
+                <Link prefetch={false} href="/contact">
+                  Contact
+                </Link>
               </li>
               <li className="max-lg:hidden"> &copy; 2024. All Rights Reserved</li>
             </ul>

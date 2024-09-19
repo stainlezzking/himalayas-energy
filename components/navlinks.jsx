@@ -1,6 +1,9 @@
+import Link from "next/link";
+
 const NavLink = ({ path, index, children, elementIndex }) => {
   return (
-    <a
+    <Link
+      prefetch={false}
       href={path}
       className={`py-2 px-4 rounded-x-full transition-colors
             hover:bg-white/60 hover:rounded-full hover:text-main max-md:rounded-none max-md:block max-md:max-w-[400px] max-md:hover:rounded-none ${
@@ -8,7 +11,7 @@ const NavLink = ({ path, index, children, elementIndex }) => {
             } `}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 

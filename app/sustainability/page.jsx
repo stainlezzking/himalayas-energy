@@ -4,6 +4,7 @@ import energy1 from "@/public/energy1.png";
 import energy2 from "@/public/energy2.png";
 import Footer from "@/components/footer";
 import ExportedImage from "next-image-export-optimizer";
+import TitleIntro from "@/components/intro";
 
 const Page = () => {
   return (
@@ -21,13 +22,7 @@ const Page = () => {
           </svg>
           <p className="text-xs text-black">04/05</p>
         </span>
-        <div className="relative gap-x-6 items-center">
-          <span className="bg-primary block absolute top-1/2 -translate-y-1/2 w-2 h-[100px]"></span>
-          <div className="space-y-3 ps-6 w-[630px] max-w-full">
-            <h4 className=" text-[14px]">SUSTAINABILITY</h4>
-            <h1 className="text-2xl sm:text-4xl font-bold">Driving Energy Innovation with a Greener Future in Mind</h1>
-          </div>
-        </div>
+        <TitleIntro title="SUSTAINABILITY">Driving Energy Innovation with a Greener Future in Mind</TitleIntro>
         <div className="mt-[38px] mb-[76px] grid grid-cols-2 space-y-10 gap-x-[10px] relative">
           <span className="absolute bg-primary sustainable-overlap about-intro-custom-width h-[126px] lg:h-[92px] top-1/2 -translate-y-1/2"></span>
           <div className="col-span-full lg:col-span-1 aspect-[4/3] relative">

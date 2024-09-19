@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import TitleIntro from "@/components/intro";
 import Navbar from "@/components/navbar";
 import service1 from "@/public/image1.png";
 import service2 from "@/public/image2.png";
@@ -23,13 +24,7 @@ const Page = () => {
             </svg>
             <p className="text-xs text-black">03/05</p>
           </span>
-          <div className="relative gap-x-6 items-center">
-            <span className="bg-primary block absolute top-1/2 -translate-y-1/2 w-2 h-[100px]"></span>
-            <div className="space-y-3 ps-6 w-[630px] max-w-full">
-              <h4 className="text-main text-[14px]">WHO WE ARE</h4>
-              <h1 className="text-2xl sm:text-4xl font-bold">Innovating for a Sustainable Energy Future in Africa</h1>
-            </div>
-          </div>
+          <TitleIntro title="WHO WE ARE">Innovating for a Sustainable Energy Future in Africa</TitleIntro>
         </div>
         <div className="relative">
           <span className="block absolute top-1/2 -translate-y-1/2 left-10">

@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import TitleIntro from "@/components/intro";
 import Navbar from "@/components/navbar";
 import Titledash from "@/components/title-dash";
 import aboutIntro from "@/public/about-intro.png";
@@ -22,13 +23,7 @@ const Page = () => {
           </svg>
           <p className="text-black text-xs">02/05</p>
         </span>
-        <div className="relative gap-x-6 items-center mb-[94px]">
-          <span className="bg-primary block absolute top-1/2 -translate-y-1/2 w-2 h-[100px]"></span>
-          <div className="space-y-3 ps-6 w-[630px] max-w-full">
-            <h4 className="text-main text-[14px]">WHO WE ARE</h4>
-            <h1 className="text-2xl sm:text-4xl font-bold">Leading the Charge in Africa's Oil & Gas Transformation</h1>
-          </div>
-        </div>
+        <TitleIntro title="WHO WE ARE">Leading the Charge in Africa's Oil & Gas Transformation</TitleIntro>
       </div>
       <div>
         <setcion className="pageMargin grid lg:grid-cols-12 max-lg:space-y-[50px] gap-x-[36px]">
