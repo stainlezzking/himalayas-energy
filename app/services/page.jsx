@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import TitleIntro from "@/components/intro";
+import LiAnimation from "@/components/li-animation";
 import Navbar from "@/components/navbar";
 import service1 from "@/public/image1.png";
 import service2 from "@/public/image2.png";
@@ -79,15 +80,15 @@ const Page = () => {
 
         <div className="space-y-[47px] pageMargin">
           <ul className="space-y-[62px]">
-            <li className="space-y-3">
+            <LiAnimation className="space-y-3">
               <span className="text-2xl pb-1 border-b border-b-primary">01</span>
               <h1 className="font-bold">ONSHORE & OFFSHORE PIPELINE INSTALLATION</h1>
               <p className="text-body1">
-                Himalayas Energy can supply a wide range of services for Onshore/Offshore projects, covering the entire project life span, from the earliest
-                conceptual studies, Basics, FEED to Detailed Design. <br />
-                Himalayas’s subsea construction and installation services offer field development support to oil and gas companies. A combination of our assets
-                and engineering services enable our team to complete projects safely and on-time and within budget. Our Onshore/Offshore Construction Services
-                include:
+                Himalayas Energy can supply a wide range of services for Onshore/Offshore projects, covering the entire project life span, from the
+                earliest conceptual studies, Basics, FEED to Detailed Design. <br />
+                Himalayas’s subsea construction and installation services offer field development support to oil and gas companies. A combination of
+                our assets and engineering services enable our team to complete projects safely and on-time and within budget. Our Onshore/Offshore
+                Construction Services include:
               </p>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
@@ -143,16 +144,16 @@ const Page = () => {
                 </svg>
                 Turnkey installations
               </span>
-            </li>
-            <li className="space-y-3">
+            </LiAnimation>
+            <LiAnimation className="space-y-3">
               <span className="text-2xl pb-1 border-b border-b-primary">02</span>
               <h1 className="font-bold">LOCAL GAS DISTRIBUTION</h1>
               <p className="text-body1">
-                Himalayas Energy builds pipeline transportation networks. We provide value to our customers and the industry by constructing pipeline networks
-                to connect producing wells and treatment facilities to onshore or offshore terminals for separation, treating, storage, and off-take. Himalayas
-                Energy’s pipeline technicians are highly skilled operators of offshore installation vessels with extensive experience constructing small
-                diameter to large diameter pipeline systems and networks. Our experience spans from areas near shore, in shallow water, or between shore and a
-                connection point in deeper water. <br />
+                Himalayas Energy builds pipeline transportation networks. We provide value to our customers and the industry by constructing pipeline
+                networks to connect producing wells and treatment facilities to onshore or offshore terminals for separation, treating, storage, and
+                off-take. Himalayas Energy’s pipeline technicians are highly skilled operators of offshore installation vessels with extensive
+                experience constructing small diameter to large diameter pipeline systems and networks. Our experience spans from areas near shore, in
+                shallow water, or between shore and a connection point in deeper water. <br />
                 Himalayas Energy’s pipeline IRM work includes:
               </p>
               <span className="flex gap-x-2 items-center text-body1">
@@ -191,13 +192,13 @@ const Page = () => {
                 </svg>
                 Exposed Pipeline Burial.
               </span>
-            </li>
-            <li className="space-y-3">
+            </LiAnimation>
+            <LiAnimation className="space-y-3">
               <span className="text-2xl pb-1 border-b border-b-primary">03</span>
               <h1 className="font-bold">ENVIRONMENTAL / WASTE MANAGEMENT</h1>
               <p className="text-body1">
-                We offer cost effective waste management solutions across multiple industries from medium to large scale in the upstream and downstream oil and
-                gas sector.
+                We offer cost effective waste management solutions across multiple industries from medium to large scale in the upstream and
+                downstream oil and gas sector.
               </p>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
@@ -223,8 +224,8 @@ const Page = () => {
                 </svg>
                 Tank Cleaning
               </span>
-            </li>
-            <li className="space-y-3">
+            </LiAnimation>
+            <LiAnimation className="space-y-3">
               <span className="text-2xl pb-1 border-b border-b-primary">04</span>
               <h1 className="font-bold">PETROLEUM PRODUCTS HAULAGE AND MARKETING</h1>
               <span className="flex gap-x-2 items-center text-body1">
@@ -239,37 +240,38 @@ const Page = () => {
                 </svg>
                 Automotive Gas Oil (AGO), Dual Purpose Kerosene (DPK) and Premium Motor Spirit (PMS) to Onshore and Offshore Locations /Facilities.
               </span>
-            </li>
-            <li>
+            </LiAnimation>
+            <LiAnimation>
               <svg width="94" height="8" viewBox="0 0 94 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="59" y="2" width="3" height="59" transform="rotate(90 59 2)" fill="#181818" />
                 <rect x="42" width="8" height="39" transform="rotate(90 42 0)" fill="black" />
                 <circle cx="81.5" cy="4" r="3" transform="rotate(-90 81.5 4)" fill="#181818" stroke="#D9D9D9" />
               </svg>
-            </li>
-            <li className="space-y-3">
+            </LiAnimation>
+            <LiAnimation className="space-y-3">
               <span className="text-2xl pb-1 border-b border-b-primary">05</span>
               <h1 className="font-bold">MANPOWER SERVICES</h1>
               <p className="text-body1">
-                Himalayas Energy is a recruitment specialist for employers and professionals in the oil, gas and energy sector. We provide contract and
-                permanent recruitment opportunities across Nigeria and West Africa. We have specialist discipline knowledge for the people who are responsible
-                for Engineering Construction, Repairs, Modification and Maintenance, Project Management, Subsurface, Subsea and Marine, HSEQ, Waste Management ,
-                Petroleum Product Haulage and Seismic Surveys. <br />
-                Himalayas Energy also recruits and mobilises business service and operational experts for Supply Chain, IT, Finance, HR, Sales and Manufacturing
-                opportunities. We speak the language of the oil, gas and energy industry and have a genuine understanding of client requirements. <br />
+                Himalayas Energy is a recruitment specialist for employers and professionals in the oil, gas and energy sector. We provide contract
+                and permanent recruitment opportunities across Nigeria and West Africa. We have specialist discipline knowledge for the people who are
+                responsible for Engineering Construction, Repairs, Modification and Maintenance, Project Management, Subsurface, Subsea and Marine,
+                HSEQ, Waste Management , Petroleum Product Haulage and Seismic Surveys. <br />
+                Himalayas Energy also recruits and mobilises business service and operational experts for Supply Chain, IT, Finance, HR, Sales and
+                Manufacturing opportunities. We speak the language of the oil, gas and energy industry and have a genuine understanding of client
+                requirements. <br />
                 The flexibility of our business model means our clients can outsource their recruitment function entirely or complement their internal
-                capabilities with our services. Our network of skilled professionals is constantly evolving and expanding throughour innovative use of social
-                media, online advertising and database technology building. <br />
-                We build engagement with thousands of potential candidates – and organically via referrals and recommendations from existing clients and
-                candidates.
+                capabilities with our services. Our network of skilled professionals is constantly evolving and expanding throughour innovative use of
+                social media, online advertising and database technology building. <br />
+                We build engagement with thousands of potential candidates – and organically via referrals and recommendations from existing clients
+                and candidates.
               </p>
-            </li>
-            <li className="space-y-3">
+            </LiAnimation>
+            <LiAnimation className="space-y-3">
               <span className="text-2xl pb-1 border-b border-b-primary">06</span>
               <h1 className="font-bold">OIL & GAS EXPLORATION AND FIELD DEVELOPMENT PROGRAM</h1>
               <p className="text-body1">
-                Himalayas Energy Consults Limited has expertise to optimize onshore and offshore field development, reduce Capex and expedite your production
-                start. Our Onshore and Offshore Field Development Programs include:
+                Himalayas Energy Consults Limited has expertise to optimize onshore and offshore field development, reduce Capex and expedite your
+                production start. Our Onshore and Offshore Field Development Programs include:
               </p>
               <span className="flex flex-wrap gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
@@ -325,15 +327,15 @@ const Page = () => {
                 </svg>
                 EPCIC Development of the Field to First Oil
               </span>
-            </li>
-            <li className="space-y-3">
+            </LiAnimation>
+            <LiAnimation className="space-y-3">
               <span className="text-2xl pb-1 border-b border-b-primary">07</span>
               <h1 className="font-bold">
                 ENGINEERING CONSTRUCTION / OPERATION / MODIFICATTON / REPAIR / MAINTENANCE SERVICES FOR SITE / PLATFORMS / PROPERTIES
               </h1>
               <p className="text-body1">
-                geting the offshore & on shore industry, Himalayas Energy provides a wide range of services in operation, modification, repair and maintenance
-                services for offshore and onshore site and platforms. Areas we cover are listed as follows:
+                geting the offshore & on shore industry, Himalayas Energy provides a wide range of services in operation, modification, repair and
+                maintenance services for offshore and onshore site and platforms. Areas we cover are listed as follows:
               </p>
               <span className="flex gap-x-2 items-center text-body1">
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
@@ -413,7 +415,7 @@ const Page = () => {
                 </svg>
                 Maintenance Services.
               </span>
-            </li>
+            </LiAnimation>
           </ul>
         </div>
       </main>

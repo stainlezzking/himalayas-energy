@@ -1,7 +1,8 @@
 import Footer from "@/components/footer";
+import { parentStagger } from "@/components/framer-variants";
 import TitleIntro from "@/components/intro";
 import Navbar from "@/components/navbar";
-
+import * as motion from "framer-motion/client";
 const Page = () => {
   return (
     <>
@@ -20,24 +21,35 @@ const Page = () => {
         </span>
         <TitleIntro title="CONTACT US">Connect with Us to Fuel Your Energy Needs</TitleIntro>
         <div className="mt-[38px] space-y-[62px]">
-          <div className="space-y-8">
-            <div>
+          <motion.div
+            variants={parentStagger(0.3)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.3, once: true }}
+            className="space-y-8"
+          >
+            <motion.div variants={{ hidden: { y: 100, opacity: 0 }, visible: { y: 0, opacity: 1 } }} viewport={{ once: true }}>
               <h1 className="text-black">OUR CONTACTS OFFICE ADDRESS: </h1>
               <p className="text-body1">33b, Alfred Rewane Road, Ikoyi, Lagos, Nigeria </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={{ hidden: { y: 100, opacity: 0 }, visible: { y: 0, opacity: 1 } }} viewport={{ once: true }}>
               <h1 className="text-black">TELEPHONE LINES: </h1>
               <p className="text-body1">+234(1)896-3099, +2348038696970 </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={{ hidden: { y: 100, opacity: 0 }, visible: { y: 0, opacity: 1 } }} viewport={{ once: true }}>
               <h1 className="text-black">EMAIL ADDRESS: </h1>
               <p className="text-body1">info@himalayasenergy.com</p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
           <form action="" className="space-y-8">
             <div className="space-y-3">
               <h1 className="text-2xl">Send us a Message</h1>
-              <span className="bg-black block h-1 w-20"></span>
+              <motion.span
+                initial={{ opacity: 0, width: 0 }}
+                whileInView={{ opacity: 1, width: "80px" }}
+                viewport={{ once: true }}
+                className="bg-black block h-1 w-20"
+              ></motion.span>
             </div>
             <div className="space-y-[49px] max-w-[665px]">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -45,7 +57,11 @@ const Page = () => {
                   <input type="text" className="px-[10px] rounded-2xl w-full py-[20px] bg-[#F6F6F6] placeholder:text-body1" placeholder="Your Name" />
                 </div>
                 <div className="col-span-1">
-                  <input type="text" className="px-[10px] rounded-2xl w-full py-[20px] bg-[#F6F6F6] placeholder:text-body1" placeholder="Your Email" />
+                  <input
+                    type="text"
+                    className="px-[10px] rounded-2xl w-full py-[20px] bg-[#F6F6F6] placeholder:text-body1"
+                    placeholder="Your Email"
+                  />
                 </div>
               </div>
               <textarea

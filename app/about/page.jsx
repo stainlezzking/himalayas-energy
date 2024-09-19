@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import { homeVisionandMissionVariant } from "@/components/framer-variants";
 import TitleIntro from "@/components/intro";
 import Navbar from "@/components/navbar";
 import Titledash from "@/components/title-dash";
@@ -6,6 +7,8 @@ import aboutIntro from "@/public/about-intro.png";
 import values from "@/public/values.png";
 import ExportedImage from "next-image-export-optimizer";
 import Image from "next/image";
+import * as motion from "framer-motion/client";
+import LiAnimation from "@/components/li-animation";
 
 const Page = () => {
   return (
@@ -27,20 +30,41 @@ const Page = () => {
       </div>
       <div>
         <setcion className="pageMargin grid lg:grid-cols-12 max-lg:space-y-[50px] gap-x-[36px]">
-          <div className="relative max-lg:aspect-square col-span-full lg:col-span-5">
+          <motion.div
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.2 } },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="relative max-lg:aspect-square col-span-full lg:col-span-5"
+          >
             <Image src={aboutIntro} fill alt="" />
-            <span className="bg-primary h-[126px] lg:h-[92px] absolute top-1/2 -translate-y-1/2 z-[-1] about-intro-custom-width"></span>
-          </div>
-          <div className="col-span-full lg:col-span-7 lg:p-[40px] text-body1">
-            Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the Oil & Gas
-            industry. Himalayas Energy is committed to continually growing the Oil and Gas Sector on the African continent and is always looking for new and
-            innovative ways of achieving this goal. With over six (6) years’ experience in the Oil and Gas industry, our vast array of services includes
-            Pipeline Fabrication, Construction and Laying of Offshore/Onshore Pipelines, Gas Distribution, Vessel Supply, just to mention a few. <br />{" "}
-            Himalayas Energy Consults Limited currently has its head office in Nigeria but with an ever buoyancy in the target markets, spreading its wings even
-            wider to cater for the process industries, especially in the emerging African Oil and Gas sector. The management of Himalayas Energy Consults
-            Limited is always focusing to deliver high quality projects within the scheduled time, and in full compliance with the clients’ specifications and
-            applicable standards.
-          </div>
+            <motion.span
+              variants={{ hidden: { x: "-100%" }, visible: { x: 0, transition: { ease: "easeIn", duration: 0.8, delay: 0.5 } } }}
+              // variants={{
+              //   hidden: { backgroundColor: "red" },
+              //   visible: { backgroundColor: "blue", transition: { duration: 4 } },
+              // }}
+              className="bg-primary h-[126px] lg:h-[92px] absolute top-1/2 -translate-y-1/2 z-[-1] about-intro-custom-width"
+            ></motion.span>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 0.5 } }}
+            viewport={{ once: true }}
+            className="col-span-full lg:col-span-7 lg:p-[40px] text-body1"
+          >
+            Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the Oil &
+            Gas industry. Himalayas Energy is committed to continually growing the Oil and Gas Sector on the African continent and is always looking
+            for new and innovative ways of achieving this goal. With over six (6) years’ experience in the Oil and Gas industry, our vast array of
+            services includes Pipeline Fabrication, Construction and Laying of Offshore/Onshore Pipelines, Gas Distribution, Vessel Supply, just to
+            mention a few. <br /> Himalayas Energy Consults Limited currently has its head office in Nigeria but with an ever buoyancy in the target
+            markets, spreading its wings even wider to cater for the process industries, especially in the emerging African Oil and Gas sector. The
+            management of Himalayas Energy Consults Limited is always focusing to deliver high quality projects within the scheduled time, and in full
+            compliance with the clients’ specifications and applicable standards.
+          </motion.div>
           <div className="relative col-span-full my-[135px] max-lg:pb-20">
             <span className="absolute bottom-[20px] lg:top-1/2 right-0">
               <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,10 +73,15 @@ const Page = () => {
                 <rect x="43" y="8" width="8" height="39" transform="rotate(-90 43 8)" fill="black" />
               </svg>
             </span>
-            <p className="max-w-[764px] mx-auto text-center font-medium ">
-              We are at the fore front of providing cutting edge technology to our extensive clientele in the African Oil and Gas sector and this we achieve
-              through our unique strategic partnership alliances with world renowned industry leaders and experts.
-            </p>
+            <motion.p
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { delay: 0.3, ease: "easeOut" } }}
+              viewport={{ once: true }}
+              className="max-w-[764px] mx-auto text-center font-medium "
+            >
+              We are at the fore front of providing cutting edge technology to our extensive clientele in the African Oil and Gas sector and this we
+              achieve through our unique strategic partnership alliances with world renowned industry leaders and experts.
+            </motion.p>
           </div>
         </setcion>
       </div>
@@ -69,7 +98,13 @@ const Page = () => {
             </svg>
           </span>
           <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-[26px]">
-            <div className=" col-span-1 py-[35px] px-5 gap-x-[32px] space-y-8 sm:flex items-center bg-[#F9F8F8]">
+            <motion.div
+              variants={homeVisionandMissionVariant()}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className=" col-span-1 py-[35px] px-5 gap-x-[32px] space-y-8 sm:flex items-center bg-[#F9F8F8]"
+            >
               <div className="bg-white py-[54px] px-[42px] max-sm:w-fit">
                 <svg width="72" height="62" viewBox="0 0 72 62" fill="none">
                   <path
@@ -80,13 +115,25 @@ const Page = () => {
               </div>
               <div className="space-y-[15px]">
                 <Titledash> OUR MISSION</Titledash>
-                <p className="text-body1">
-                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the efficient
-                  execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual improvement in quality.
-                </p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 0.5 } }}
+                  viewport={{ once: true }}
+                  className="text-body1"
+                >
+                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the
+                  efficient execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual
+                  improvement in quality.
+                </motion.p>
               </div>
-            </div>
-            <div className=" col-span-1 py-[35px] px-5 gap-x-[32px] space-y-8 sm:flex items-center bg-[#F9F8F8]">
+            </motion.div>
+            <motion.div
+              variants={homeVisionandMissionVariant(0.2)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className=" col-span-1 py-[35px] px-5 gap-x-[32px] space-y-8 sm:flex items-center bg-[#F9F8F8]"
+            >
               <div className="bg-white py-[54px] px-[42px] max-sm:px-[50px] max-sm:w-fit">
                 <svg width="58" height="74" viewBox="0 0 58 74" fill="none">
                   <path
@@ -97,12 +144,17 @@ const Page = () => {
               </div>
               <div className="space-y-[15px]">
                 <Titledash> OUR VISSION</Titledash>
-                <p className="text-body1">
-                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the upstream and downstream oil and gas
-                  sector.
-                </p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 0.5 } }}
+                  viewport={{ once: true }}
+                  className="text-body1"
+                >
+                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the upstream and downstream
+                  oil and gas sector.
+                </motion.p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </section>
       </div>
@@ -114,7 +166,16 @@ const Page = () => {
               <Image src={values} alt="Himalayas Energy Core values " fill />
             </div>
             <div className="items-stretch p-[54px] ps-0">
-              <ul className="space-y-6 lg:max-w-[500px]">
+              <motion.ul
+                variants={{
+                  hidden: { opacity: 0, y: 100 },
+                  visible: { opacity: 1, y: 0, transition: { ease: "easeOut" } },
+                }}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.3, once: true }}
+                className="space-y-6 lg:max-w-[500px]"
+              >
                 <li className="flex gap-x-2 items-center">
                   <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
                     <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
@@ -149,9 +210,11 @@ const Page = () => {
                   <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
                     <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                   </svg>
-                  <p>Commitment to high-quality project delivery within scheduled timeframes and compliance with client specifications and standards.</p>
+                  <p>
+                    Commitment to high-quality project delivery within scheduled timeframes and compliance with client specifications and standards.
+                  </p>
                 </li>
-              </ul>
+              </motion.ul>
             </div>
           </div>
         </section>
@@ -162,23 +225,24 @@ const Page = () => {
           <Titledash span="mx-auto">WHAT WE DO</Titledash>
         </div>
         <ul className="space-y-[62px]">
-          <li className="space-y-3">
+          <LiAnimation>
             <span className="text-2xl pb-1 border-b border-b-primary">01</span>
             <h1 className="font-bold">CORPORATE GOVERNANCE</h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited is totally committed to sound corporate governance. It is recognised that, besides being a valid expectation of
-              investors, good governance is fundamentally advantageous to the company’s sustainability and functioning. Inextricably linked to good corporate
-              governance is the company’s Code of Ethics. Himalayas Energy Consults Limited has always aspired to the highest ethical standards and is in full
-              compliance with applicable laws, regulations and industry standards.
+              Himalayas Energy Consults Limited is totally committed to sound corporate governance. It is recognised that, besides being a valid
+              expectation of investors, good governance is fundamentally advantageous to the company’s sustainability and functioning. Inextricably
+              linked to good corporate governance is the company’s Code of Ethics. Himalayas Energy Consults Limited has always aspired to the highest
+              ethical standards and is in full compliance with applicable laws, regulations and industry standards.
             </p>
-          </li>
-          <li className="space-y-3">
+          </LiAnimation>
+          <LiAnimation>
             <span className="text-2xl pb-1 border-b border-b-primary">02</span>
             <h1 className="font-bold">SOCIAL INVOLVEMENT (LOCAL CONTENT POLICY)</h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited strongly believes in and supports the Nigerian Local Content Act. Being an indigenous African company Himalayas
-              Energy understands the demands and laws in each country, and cultivates its alliances and joint ventures accordingly. Himalayas Energy Consults
-              Limited is effective in local participation by adopting the following principles in all procurement activities:
+              Himalayas Energy Consults Limited strongly believes in and supports the Nigerian Local Content Act. Being an indigenous African company
+              Himalayas Energy understands the demands and laws in each country, and cultivates its alliances and joint ventures accordingly.
+              Himalayas Energy Consults Limited is effective in local participation by adopting the following principles in all procurement
+              activities:
             </p>
             <span className="flex gap-x-2 items-center text-body1">
               <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
@@ -199,42 +263,44 @@ const Page = () => {
               Technology transfer to local companies.
             </span>
             <p className="text-body1">
-              Himalayas Energy Consults Limited is proud of the cultural diversity of its people. As set out in our Code of Conduct, the company encourages
-              tolerance and sensitivity to all cultures and is committed to maintaining a workplace free from discrimination for reasons of race, creed,
-              culture, nationality, gender, and sexual or marital status. Employees are selected on their ability to perform the job and physical disability is
-              not a barr
+              Himalayas Energy Consults Limited is proud of the cultural diversity of its people. As set out in our Code of Conduct, the company
+              encourages tolerance and sensitivity to all cultures and is committed to maintaining a workplace free from discrimination for reasons of
+              race, creed, culture, nationality, gender, and sexual or marital status. Employees are selected on their ability to perform the job and
+              physical disability is not a barr
             </p>
-          </li>
-          <li className="space-y-3">
+          </LiAnimation>
+          <LiAnimation>
             <span className="text-2xl pb-1 border-b border-b-primary">03</span>
             <h1 className="font-bold">SOCIAL INVOLVEMENT (LOCAL CONTENT POLICY)</h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited is totally committed to sound corporate governance. It is recognised that, besides being a valid expectation of
-              investors, good governance is fundamentally advantageous to the company’s sustainability and functioning. Inextricably linked to good corporate
-              governance is the company’s Code of Ethics. Himalayas Energy Consults Limited has always aspired to the highest ethical standards and is in full
-              compliance with applicable laws, regulations and industry standards.
+              Himalayas Energy Consults Limited is totally committed to sound corporate governance. It is recognised that, besides being a valid
+              expectation of investors, good governance is fundamentally advantageous to the company’s sustainability and functioning. Inextricably
+              linked to good corporate governance is the company’s Code of Ethics. Himalayas Energy Consults Limited has always aspired to the highest
+              ethical standards and is in full compliance with applicable laws, regulations and industry standards.
             </p>
-          </li>
-          <li className="space-y-3">
+          </LiAnimation>
+          <LiAnimation>
             <span className="text-2xl pb-1 border-b border-b-primary">04</span>
             <h1 className="font-bold">SKILLS DEVELOPMENT</h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form of e learning,
-              on-the-job coaching and training, development projects, secondments and classroom-based training. In-house programmes are provided to improve
-              productivity by equipping employees with behavioural skills. These courses include performance and change management, recruitment and selection,
-              industrial relations, stress management, and presentation skills. In addition, individual development plans assist all employees. Himalayas Energy
-              Consults Limited also offers leaderships and graduate training programmes in all areas of the business.
+              Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form of e
+              learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house programmes are
+              provided to improve productivity by equipping employees with behavioural skills. These courses include performance and change
+              management, recruitment and selection, industrial relations, stress management, and presentation skills. In addition, individual
+              development plans assist all employees. Himalayas Energy Consults Limited also offers leaderships and graduate training programmes in
+              all areas of the business.
             </p>
-          </li>
-          <li className="space-y-3">
+          </LiAnimation>
+          <LiAnimation>
             <span className="text-2xl pb-1 border-b border-b-primary">05</span>
             <h1 className="font-bold">SOCIAL RESPONSIBILITY</h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the environment.
-              Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does business. Economically and socially
-              strong communities enhance Himalayas Energy Consults Limited success, and its evolving strategy is aligned to long-term business objectives.
+              Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the
+              environment. Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does business.
+              Economically and socially strong communities enhance Himalayas Energy Consults Limited success, and its evolving strategy is aligned to
+              long-term business objectives.
             </p>
-          </li>
+          </LiAnimation>
         </ul>
       </div>
 
