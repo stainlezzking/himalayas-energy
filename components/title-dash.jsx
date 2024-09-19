@@ -1,5 +1,6 @@
 import { cn } from "@/libs/utility";
-import { motion } from "framer-motion";
+import * as motion from "framer-motion/client";
+
 import { parentStagger } from "./framer-variants";
 
 const spanVariant = {
@@ -19,7 +20,7 @@ const Titledash = ({ children, span, animDelay }) => {
   );
 };
 
-export const SubTitleDash = ({ children, span, animDelay }) => {
+export const SubTitleDash = ({ children, span, animDelay = 0 }) => {
   return (
     <motion.div variants={parentStagger()} viewport={{ once: true, amount: 1 }} initial="hidden" whileInView="visible" className="relative">
       <motion.h2 variants={{ hidden: { opacity: 0.2 }, visible: { opacity: 1 } }} className="font-medim">
@@ -27,7 +28,7 @@ export const SubTitleDash = ({ children, span, animDelay }) => {
       </motion.h2>
       <div className="pt-[6px]">
         <motion.span
-          variants={{ ...spanVariant, visible: { opacity: 1, width: "40px" } }}
+          variants={{ ...spanVariant, visible: { opacity: 1, width: "40px", transition: { delay: animDelay } } }}
           className={cn("block w-[40px] h-[2px] bg-black ", span)}
         ></motion.span>
       </div>

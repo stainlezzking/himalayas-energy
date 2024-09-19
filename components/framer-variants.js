@@ -17,19 +17,29 @@ export const homeListMoveRightVariant = {
   visible: { opacity: 1, x: 0, transition: { ease: "easeOut" } },
 };
 
-export const homeVisionandMissionVariant = {
+export const homeVisionandMissionVariant = (delay = 0) => ({
   hidden: { opacity: 0, y: 100 },
-  visible: { opacity: 1, y: 0, transition: { ease: "easeIn", transition: { when: "beforeChildren" } } },
-};
+  visible: { opacity: 1, y: 0, transition: { ease: "easeIn", delay, transition: { when: "beforeChildren" } } },
+});
 
-export const BlogsParentVariant = {
+export const BlogsParentVariant = (delay = 0) => ({
   hidden: { y: 100, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
+    delay,
     transition: {
       staggerChildren: 0.2,
       when: "beforeChildren",
+    },
+  },
+});
+
+export const coreValues = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
     },
   },
 };

@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import oil from "@/public/oil.png";
@@ -20,15 +20,10 @@ import Marketing from "@/components/svg/whatwedo-marketing";
 import Manpower from "@/components/svg/whatwedo-manpower";
 import Development from "@/components/svg/whatwedo-development";
 import Footer from "@/components/footer";
-import { motion } from "framer-motion";
+import * as motion from "framer-motion/client";
+
 import ExportedImage from "next-image-export-optimizer";
-import {
-  BannerIntroVariant,
-  BlogsParentVariant,
-  homeListMoveRightVariant,
-  homeVisionandMissionVariant,
-  parentStagger,
-} from "@/components/framer-variants";
+import { BannerIntroVariant, BlogsParentVariant, homeListMoveRightVariant, homeVisionandMissionVariant, parentStagger } from "@/components/framer-variants";
 
 export default function Home() {
   return (
@@ -85,7 +80,7 @@ export default function Home() {
           </span>
           <div className="gap-x-4 sm:gap-x-[36px] max-sm:items-center grid grid-cols-2 sm:grid-cols-3 ">
             <div className="col-span-1 space-y-3 ">
-              <ExportedImage
+              <Image
                 src={oil}
                 width="154"
                 alt="oil and gas company from Himalayas Energy"
@@ -152,9 +147,9 @@ export default function Home() {
             <Titledash>WHO WE ARE</Titledash>
             <div className="space-y-16">
               <p className="text-body1">
-                Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the
-                Oil & Gas industry. Himalayas Energy is currently looking to spread its tentacles into the exploration and production terrain with its
-                recent participation in the Marginal Field BidRound.
+                Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the Oil & Gas
+                industry. Himalayas Energy is currently looking to spread its tentacles into the exploration and production terrain with its recent
+                participation in the Marginal Field BidRound.
               </p>
               <Button className="max-lg:hidden"> Read more</Button>
             </div>
@@ -163,10 +158,10 @@ export default function Home() {
             variants={parentStagger()}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.8, once: true }}
+            viewport={{ amount: 0.6, once: true }}
             className="col-span-6 xl:col-span-7 relative aspect-square "
           >
-            <ExportedImage
+            <Image
               src={whoAreWe1}
               placeholder="blur"
               alt="Who are Himalayas Energy Consults, Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company
@@ -177,10 +172,10 @@ export default function Home() {
             absolute bottom-0 left-0"
             />
             <motion.span
-              variants={{ hidden: { x: "100%" }, visible: { x: 0, transition: { ease: "easeOut", duration: 0.4, delay: 0.3 } } }}
+              variants={{ hidden: { x: "100%" }, visible: { x: 0, transition: { ease: "easeIn", duration: 0.4, delay: 0.2, type: "spring" } } }}
               className="absolute bg-primary home-who-are-we-overlap h-[92px] top-1/2 -translate-y-1/2"
             ></motion.span>
-            <ExportedImage
+            <Image
               src={whoAreWe2}
               placeholder="blur"
               alt="Himalayas Energy is currently looking to spread its tentacles into the exploration and production terrain with its recent
@@ -211,15 +206,12 @@ export default function Home() {
               <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
             </svg>
           </span>
-          <motion.div
-            variants={parentStagger(0.2)}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.8, once: true }}
-            className="grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-[26px]"
-          >
+          <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-[26px]">
             <motion.div
-              variants={homeVisionandMissionVariant}
+              variants={homeVisionandMissionVariant()}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
               className=" col-span-1 py-[35px] px-5 gap-x-[32px] space-y-8 sm:flex items-center bg-[#F9F8F8]"
             >
               <div className="bg-white py-[54px] px-[42px] max-sm:w-fit">
@@ -233,14 +225,16 @@ export default function Home() {
               <div className="space-y-[15px]">
                 <Titledash> OUR MISSION</Titledash>
                 <p className="text-body1">
-                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the
-                  efficient execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual
-                  improvement in quality.
+                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the efficient
+                  execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual improvement in quality.
                 </p>
               </div>
             </motion.div>
             <motion.div
-              variants={homeVisionandMissionVariant}
+              variants={homeVisionandMissionVariant(0.2)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
               className=" col-span-1 py-[35px] px-5 gap-x-[32px] space-y-8 sm:flex items-center bg-[#F9F8F8]"
             >
               <div className="bg-white py-[54px] px-[42px] max-sm:px-[50px] max-sm:w-fit">
@@ -254,12 +248,12 @@ export default function Home() {
               <div className="space-y-[15px]">
                 <Titledash> OUR VISSION</Titledash>
                 <p className="text-body1">
-                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the upstream and downstream
-                  oil and gas sector.
+                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the upstream and downstream oil and gas
+                  sector.
                 </p>
               </div>
             </motion.div>
-          </motion.div>
+          </div>
         </section>
       </div>
 
@@ -278,80 +272,56 @@ export default function Home() {
               <Titledash span="mx-auto">WHAT WE DO</Titledash>
             </div>
             <div className="space-y-16">
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.4 }}
-                variants={parentStagger(0.2)}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[62px] gap-y-[60px] md:gap-y-10"
-              >
-                <motion.div
-                  variants={{ hidden: { opacity: 0, y: "100px" }, visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.4 } } }}
-                  className="col-span-1"
-                >
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[62px] gap-y-[60px] md:gap-y-10">
+                <div className="col-span-1">
                   <WhatWeDoSections
                     title="ONSHORE & OFFSHORE PIPELINE INSTALLATION"
                     body="Himalayas Energy can supply a wide range of services for Onshore/Offshore projects, covering the entire project life span, from the earliest conceptual studies, Basics, FEED to Detailed Design."
                   >
                     <Onshore />
                   </WhatWeDoSections>
-                </motion.div>
-                <motion.div
-                  variants={{ hidden: { opacity: 0, y: "100px" }, visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.4 } } }}
-                  className="col-span-1"
-                >
+                </div>
+                <div className="col-span-1">
                   <WhatWeDoSections
                     title="LOCAL GAS DISTRIBUTION"
                     body="Himalayas Energy can supply a wide range of services for Onshore/Offshore projects, covering the entire project life span, from the earliest conceptual studies, Basics, FEED to Detailed Design."
                   >
                     <Distribution />
                   </WhatWeDoSections>
-                </motion.div>
-                <motion.div
-                  variants={{ hidden: { opacity: 0, y: "100px" }, visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.4 } } }}
-                  className="col-span-1"
-                >
+                </div>
+                <div className="col-span-1">
                   <WhatWeDoSections
                     title="ENVIRONMENTAL / WASTE MANAGEMENT"
                     body="Himalayas Energy can supply a wide range of services for Onshore/Offshore projects, covering the entire project life span, from the earliest conceptual studies, Basics, FEED to Detailed Design."
                   >
                     <Environment />
                   </WhatWeDoSections>
-                </motion.div>
-                <motion.div
-                  variants={{ hidden: { opacity: 0, y: "100px" }, visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.4 } } }}
-                  className="col-span-1"
-                >
+                </div>
+                <div className="col-span-1">
                   <WhatWeDoSections
                     title="PETROLEUM PRODUCTS HAULAGE AND MARKETING"
                     body="Himalayas Energy can supply a wide range of services for Onshore/Offshore projects, covering the entire project life span, from the earliest conceptual studies, Basics, FEED to Detailed Design."
                   >
                     <Marketing />
                   </WhatWeDoSections>
-                </motion.div>
-                <motion.div
-                  variants={{ hidden: { opacity: 0, y: "100px" }, visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.4 } } }}
-                  className="col-span-1"
-                >
+                </div>
+                <div className="col-span-1">
                   <WhatWeDoSections
                     title="MANPOWER SERVICES"
                     body="Himalayas Energy can supply a wide range of services for Onshore/Offshore projects, covering the entire project life span, from the earliest conceptual studies, Basics, FEED to Detailed Design."
                   >
                     <Manpower />
                   </WhatWeDoSections>
-                </motion.div>
-                <motion.div
-                  variants={{ hidden: { opacity: 0, y: "100px" }, visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.4 } } }}
-                  className="col-span-1"
-                >
+                </div>
+                <div className="col-span-1">
                   <WhatWeDoSections
                     title="OIL & GAS EXPLORATION AND FIELD DEVELOPMENT PROGRAM"
                     body="Himalayas Energy can supply a wide range of services for Onshore/Offshore projects, covering the entire project life span, from the earliest conceptual studies, Basics, FEED to Detailed Design."
                   >
                     <Development />
                   </WhatWeDoSections>
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
               <Button className="mx-auto"> Read more</Button>
             </div>
           </div>
@@ -378,47 +348,54 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch relative">
               <span className="max-lg:hidden bg-primary h-[92px] w-[1500px] absolute top-1/2 -translate-y-1/2 -left-[1000px] z-[-1] block"></span>
               <div className="col-span-1 max-sm:h-auto max-lg:h-[345px] max-lg:flex items-center justify-center bg-main lg:bg-white px-[67px] pb-[27px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center">
-                <div className="space-y-3  max-w-[240px]">
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ amount: 0.3, once: true }} className="space-y-3  max-w-[240px]">
                   <h1 className="text-[32px] max-lg:text-white"> 01</h1>
                   <h2 className="text-lg max-lg:text-white">QUALITY POLICY</h2>
                   <p className="text-body2 lg:text-body1">
-                    We are committed to providing safe, dependable transportation service to our customers and to meet our goal, organization shall
-                    strive’ Prompt & Positive response Team Performance On time delivery of goods To reduce customer complaints.
+                    We are committed to providing safe, dependable transportation service to our customers and to meet our goal, organization shall strive’
+                    Prompt & Positive response Team Performance On time delivery of goods To reduce customer complaints.
                   </p>
-                </div>
+                </motion.div>
               </div>
               <div className="col-span-1 relative max-lg:h-[345px]">
-                <ExportedImage src={chooseus} alt="Why choose Himalayas Energy" className="object-cover " fill />
+                <Image src={chooseus} alt="Why choose Himalayas Energy" className="object-cover " fill />
               </div>
               <div className="col-span-1 max-sm:h-auto max-lg:h-[356px] bg-black px-[70px] pb-[27px] flex flex-col justify-center shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center">
-                <div className=" max-w-[240px] mx-auto space-y-3">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ amount: 0.3, once: true }}
+                  className=" max-w-[240px] mx-auto space-y-3"
+                >
                   <h1 className="text-[32px] text-white"> 02</h1>
                   <h2 className="text-lg text-white">QUALITY POLICY</h2>
                   <p className="text-body2">
-                    Our goals are to understand and meet customer needs, constantly seeking customer opinions; to anticipate market trends; to be
-                    competitive; to create and deliver products and services that bring value to the customer.
+                    Our goals are to understand and meet customer needs, constantly seeking customer opinions; to anticipate market trends; to be competitive;
+                    to create and deliver products and services that bring value to the customer.
                   </p>
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch relative">
               <div className="col-span-2 max-lg:order-2 max-lg:mx-auto">
-                <div className="max-w-[700px] space-y-[28px] pt-[91px] ">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ amount: 0.3, once: true }}
+                  className="max-w-[700px] space-y-[28px] pt-[91px] "
+                >
                   <h1 className="text-2xl text-center text-black">
-                    At Himalayas Energy Consults Limited we value the health and safety of our employees and all who come into contact with our
-                    business. We do not want to harm or damage the environment and are committed to supply high quality and safe products to our
-                    customers.
+                    At Himalayas Energy Consults Limited we value the health and safety of our employees and all who come into contact with our business. We do
+                    not want to harm or damage the environment and are committed to supply high quality and safe products to our customers.
                   </h1>
                   <p className="text-body1">
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
-                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
-                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for all persons and
-                    environment.
+                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its activities.
+                    Although many companies have their own safety standards with which we are obliged to comply during our operations, it is our policy to
+                    strive towards the improvement and provision of safe and healthy working conditions for all persons and environment.
                     <br />
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
-                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
-                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for all persons and
-                    environment
+                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its activities.
+                    Although many companies have their own safety standards with which we are obliged to comply during our operations, it is our policy to
+                    strive towards the improvement and provision of safe and healthy working conditions for all persons and environment
                   </p>
                   <div className="flex justify-end mt-10">
                     <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -427,28 +404,38 @@ export default function Home() {
                       <rect x="43" y="8" width="8" height="39" transform="rotate(-90 43 8)" fill="black" />
                     </svg>
                   </div>
-                </div>
+                </motion.div>
               </div>
               <div className="col-span-1 max-lg:order-1 bg-primary">
                 <div className="h-[345px] flex items-center lg:min-h-[50%] bg-black text-center border-y-2 border-y-body2">
-                  <div className=" max-w-[240px] mx-auto space-y-3">
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ amount: 0.3, once: true }}
+                    className=" max-w-[240px] mx-auto space-y-3"
+                  >
                     <h1 className="text-[32px] text-white"> 03</h1>
                     <h2 className="text-lg text-white">PROCESS ENVIRONMENT</h2>
                     <p className="text-body2 pb-5">
-                      Our goals are to ensure processes are structured and executed to support business performance; to run world-class standardised
-                      processes; and to have a common understanding of excellent execution.
+                      Our goals are to ensure processes are structured and executed to support business performance; to run world-class standardised processes;
+                      and to have a common understanding of excellent execution.
                     </p>
-                  </div>
+                  </motion.div>
                 </div>
                 <div className="h-[345px] lg:min-h-[50%] max-lg:flex items-center bg-black text-center border-y-2 border-y-body2">
-                  <div className=" max-w-[240px] mx-auto space-y-3">
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ amount: 0.3, once: true }}
+                    className=" max-w-[240px] mx-auto space-y-3"
+                  >
                     <h1 className="text-[32px] text-white"> 04</h1>
                     <h2 className="text-lg text-white">PEOPLE EXCELLENCE</h2>
                     <p className="text-body2 pb-5">
-                      Our goals are to be an employer of choice; to have the right people in the right place; to think outside the box; to
-                      continuously learn, change and improve; to provide attractive careers and to develop management and leadership capabilities.
+                      Our goals are to be an employer of choice; to have the right people in the right place; to think outside the box; to continuously learn,
+                      change and improve; to provide attractive careers and to develop management and leadership capabilities.
                     </p>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
@@ -462,35 +449,53 @@ export default function Home() {
         </div>
         <div className="md:flex space-y-8 gap-x-8">
           <div className=" relative w-full max-w-[520px] h-[320px] max-md:mx-auto">
-            <ExportedImage src={values} alt="Himalayas Energy Core values" fill />
+            <Image placeholder="blur" src={values} alt="Himalayas Energy Core values" fill />
           </div>
           <div className="items-stretch p-5 lg:p-[67px] ps-0">
-            <ul className="space-y-6 max-w-[500px] max-md:mx-auto">
-              <li className="flex gap-x-1 items-center">
+            <motion.ul
+              variants={parentStagger(0.2)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.3, once: true }}
+              className="space-y-6 max-w-[500px] max-md:mx-auto"
+            >
+              <motion.li
+                initial={{ opacity: 0, y: 150 }}
+                whileInView={{ opacity: 1, y: 0, transition: { ease: "easeOut" } }}
+                className="flex gap-x-1 items-center"
+              >
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
                   <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 <p>
                   <span className="font-bold">Integrity:</span> The courage to maintain the right from the wrong without compromise.
                 </p>
-              </li>
-              <li className="flex gap-x-1 items-center">
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, y: 150 }}
+                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2, ease: "easeOut" } }}
+                className="flex gap-x-1 items-center"
+              >
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
                   <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 <p>
                   <span className="font-bold"> Reliability:</span>The ability to deliver on what we promise, without exception.
                 </p>
-              </li>
-              <li className="flex gap-x-1 items-center">
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, y: 150 }}
+                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, ease: "easeOut" } }}
+                className="flex gap-x-1 items-center"
+              >
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
                   <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
                 </svg>
                 <p>
                   <span className="font-bold"> Accountabilty:</span>The strength to be responsible for our actions and decision.
                 </p>
-              </li>
-            </ul>
+              </motion.li>
+            </motion.ul>
           </div>
         </div>
       </section>
@@ -499,21 +504,17 @@ export default function Home() {
         <div className="flex items-center justify-center flex-cols-1">
           <Titledash span="mx-auto">WHAT WE DO</Titledash>
         </div>
-        <motion.div
-          variants={parentStagger(0.2)}
-          viewport={{ amount: 0.4, once: true }}
-          initial="hidden"
-          whileInView="visible"
-          className="grid grid-cols-1 lg:grid-cols-3 gap-x-[23px]"
-        >
-          <motion.div variants={BlogsParentVariant} className="col-span-1">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-[23px]">
+          <motion.div viewport={{ once: true }} initial="hidden" whileInView="visible" variants={BlogsParentVariant()} className="col-span-1">
             <div className="lg:max-w-[370px] w-full ">
               <motion.div
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+                animDelay={0.2}
                 className="relative max-sm:aspect-square max-lg:aspect-video lg:h-[370px]  w-full "
               >
-                <ExportedImage
+                <Image
                   src={skills}
+                  placeholder="blur"
                   className="object-cover object-top "
                   fill
                   alt="Himalayas Energy Consults Limited offers education and training opportunities for
@@ -528,21 +529,21 @@ export default function Home() {
                 <div className="bg-white max-sm:max-w-[100%] max-lg:max-w-[80%] mx-auto px-[13px] py-[8px]  md:space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
                   <SubTitleDash>SKILLS DEVELOPMENT</SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
-                    Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form
-                    of e learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house
-                    programmes are provided to improve productivity by equipping employees with behavioural skills
+                    Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form of e
+                    learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house programmes are provided
+                    to improve productivity by equipping employees with behavioural skills
                   </p>
                 </div>
               </motion.div>
             </div>
           </motion.div>
-          <motion.div variants={BlogsParentVariant} className="col-span-1">
+          <motion.div viewport={{ once: true }} initial="hidden" whileInView="visible" variants={BlogsParentVariant(0.2)} className="col-span-1">
             <div className="lg:max-w-[370px] w-full ">
               <motion.div
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
                 className="relative max-sm:aspect-square max-lg:aspect-video lg:h-[370px]  w-full "
               >
-                <ExportedImage
+                <Image
                   src={social}
                   className="object-cover object-top "
                   fill
@@ -556,23 +557,23 @@ export default function Home() {
               >
                 <motion.span className="block w-[55px] h-[6px] mx-auto bg-primary"></motion.span>
                 <div className="bg-white max-sm:max-w-[100%] max-lg:max-w-[80%] mx-auto px-[13px] py-[8px]  md:space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
-                  <SubTitleDash>SOCIAL RESPONSIBILITY</SubTitleDash>
+                  <SubTitleDash animDelay={0.2}>SOCIAL RESPONSIBILITY</SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
-                    Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the
-                    environment. Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does
-                    business. Economically and socially strong communities enhance Himalayas Energy Consults Limited success.
+                    Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the environment.
+                    Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does business. Economically and
+                    socially strong communities enhance Himalayas Energy Consults Limited success.
                   </p>
                 </div>
               </motion.div>
             </div>
           </motion.div>
-          <motion.div variants={BlogsParentVariant} className="col-span-1">
+          <motion.div viewport={{ once: true }} initial="hidden" whileInView="visible" variants={BlogsParentVariant(0.3)} className="col-span-1">
             <div className="lg:max-w-[370px] w-full ">
               <motion.div
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
                 className="relative max-sm:aspect-square max-lg:aspect-video lg:h-[370px]  w-full "
               >
-                <ExportedImage
+                <Image
                   src={economic}
                   className="object-cover object-top "
                   fill
@@ -586,17 +587,17 @@ export default function Home() {
               >
                 <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
                 <div className="bg-white max-sm:max-w-[100%] max-lg:max-w-[80%] mx-auto px-[13px] py-[8px]  md:space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
-                  <SubTitleDash>ECONOMIC EMPOWERMENT INITIATIVES</SubTitleDash>
+                  <SubTitleDash animDelay={0.2}>ECONOMIC EMPOWERMENT INITIATIVES</SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
-                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
-                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for everyone.
+                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its activities.
+                    Although many companies have their own safety standards with which we are obliged to comply during our operations, it is our policy to
+                    strive towards the improvement and provision of safe and healthy working conditions for everyone.
                   </p>
                 </div>
               </motion.div>
             </div>
           </motion.div>
-        </motion.div>
+        </div>
       </section>
       <Footer index={0} />
     </>
