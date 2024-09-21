@@ -10,7 +10,7 @@ const Footer = ({ index }) => {
           <div className="py-2 flex justify-between">
             <ul className="max-sm:space-y-4 max-sm:list-disc max-sm:ps-4 sm:flex max-md:flex-wrap  items-center gap-x-8">
               <li>
-                <Link prefetch={false} href="/index">
+                <Link prefetch={false} href="/">
                   Home
                 </Link>
               </li>
@@ -19,7 +19,7 @@ const Footer = ({ index }) => {
               </svg>
 
               <li>
-                <Link prefetch={false} href="/about">
+                <Link prefetch={false} href="/about.html">
                   About
                 </Link>
               </li>
@@ -28,7 +28,7 @@ const Footer = ({ index }) => {
               </svg>
 
               <li>
-                <Link prefetch={false} href="/services">
+                <Link prefetch={false} href="/services.html">
                   Services
                 </Link>
               </li>
@@ -37,7 +37,7 @@ const Footer = ({ index }) => {
               </svg>
 
               <li>
-                <Link prefetch={false} href="/sustainability">
+                <Link prefetch={false} href="/sustainability.html">
                   Sustainability
                 </Link>
               </li>
@@ -46,7 +46,7 @@ const Footer = ({ index }) => {
               </svg>
 
               <li>
-                <Link prefetch={false} href="/contact">
+                <Link prefetch={false} href="/contact.html">
                   Contact
                 </Link>
               </li>

@@ -27,8 +27,8 @@ export const BlogsParentVariant = (delay = 0) => ({
   visible: {
     y: 0,
     opacity: 1,
-    delay,
     transition: {
+      delay,
       staggerChildren: 0.2,
       when: "beforeChildren",
     },

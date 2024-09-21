@@ -7,7 +7,7 @@ import service2 from "@/public/image2.png";
 import service3 from "@/public/image3.png";
 import service4 from "@/public/image4.png";
 import ExportedImage from "next-image-export-optimizer";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 const Page = () => {
   return (
     <>

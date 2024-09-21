@@ -1,5 +1,5 @@
 import Navbar from "@/components/navbar";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 import energy1 from "@/public/energy1.png";
 import energy2 from "@/public/energy2.png";
 import Footer from "@/components/footer";

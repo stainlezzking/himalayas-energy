@@ -6,7 +6,7 @@ import Titledash from "@/components/title-dash";
 import aboutIntro from "@/public/about-intro.png";
 import values from "@/public/values.png";
 import ExportedImage from "next-image-export-optimizer";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 import * as motion from "framer-motion/client";
 import LiAnimation from "@/components/li-animation";
 
@@ -143,7 +143,7 @@ const Page = () => {
                 </svg>
               </div>
               <div className="space-y-[15px]">
-                <Titledash> OUR VISSION</Titledash>
+                <Titledash> OUR VISION</Titledash>
                 <motion.p
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 0.5 } }}
