@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "public": "out",
+    "site": "himalayasenergy",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

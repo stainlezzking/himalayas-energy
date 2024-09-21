@@ -41,7 +41,7 @@ const FlotingWidget = ({ index }) => {
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
         <Link
           prefetch={false}
-          href="/home"
+          href="/"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-100px] top-1/2 -translate-y-1/2 group-hover:w-[100px] rounded-l-2xl "
         >
           Home
@@ -58,7 +58,7 @@ const FlotingWidget = ({ index }) => {
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
         <Link
           prefetch={false}
-          href="/about"
+          href="/abou.html"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-110px] top-1/2 -translate-y-1/2 group-hover:w-[100px] rounded-l-2xl "
         >
           About
@@ -75,7 +75,7 @@ const FlotingWidget = ({ index }) => {
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
         <Link
           prefetch={false}
-          href="/services"
+          href="/service.html"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-110px] top-1/2 -translate-y-1/2 group-hover:w-[100px] rounded-l-2xl "
         >
           Services
@@ -93,7 +93,7 @@ const FlotingWidget = ({ index }) => {
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
         <Link
           prefetch={false}
-          href="/sustainability"
+          href="/sustainabilit.html"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-155px] top-1/2 -translate-y-1/2 group-hover:w-[150px] rounded-l-2xl "
         >
           Sustainability
