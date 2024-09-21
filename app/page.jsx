@@ -468,21 +468,16 @@ export default function Home() {
         <div className="max-md:flex justify-center">
           <Titledash span="max-md:mx-auto"> OUR CORE VALUES </Titledash>
         </div>
-        <div className="md:flex space-y-8 gap-x-8">
+        <div className="md:flex items-center space-y-8 gap-x-8">
           <div className=" relative w-full max-w-[520px] h-[320px] max-md:mx-auto">
             <Image placeholder="blur" src={values} alt="Himalayas Energy Core values" fill />
           </div>
           <div className="items-stretch p-5 lg:p-[67px] ps-0">
-            <motion.ul
-              variants={parentStagger(0.2)}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ amount: 0.3, once: true }}
-              className="space-y-6 max-w-[500px] max-md:mx-auto"
-            >
+            <ul className="space-y-6 max-w-[500px] max-md:mx-auto">
               <motion.li
                 initial={{ opacity: 0, y: 150 }}
                 whileInView={{ opacity: 1, y: 0, transition: { ease: "easeOut" } }}
+                viewport={{ once: true }}
                 className="flex gap-x-1 items-center"
               >
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
@@ -495,6 +490,7 @@ export default function Home() {
               <motion.li
                 initial={{ opacity: 0, y: 150 }}
                 whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2, ease: "easeOut" } }}
+                viewport={{ once: true }}
                 className="flex gap-x-1 items-center"
               >
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
@@ -506,7 +502,8 @@ export default function Home() {
               </motion.li>
               <motion.li
                 initial={{ opacity: 0, y: 150 }}
-                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.4, ease: "easeOut" } }}
+                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.3, ease: "easeOut" } }}
+                viewport={{ once: true }}
                 className="flex gap-x-1 items-center"
               >
                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
@@ -516,7 +513,7 @@ export default function Home() {
                   <span className="font-bold"> Accountabilty:</span>The strength to be responsible for our actions and decision.
                 </p>
               </motion.li>
-            </motion.ul>
+            </ul>
           </div>
         </div>
       </section>
@@ -530,7 +527,7 @@ export default function Home() {
             <div className="lg:max-w-[370px] w-full ">
               <motion.div
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-                animDelay={0.2}
+                animdelay={0.2}
                 className="relative max-sm:aspect-square max-lg:aspect-video lg:h-[370px]  w-full "
               >
                 <Image
@@ -578,7 +575,7 @@ export default function Home() {
               >
                 <motion.span className="block w-[55px] h-[6px] mx-auto bg-primary"></motion.span>
                 <div className="bg-white max-sm:max-w-[100%] max-lg:max-w-[80%] mx-auto px-[13px] py-[8px]  md:space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
-                  <SubTitleDash animDelay={0.2}>SOCIAL RESPONSIBILITY</SubTitleDash>
+                  <SubTitleDash animdelay={0.2}>SOCIAL RESPONSIBILITY</SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
                     Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the
                     environment. Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does
@@ -608,7 +605,7 @@ export default function Home() {
               >
                 <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
                 <div className="bg-white max-sm:max-w-[100%] max-lg:max-w-[80%] mx-auto px-[13px] py-[8px]  md:space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
-                  <SubTitleDash animDelay={0.2}>ECONOMIC EMPOWERMENT INITIATIVES</SubTitleDash>
+                  <SubTitleDash animdelay={0.2}>ECONOMIC EMPOWERMENT INITIATIVES</SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
                     Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
                     activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it

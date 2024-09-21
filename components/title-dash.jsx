@@ -7,7 +7,7 @@ const spanVariant = {
   hidden: { opacity: 0, width: 0 },
   visible: { opacity: 1, width: "80px" },
 };
-const Titledash = ({ children, span, animDelay }) => {
+const Titledash = ({ children, span, animdelay }) => {
   return (
     <motion.div variants={parentStagger(0.4)} viewport={{ once: true, amount: 1 }} initial="hidden" whileInView="visible" className="relative">
       <motion.h2 className="text-2xl" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
@@ -20,7 +20,7 @@ const Titledash = ({ children, span, animDelay }) => {
   );
 };
 
-export const SubTitleDash = ({ children, span, animDelay = 0 }) => {
+export const SubTitleDash = ({ children, span, animdelay = 0 }) => {
   return (
     <motion.div variants={parentStagger()} viewport={{ once: true, amount: 1 }} initial="hidden" whileInView="visible" className="relative">
       <motion.h2 variants={{ hidden: { opacity: 0.2 }, visible: { opacity: 1 } }} className="font-medim">
@@ -28,7 +28,7 @@ export const SubTitleDash = ({ children, span, animDelay = 0 }) => {
       </motion.h2>
       <div className="pt-[6px]">
         <motion.span
-          variants={{ ...spanVariant, visible: { opacity: 1, width: "40px", transition: { delay: animDelay } } }}
+          variants={{ ...spanVariant, visible: { opacity: 1, width: "40px", transition: { delay: animdelay } } }}
           className={cn("block w-[40px] h-[2px] bg-black ", span)}
         ></motion.span>
       </div>
