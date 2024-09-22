@@ -179,6 +179,7 @@ export default function Home() {
           >
             <Image
               src={whoAreWe1}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               placeholder="blur"
               alt="Who are Himalayas Energy Consults, Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company
             providing a range of services to the Oil & Gas industry. "
@@ -193,6 +194,7 @@ export default function Home() {
             ></motion.span>
             <Image
               src={whoAreWe2}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               placeholder="blur"
               alt="Himalayas Energy is currently looking to spread its tentacles into the exploration and production terrain with its recent
             participation in the Marginal Field BidRound."
@@ -382,7 +384,14 @@ export default function Home() {
                 </motion.div>
               </div>
               <div className="col-span-1 relative max-lg:h-[345px]">
-                <Image src={qualitypolicy} placeholder="blur" alt="Why choose Himalayas Energy" className="object-cover " fill />
+                <Image
+                  sizes="(max-width: 1024px) 100vw,  33vw"
+                  src={qualitypolicy}
+                  placeholder="blur"
+                  alt="Why choose Himalayas Energy"
+                  className="object-cover "
+                  fill
+                />
               </div>
               <div className="col-span-1 max-sm:h-auto max-lg:h-[356px] bg-black px-[70px] pb-[27px] flex flex-col justify-center shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center">
                 <motion.div
@@ -435,7 +444,14 @@ export default function Home() {
               </div>
               <div className="col-span-1 max-lg:order-1 bg-primary">
                 <div className="h-[345px] lg:min-h-[50%] relative ">
-                  <Image src={customerfocus} placeholder="blur" alt="Why choose Himalayas Energy" className="object-cover " fill />
+                  <Image
+                    sizes="(max-width: 1024px) 100vw,  33vw"
+                    src={customerfocus}
+                    placeholder="blur"
+                    alt="Why choose Himalayas Energy"
+                    className="object-cover "
+                    fill
+                  />
                 </div>
                 <div className="h-[345px] flex items-center lg:min-h-[50%] bg-black text-center border-y-2 border-y-body2">
                   <motion.div
@@ -456,7 +472,14 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch relative">
               <div className="col-span-1 relative max-lg:h-[345px] max-lg:order-2 lg:shadow-[0px_4px_4px_rgba(0,0,0,0.25)] ">
-                <Image src={peopleexcellence} placeholder="blur" alt="Why choose Himalayas Energy" className="object-cover " fill />
+                <Image
+                  sizes="(max-width: 1024px) 100vw,  33vw"
+                  src={peopleexcellence}
+                  placeholder="blur"
+                  alt="Why choose Himalayas Energy"
+                  className="object-cover "
+                  fill
+                />
               </div>
               <div className="col-span-1 max-lg:order-1 max-sm:h-auto max-lg:h-[345px] flex items-center justify-center bg-black px-[67px] lg:pt-2 pb-[27px] text-center">
                 <motion.div
@@ -474,7 +497,14 @@ export default function Home() {
                 </motion.div>
               </div>
               <div className="col-span-1 relative max-lg:h-[345px]">
-                <Image src={processenv} placeholder="blur" alt="Why choose Himalayas Energy" className="object-cover " fill />
+                <Image
+                  sizes="(max-width: 1024px) 100vw,  33vw"
+                  src={processenv}
+                  placeholder="blur"
+                  alt="Why choose Himalayas Energy"
+                  className="object-cover "
+                  fill
+                />
               </div>
             </div>
           </div>
@@ -487,7 +517,7 @@ export default function Home() {
         </div>
         <div className="md:flex items-center space-y-8 gap-x-8">
           <div className=" relative w-full max-w-[520px] h-[320px] max-md:mx-auto">
-            <Image placeholder="blur" src={values} alt="Himalayas Energy Core values" fill />
+            <Image placeholder="blur" sizes="(max-width: 768px) 100vw,  45vw" src={values} alt="Himalayas Energy Core values" fill />
           </div>
           <div className="items-stretch p-5 lg:p-[67px] ps-0">
             <ul className="space-y-6 max-w-[500px] max-md:mx-auto">
@@ -549,6 +579,7 @@ export default function Home() {
               >
                 <Image
                   src={skills}
+                  sizes="(max-width: 1024px) 100vw,  33vw"
                   placeholder="blur"
                   className="object-cover object-top "
                   fill
@@ -580,6 +611,7 @@ export default function Home() {
               >
                 <Image
                   src={social}
+                  sizes="(max-width: 1024px) 100vw,  33vw"
                   className="object-cover object-top "
                   fill
                   alt="Himalayas Energy Consults Limited offers education and training opportunities for
@@ -610,6 +642,7 @@ export default function Home() {
               >
                 <Image
                   src={economic}
+                  sizes="(max-width: 1024px) 100vw,  33vw"
                   className="object-cover object-top "
                   fill
                   alt="Himalayas Energy Consults Limited offers education and training opportunities for
