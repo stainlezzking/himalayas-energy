@@ -2,7 +2,10 @@
 import Navbar from "@/components/navbar";
 import Image from "next-export-optimize-images/image";
 import oil from "@/public/oil.png";
-import chooseus from "@/public/chooseus.png";
+import processenv from "@/public/processenv.png";
+import peopleexcellence from "@/public/peopleexcellence.png";
+import qualitypolicy from "@/public/qualitypolicy.png";
+import customerfocus from "@/public/customerfocus.png";
 import values from "@/public/values.png";
 import skills from "@/public/skills.png";
 import economic from "@/public/economic.png";
@@ -22,7 +25,6 @@ import Development from "@/components/svg/whatwedo-development";
 import Footer from "@/components/footer";
 import * as motion from "framer-motion/client";
 
-import ExportedImage from "next-image-export-optimizer";
 import {
   BannerIntroVariant,
   BlogsParentVariant,
@@ -163,7 +165,9 @@ export default function Home() {
                 Oil & Gas industry. Himalayas Energy is currently looking to spread its tentacles into the Exploration and Production terrain with its
                 recent participation in the Marginal Field Bid-Round.
               </p>
-              <Button className="max-lg:hidden"> Read more</Button>
+              <Button className="max-lg:hidden" path="/about.html">
+                Read more
+              </Button>
             </div>
           </div>
           <motion.div
@@ -199,7 +203,7 @@ export default function Home() {
             />
           </motion.div>
           <div className="col-span-full mt-[62px] flex justify-center lg:hidden">
-            <Button> Read more</Button>
+            <Button path="/about.html"> Read more</Button>
           </div>
         </section>
       </div>
@@ -335,7 +339,9 @@ export default function Home() {
                   </WhatWeDoSections>
                 </div>
               </div>
-              <Button className="mx-auto"> Read more</Button>
+              <Button className="mx-auto" path="/services.html">
+                Read more
+              </Button>
             </div>
           </div>
         </section>
@@ -360,7 +366,7 @@ export default function Home() {
           <div>
             <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch relative">
               <span className="max-lg:hidden bg-primary h-[92px] w-[1500px] absolute top-1/2 -translate-y-1/2 -left-[1000px] z-[-1] block"></span>
-              <div className="col-span-1 max-sm:h-auto max-lg:h-[345px] max-lg:flex items-center justify-center bg-main lg:bg-white px-[67px] pb-[27px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center">
+              <div className="col-span-1 max-sm:h-auto max-lg:h-[345px] flex items-center justify-center bg-main lg:bg-white px-[67px] pb-[27px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center">
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -376,7 +382,7 @@ export default function Home() {
                 </motion.div>
               </div>
               <div className="col-span-1 relative max-lg:h-[345px]">
-                <Image src={chooseus} alt="Why choose Himalayas Energy" className="object-cover " fill />
+                <Image src={qualitypolicy} placeholder="blur" alt="Why choose Himalayas Energy" className="object-cover " fill />
               </div>
               <div className="col-span-1 max-sm:h-auto max-lg:h-[356px] bg-black px-[70px] pb-[27px] flex flex-col justify-center shadow-[0px_4px_4px_rgba(0,0,0,0.25)] text-center">
                 <motion.div
@@ -428,6 +434,9 @@ export default function Home() {
                 </motion.div>
               </div>
               <div className="col-span-1 max-lg:order-1 bg-primary">
+                <div className="h-[345px] lg:min-h-[50%] relative ">
+                  <Image src={customerfocus} placeholder="blur" alt="Why choose Himalayas Energy" className="object-cover " fill />
+                </div>
                 <div className="h-[345px] flex items-center lg:min-h-[50%] bg-black text-center border-y-2 border-y-body2">
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -443,21 +452,29 @@ export default function Home() {
                     </p>
                   </motion.div>
                 </div>
-                <div className="h-[345px] lg:min-h-[50%] max-lg:flex items-center bg-black text-center border-y-2 border-y-body2">
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ amount: 0.3, once: true }}
-                    className=" max-w-[240px] mx-auto space-y-3"
-                  >
-                    <h1 className="text-[32px] text-white"> 04</h1>
-                    <h2 className="text-lg text-white">PEOPLE EXCELLENCE</h2>
-                    <p className="text-body2 pb-5">
-                      Our goals are to be an employer of choice; to have the right people in the right place; to think outside the box; to
-                      continuously learn, change and improve; to provide attractive careers and to develop management and leadership capabilities.
-                    </p>
-                  </motion.div>
-                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch relative">
+              <div className="col-span-1 relative max-lg:h-[345px] max-lg:order-2 lg:shadow-[0px_4px_4px_rgba(0,0,0,0.25)] ">
+                <Image src={peopleexcellence} placeholder="blur" alt="Why choose Himalayas Energy" className="object-cover " fill />
+              </div>
+              <div className="col-span-1 max-lg:order-1 max-sm:h-auto max-lg:h-[345px] flex items-center justify-center bg-black px-[67px] lg:pt-2 pb-[27px] text-center">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ amount: 0.3, once: true }}
+                  className="space-y-3  max-w-[240px]"
+                >
+                  <h1 className="text-[32px] text-white"> 04</h1>
+                  <h2 className="text-lg text-white">PEOPLE EXCELLENCE</h2>
+                  <p className="text-body2 pb-5">
+                    Our goals are to be an employer of choice; to have the right people in the right place; to think outside the box; to continuously
+                    learn, change and improve; to provide attractive careers and to develop management and leadership capabilities.
+                  </p>
+                </motion.div>
+              </div>
+              <div className="col-span-1 relative max-lg:h-[345px]">
+                <Image src={processenv} placeholder="blur" alt="Why choose Himalayas Energy" className="object-cover " fill />
               </div>
             </div>
           </div>

@@ -14,7 +14,8 @@
 /out/
 
 # my image plug image output
-/public
+/public/nextImageExportOptimizer
+/public/images
 
 # production
 /build

@@ -5,7 +5,6 @@ import Navbar from "@/components/navbar";
 import Titledash from "@/components/title-dash";
 import aboutIntro from "@/public/about-intro.png";
 import values from "@/public/values.png";
-import ExportedImage from "next-image-export-optimizer";
 import Image from "next-export-optimize-images/image";
 import * as motion from "framer-motion/client";
 import LiAnimation from "@/components/li-animation";
@@ -29,7 +28,7 @@ const Page = () => {
         <TitleIntro title="WHO WE ARE">Leading the Charge in Africa's Oil & Gas Transformation</TitleIntro>
       </div>
       <div>
-        <setcion className="pageMargin grid lg:grid-cols-12 max-lg:space-y-[50px] gap-x-[36px]">
+        <section className="pageMargin grid lg:grid-cols-12 max-lg:space-y-[50px] gap-x-[36px]">
           <motion.div
             variants={{
               hidden: {},
@@ -83,7 +82,7 @@ const Page = () => {
               achieve through our unique strategic partnership alliances with world renowned industry leaders and experts.
             </motion.p>
           </div>
-        </setcion>
+        </section>
       </div>
       <div className="bg-[#EFF0F3]">
         <section className="py-[120px] pageMargin relative">

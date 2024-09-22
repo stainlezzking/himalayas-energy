@@ -3,7 +3,6 @@ import Image from "next-export-optimize-images/image";
 import energy1 from "@/public/energy1.png";
 import energy2 from "@/public/energy2.png";
 import Footer from "@/components/footer";
-import ExportedImage from "next-image-export-optimizer";
 import TitleIntro from "@/components/intro";
 import * as motion from "framer-motion/client";
 import LiAnimation from "@/components/li-animation";

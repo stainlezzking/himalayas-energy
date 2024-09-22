@@ -4,7 +4,6 @@ import Blacklogo from "@/public/blacklogo.png";
 import Whitelogo from "@/public/whitelogo.png";
 import { useState } from "react";
 import NavLink from "./navlinks";
-import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 
 const Navbar = ({ whiteShade = false, index = 0 }) => {

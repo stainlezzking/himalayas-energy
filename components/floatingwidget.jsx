@@ -8,11 +8,9 @@ const FlotingWidget = ({ index }) => {
   const ref = useRef();
   useEffect(
     function () {
-      // i want to cancle the event listner on unmount, i dont think its necessary since all links are a tags no Link
-      // return null;
       function scrollMonitor() {
         if (window.innerWidth < 768 && floating) return setFloating(false);
-        if (window.innerWidth < 768) return null;
+        if (window.innerWidth < 768 || !ref) return null;
         const scrollPosition = window.scrollY;
         if (scrollPosition > 1000 && !floating) {
           setFloating(true);
@@ -21,6 +19,7 @@ const FlotingWidget = ({ index }) => {
           ref.current.classList.remove("animate__animated", "animate__backOutDown");
         } else if (scrollPosition < 1000 && floating) {
           setFloating(false);
+          if (!ref.current) return null;
           ref.current.classList.remove("animate__animated", "animate__bounceInUp");
           ref.current.classList.add("animate__animated", "animate__backOutDown");
           //   setTimeout(() => ref.current.classList.add("hidden"), 1000);
@@ -31,7 +30,7 @@ const FlotingWidget = ({ index }) => {
         window.removeEventListener("scroll", scrollMonitor);
       };
     },
-    [floating]
+    [floating, ref]
   );
   return (
     <div
@@ -58,7 +57,7 @@ const FlotingWidget = ({ index }) => {
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
         <Link
           prefetch={false}
-          href="/abou.html"
+          href="/about.html"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-110px] top-1/2 -translate-y-1/2 group-hover:w-[100px] rounded-l-2xl "
         >
           About
@@ -75,7 +74,7 @@ const FlotingWidget = ({ index }) => {
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
         <Link
           prefetch={false}
-          href="/service.html"
+          href="/services.html"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-110px] top-1/2 -translate-y-1/2 group-hover:w-[100px] rounded-l-2xl "
         >
           Services
@@ -93,7 +92,7 @@ const FlotingWidget = ({ index }) => {
       <div className="relative flex gap-x-2 group justify-center cursor-pointer">
         <Link
           prefetch={false}
-          href="/sustainabilit.html"
+          href="/sustainability.html"
           className="absolute hover:underline bg-black/90 py-3 w-0 transition-all delay-500 group-hover:p-[10px] text-white  left-0 overflow-hidden group-hover:left-[-155px] top-1/2 -translate-y-1/2 group-hover:w-[150px] rounded-l-2xl "
         >
           Sustainability
