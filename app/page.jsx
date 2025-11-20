@@ -40,15 +40,43 @@ export default function Home() {
         <div className="relative pt-[27px] pb-[120px] sm:min-h-screen max-w-full w-screen bg-[url('/banner.png')] bg-cover bg-no-repeat before:block before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/50">
           <div className="pageMargin relative">
             <Navbar whiteShade={true} />
-            <div id="caption" className="max-w-[660px] max-sm:my-28 my-[73px] space-y-[54px]">
+            <div
+              id="caption"
+              className="max-w-[660px] max-sm:my-28 my-[73px] space-y-[54px]"
+            >
               <span className="flex gap-x-2 items-center ">
                 <svg width="29" height="8" viewBox="0 0 29 8" fill="none">
-                  <circle cx="3.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
-                  <circle cx="14.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
-                  <circle cx="25.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
+                  <circle
+                    cx="3.5"
+                    cy="4"
+                    r="3"
+                    fill="#181818"
+                    stroke="#D9D9D9"
+                  />
+                  <circle
+                    cx="14.5"
+                    cy="4"
+                    r="3"
+                    fill="#181818"
+                    stroke="#D9D9D9"
+                  />
+                  <circle
+                    cx="25.5"
+                    cy="4"
+                    r="3"
+                    fill="#181818"
+                    stroke="#D9D9D9"
+                  />
                 </svg>
                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
-                  <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
+                  <circle
+                    cx="4.5"
+                    cy="5"
+                    r="3.5"
+                    fill="white"
+                    stroke="#C00000"
+                    strokeWidth="2"
+                  />
                 </svg>
                 <p className="text-white text-xs">01/06</p>
               </span>
@@ -66,7 +94,8 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="text-2xl/[35px] sm:text-[40px]/[60px] font-bold text-white"
                 >
-                  DRIVING INNOVATION AND EXCELLENCE IN AFRICA'S OIL & GAS INDUSTRY
+                  DRIVING INNOVATION AND EXCELLENCE IN AFRICA'S OIL & GAS
+                  INDUSTRY
                 </motion.h1>
               </div>
             </div>
@@ -78,16 +107,58 @@ export default function Home() {
         <div className="bg-white px-[10px] sm:px-[30px] max-sm:max-w-[90%] py-[20px] w-fit mx-auto shadow-[0px_4px_4px_rgba(0,0,0,0.25)] relative">
           <span className="block absolute -left-[60px] top-1/2">
             <svg width="9" height="62" viewBox="0 0 9 62" fill="none">
-              <circle cx="4.5" cy="58.5" r="3" transform="rotate(-90 4.5 58.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="47.5" r="3" transform="rotate(-90 4.5 47.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="36.5" r="3" transform="rotate(-90 4.5 36.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
-              <circle cx="4.5" cy="14.5" r="3" transform="rotate(-90 4.5 14.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
+              <circle
+                cx="4.5"
+                cy="58.5"
+                r="3"
+                transform="rotate(-90 4.5 58.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="47.5"
+                r="3"
+                transform="rotate(-90 4.5 47.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="36.5"
+                r="3"
+                transform="rotate(-90 4.5 36.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="25.5"
+                r="3.5"
+                fill="white"
+                stroke="#C00000"
+                strokeWidth="2"
+              />
+              <circle
+                cx="4.5"
+                cy="14.5"
+                r="3"
+                transform="rotate(-90 4.5 14.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="3.5"
+                r="3"
+                transform="rotate(-90 4.5 3.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
             </svg>
           </span>
           <div className="gap-x-4 sm:gap-x-[36px] max-sm:items-center grid grid-cols-2 sm:grid-cols-3 ">
-            <div className="col-span-1 space-y-3 ">
+            <div className="col-span-1 gap-y-3 h-full flex flex-col justify-center">
               <Image
                 src={oil}
                 width="154"
@@ -96,7 +167,9 @@ export default function Home() {
               sm:max-w-[154px]"
               />
               <div>
-                <h3 className="text-sm sm:text-lg text-center">SERVICE OFFERING</h3>
+                <h3 className="text-sm sm:text-lg text-center">
+                  SERVICE OFFERING
+                </h3>
                 <div className="pt-3">
                   <span className="w-[80px] h-1 mx-auto bg-black block"></span>
                 </div>
@@ -110,35 +183,185 @@ export default function Home() {
                 viewport={{ amount: 0.5, once: true }}
                 className="space-y-6 text-[14px] sm:text-lg"
               >
-                <motion.li variants={homeListMoveRightVariant} className="flex items-center gap-x-2 ">
-                  <svg className="w-[12px] h-[13px] shrink-0" viewBox="0 0 13 14" fill="none">
-                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" className="stroke-primary" strokeWidth="4" />
+                <motion.li
+                  variants={homeListMoveRightVariant}
+                  className="flex items-center gap-x-2 "
+                >
+                  <svg
+                    className="w-[12px] h-[13px] shrink-0"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7.10205"
+                      r="4.5"
+                      fill="white"
+                      className="stroke-primary"
+                      strokeWidth="4"
+                    />
                   </svg>
                   Exploration & Production
                 </motion.li>
-                <motion.li variants={homeListMoveRightVariant} className="flex items-center gap-x-2 ">
-                  <svg className="w-[12px] h-[13px] shrink-0" viewBox="0 0 13 14" fill="none">
-                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" className="stroke-primary" strokeWidth="4" />
+                <motion.li
+                  variants={homeListMoveRightVariant}
+                  className="flex items-center gap-x-2 "
+                >
+                  <svg
+                    className="w-[12px] h-[13px] shrink-0"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7.10205"
+                      r="4.5"
+                      fill="white"
+                      className="stroke-primary"
+                      strokeWidth="4"
+                    />
                   </svg>
                   Design & Build
                 </motion.li>
-                <motion.li variants={homeListMoveRightVariant} className="flex items-center gap-x-2 ">
-                  <svg className="w-[12px] h-[13px] shrink-0" viewBox="0 0 13 14" fill="none">
-                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" className="stroke-primary" strokeWidth="4" />
+                <motion.li
+                  variants={homeListMoveRightVariant}
+                  className="flex items-center gap-x-2 "
+                >
+                  <svg
+                    className="w-[12px] h-[13px] shrink-0"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7.10205"
+                      r="4.5"
+                      fill="white"
+                      className="stroke-primary"
+                      strokeWidth="4"
+                    />
                   </svg>
                   Engineering Procurement
                 </motion.li>
-                <motion.li variants={homeListMoveRightVariant} className="flex items-center gap-x-2 ">
-                  <svg className="w-[12px] h-[13px] shrink-0" viewBox="0 0 13 14" fill="none">
-                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" className="stroke-primary" strokeWidth="4" />
+                <motion.li
+                  variants={homeListMoveRightVariant}
+                  className="flex items-center gap-x-2 "
+                >
+                  <svg
+                    className="w-[12px] h-[13px] shrink-0"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7.10205"
+                      r="4.5"
+                      fill="white"
+                      className="stroke-primary"
+                      strokeWidth="4"
+                    />
                   </svg>
                   Construction
                 </motion.li>
-                <motion.li variants={homeListMoveRightVariant} className="flex items-center gap-x-2 ">
-                  <svg className="w-[12px] h-[13px] shrink-0" viewBox="0 0 13 14" fill="none">
-                    <circle cx="6.5" cy="7.10205" r="4.5" fill="white" className="stroke-primary" strokeWidth="4" />
+                <motion.li
+                  variants={homeListMoveRightVariant}
+                  className="flex items-center gap-x-2 "
+                >
+                  <svg
+                    className="w-[12px] h-[13px] shrink-0"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7.10205"
+                      r="4.5"
+                      fill="white"
+                      className="stroke-primary"
+                      strokeWidth="4"
+                    />
                   </svg>
                   Commissioning (EPCC)
+                </motion.li>
+                <motion.li
+                  variants={homeListMoveRightVariant}
+                  className="flex items-center gap-x-2 "
+                >
+                  <svg
+                    className="w-[12px] h-[13px] shrink-0"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7.10205"
+                      r="4.5"
+                      fill="white"
+                      className="stroke-primary"
+                      strokeWidth="4"
+                    />
+                  </svg>
+                  Service offering: exploration and production (E&P),
+                </motion.li>
+                <motion.li
+                  variants={homeListMoveRightVariant}
+                  className="flex items-center gap-x-2 "
+                >
+                  <svg
+                    className="w-[12px] h-[13px] shrink-0"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7.10205"
+                      r="4.5"
+                      fill="white"
+                      className="stroke-primary"
+                      strokeWidth="4"
+                    />
+                  </svg>
+                  Consultancy,
+                </motion.li>
+                <motion.li
+                  variants={homeListMoveRightVariant}
+                  className="flex items-center gap-x-2 "
+                >
+                  <svg
+                    className="w-[12px] h-[13px] shrink-0"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7.10205"
+                      r="4.5"
+                      fill="white"
+                      className="stroke-primary"
+                      strokeWidth="4"
+                    />
+                  </svg>
+                  Sub-surface reservoir management,
+                </motion.li>
+                <motion.li
+                  variants={homeListMoveRightVariant}
+                  className="flex items-center gap-x-2 "
+                >
+                  <svg
+                    className="w-[12px] h-[13px] shrink-0"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7.10205"
+                      r="4.5"
+                      fill="white"
+                      className="stroke-primary"
+                      strokeWidth="4"
+                    />
+                  </svg>
+                  Geology and geophysics consultancy (G&G)
                 </motion.li>
               </motion.ul>
             </div>
@@ -152,18 +375,42 @@ export default function Home() {
         <section className="relative py-[55px] pageMargin grid grid-cols-6 space-y-[58px] md:grid-cols-12 justify-between gap-x-1 lg:gap-x-10 items-center ">
           <span className="block absolute top-0 right-0">
             <svg width="95" height="8" viewBox="0 0 95 8" fill="none">
-              <circle cx="3.5" cy="4" r="3" transform="rotate(-90 3.5 4)" fill="#181818" stroke="#D9D9D9" />
-              <rect x="26" y="6" width="3" height="59" transform="rotate(-90 26 6)" fill="#181818" />
-              <rect x="43" y="8" width="8" height="39" transform="rotate(-90 43 8)" fill="black" />
+              <circle
+                cx="3.5"
+                cy="4"
+                r="3"
+                transform="rotate(-90 3.5 4)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <rect
+                x="26"
+                y="6"
+                width="3"
+                height="59"
+                transform="rotate(-90 26 6)"
+                fill="#181818"
+              />
+              <rect
+                x="43"
+                y="8"
+                width="8"
+                height="39"
+                transform="rotate(-90 43 8)"
+                fill="black"
+              />
             </svg>
           </span>
           <div className="space-y-6 col-span-6 xl:col-span-5 max-w-[430px]">
             <Titledash>WHO WE ARE</Titledash>
             <div className="space-y-16">
               <p className="text-body1">
-                Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the
-                Oil & Gas industry. Himalayas Energy is currently looking to spread its tentacles into the Exploration and Production terrain with its
-                recent participation in the Marginal Field Bid-Round.
+                Himalayas energy consults, a subsidiary of Magnumflo
+                resources Nigeria Ltd was established in 2023 in Nigeria as a
+                full-service company providing a range of services to the Oil &
+                Gas industry. Himalayas Energy is currently looking to spread
+                its tentacles into the Exploration and Production terrain with
+                its recent participation in the Marginal Field Bid-Round.
               </p>
               <Button className="max-lg:hidden" path="/about.html">
                 Read more
@@ -181,7 +428,7 @@ export default function Home() {
               src={whoAreWe1}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               placeholder="blur"
-              alt="Who are Himalayas Energy Consults, Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company
+              alt="Who are Himalayas Energy Consults,Himalayas energy consults, a subsidiary of Magnumflo resources nigeria Ltd was established in 2023 in Nigeria as a full-service company
             providing a range of services to the Oil & Gas industry. "
               width="554"
               height="462"
@@ -189,7 +436,18 @@ export default function Home() {
             absolute bottom-0 left-0"
             />
             <motion.span
-              variants={{ hidden: { x: "100%" }, visible: { x: 0, transition: { ease: "easeIn", duration: 0.4, delay: 0.2, type: "spring" } } }}
+              variants={{
+                hidden: { x: "100%" },
+                visible: {
+                  x: 0,
+                  transition: {
+                    ease: "easeIn",
+                    duration: 0.4,
+                    delay: 0.2,
+                    type: "spring",
+                  },
+                },
+              }}
               className="absolute bg-primary home-who-are-we-overlap h-[92px] top-1/2 -translate-y-1/2"
             ></motion.span>
             <Image
@@ -216,12 +474,54 @@ export default function Home() {
           </div>
           <span className="block absolute top-40 lg:top-20 -left-5">
             <svg width="9" height="62" viewBox="0 0 9 62" fill="none">
-              <circle cx="4.5" cy="58.5" r="3" transform="rotate(-90 4.5 58.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="47.5" r="3" transform="rotate(-90 4.5 47.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="36.5" r="3" transform="rotate(-90 4.5 36.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
-              <circle cx="4.5" cy="14.5" r="3" transform="rotate(-90 4.5 14.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
+              <circle
+                cx="4.5"
+                cy="58.5"
+                r="3"
+                transform="rotate(-90 4.5 58.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="47.5"
+                r="3"
+                transform="rotate(-90 4.5 47.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="36.5"
+                r="3"
+                transform="rotate(-90 4.5 36.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="25.5"
+                r="3.5"
+                fill="white"
+                stroke="#C00000"
+                strokeWidth="2"
+              />
+              <circle
+                cx="4.5"
+                cy="14.5"
+                r="3"
+                transform="rotate(-90 4.5 14.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="3.5"
+                r="3"
+                transform="rotate(-90 4.5 3.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
             </svg>
           </span>
           <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-[26px]">
@@ -243,9 +543,11 @@ export default function Home() {
               <div className="space-y-[15px]">
                 <Titledash> OUR MISSION</Titledash>
                 <p className="text-body1">
-                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the
-                  efficient execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual
-                  improvement in quality.
+                  Our mission is to satisfy our customer’s requirements through
+                  conformity by utilizing proven process techniques that allow
+                  for the efficient execution of projects meeting the time, cost
+                  and quality requirements of our Clients with a commitment to
+                  continual improvement in quality.
                 </p>
               </div>
             </motion.div>
@@ -267,8 +569,9 @@ export default function Home() {
               <div className="space-y-[15px]">
                 <Titledash> OUR VISION</Titledash>
                 <p className="text-body1">
-                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the Upstream and Downstream
-                  oil and gas sector.
+                  Our vision is to be the first choice of all companies for the
+                  provision of cutting-edge technology in the Upstream and
+                  Downstream oil and gas sector.
                 </p>
               </div>
             </motion.div>
@@ -281,10 +584,36 @@ export default function Home() {
           <PageNumber className="w-fit">03</PageNumber>
         </div>
         <section className="bg-white pt-[100px] pb-[50px] pageMargin">
-          <svg width="94" height="8" viewBox="0 0 94 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="59" y="2" width="3" height="59" transform="rotate(90 59 2)" fill="#181818" />
-            <rect x="42" width="8" height="39" transform="rotate(90 42 0)" fill="black" />
-            <circle cx="81.5" cy="4" r="3" transform="rotate(-90 81.5 4)" fill="#181818" stroke="#D9D9D9" />
+          <svg
+            width="94"
+            height="8"
+            viewBox="0 0 94 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="59"
+              y="2"
+              width="3"
+              height="59"
+              transform="rotate(90 59 2)"
+              fill="#181818"
+            />
+            <rect
+              x="42"
+              width="8"
+              height="39"
+              transform="rotate(90 42 0)"
+              fill="black"
+            />
+            <circle
+              cx="81.5"
+              cy="4"
+              r="3"
+              transform="rotate(-90 81.5 4)"
+              fill="#181818"
+              stroke="#D9D9D9"
+            />
           </svg>
           <div className="space-y-10">
             <div className="flex items-center justify-center flex-cols-1">
@@ -351,13 +680,61 @@ export default function Home() {
 
       <div className="relative">
         <div className="absolute top-[100px] right-[30px]">
-          <svg width="9" height="62" viewBox="0 0 9 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="4.5" cy="58.5" r="3" transform="rotate(-90 4.5 58.5)" fill="#181818" stroke="#D9D9D9" />
-            <circle cx="4.5" cy="47.5" r="3" transform="rotate(-90 4.5 47.5)" fill="#181818" stroke="#D9D9D9" />
-            <circle cx="4.5" cy="36.5" r="3" transform="rotate(-90 4.5 36.5)" fill="#181818" stroke="#D9D9D9" />
-            <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
-            <circle cx="4.5" cy="14.5" r="3" transform="rotate(-90 4.5 14.5)" fill="#181818" stroke="#D9D9D9" />
-            <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
+          <svg
+            width="9"
+            height="62"
+            viewBox="0 0 9 62"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="4.5"
+              cy="58.5"
+              r="3"
+              transform="rotate(-90 4.5 58.5)"
+              fill="#181818"
+              stroke="#D9D9D9"
+            />
+            <circle
+              cx="4.5"
+              cy="47.5"
+              r="3"
+              transform="rotate(-90 4.5 47.5)"
+              fill="#181818"
+              stroke="#D9D9D9"
+            />
+            <circle
+              cx="4.5"
+              cy="36.5"
+              r="3"
+              transform="rotate(-90 4.5 36.5)"
+              fill="#181818"
+              stroke="#D9D9D9"
+            />
+            <circle
+              cx="4.5"
+              cy="25.5"
+              r="3.5"
+              fill="white"
+              stroke="#C00000"
+              strokeWidth="2"
+            />
+            <circle
+              cx="4.5"
+              cy="14.5"
+              r="3"
+              transform="rotate(-90 4.5 14.5)"
+              fill="#181818"
+              stroke="#D9D9D9"
+            />
+            <circle
+              cx="4.5"
+              cy="3.5"
+              r="3"
+              transform="rotate(-90 4.5 3.5)"
+              fill="#181818"
+              stroke="#D9D9D9"
+            />
           </svg>
         </div>
         <div className="absolute top-1/2 right-[10px]">
@@ -378,8 +755,11 @@ export default function Home() {
                   <h1 className="text-[32px] max-lg:text-white"> 01</h1>
                   <h2 className="text-lg max-lg:text-white">QUALITY POLICY</h2>
                   <p className="text-body2 lg:text-body1">
-                    We are committed to providing safe, dependable transportation service to our customers and to meet our goal, organization shall
-                    strive’ Prompt & Positive response Team Performance On time delivery of goods To reduce customer complaints.
+                    We are committed to providing safe, dependable
+                    transportation service to our customers and to meet our
+                    goal, organization shall strive’ Prompt & Positive response
+                    Team Performance On time delivery of goods To reduce
+                    customer complaints.
                   </p>
                 </motion.div>
               </div>
@@ -403,8 +783,10 @@ export default function Home() {
                   <h1 className="text-[32px] text-white"> 02</h1>
                   <h2 className="text-lg text-white">CUSTOMER FOCUS</h2>
                   <p className="text-body2">
-                    Our goals are to understand and meet customer needs, constantly seeking customer opinions; to anticipate market trends; to be
-                    competitive; to create and deliver products and services that bring value to the customer.
+                    Our goals are to understand and meet customer needs,
+                    constantly seeking customer opinions; to anticipate market
+                    trends; to be competitive; to create and deliver products
+                    and services that bring value to the customer.
                   </p>
                 </motion.div>
               </div>
@@ -418,26 +800,61 @@ export default function Home() {
                   className="max-w-[700px] space-y-[28px] pt-[91px] "
                 >
                   <h1 className="text-2xl text-center text-black">
-                    At Himalayas Energy Consults Limited we value the health and safety of our employees and all who come into contact with our
-                    business. We do not want to harm or damage the environment and are committed to supply high quality and safe products to our
-                    customers.
+                    At Himalayas Energy Consults Limited we value the health and
+                    safety of our employees and all who come into contact with
+                    our business. We do not want to harm or damage the
+                    environment and are committed to supply high quality and
+                    safe products to our customers.
                   </h1>
                   <p className="text-body1">
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
-                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
-                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for all persons and
-                    environment.
+                    Himalayas Energy Consults Limited places a very high premium
+                    on Health, Safety and Environmental (HSE) considerations in
+                    all its activities. Although many companies have their own
+                    safety standards with which we are obliged to comply during
+                    our operations, it is our policy to strive towards the
+                    improvement and provision of safe and healthy working
+                    conditions for all persons and environment.
                     <br />
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
-                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
-                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for all persons and
-                    environment
+                    Himalayas Energy Consults Limited places a very high premium
+                    on Health, Safety and Environmental (HSE) considerations in
+                    all its activities. Although many companies have their own
+                    safety standards with which we are obliged to comply during
+                    our operations, it is our policy to strive towards the
+                    improvement and provision of safe and healthy working
+                    conditions for all persons and environment
                   </p>
                   <div className="flex justify-end mt-10">
-                    <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="3.5" cy="4" r="3" transform="rotate(-90 3.5 4)" fill="#181818" stroke="#D9D9D9" />
-                      <rect x="26" y="6" width="3" height="59" transform="rotate(-90 26 6)" fill="#181818" />
-                      <rect x="43" y="8" width="8" height="39" transform="rotate(-90 43 8)" fill="black" />
+                    <svg
+                      width="95"
+                      height="8"
+                      viewBox="0 0 95 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="3.5"
+                        cy="4"
+                        r="3"
+                        transform="rotate(-90 3.5 4)"
+                        fill="#181818"
+                        stroke="#D9D9D9"
+                      />
+                      <rect
+                        x="26"
+                        y="6"
+                        width="3"
+                        height="59"
+                        transform="rotate(-90 26 6)"
+                        fill="#181818"
+                      />
+                      <rect
+                        x="43"
+                        y="8"
+                        width="8"
+                        height="39"
+                        transform="rotate(-90 43 8)"
+                        fill="black"
+                      />
                     </svg>
                   </div>
                 </motion.div>
@@ -463,8 +880,10 @@ export default function Home() {
                     <h1 className="text-[32px] text-white"> 03</h1>
                     <h2 className="text-lg text-white">PROCESS ENVIRONMENT</h2>
                     <p className="text-body2 pb-5">
-                      Our goals are to ensure processes are structured and executed to support business performance; to run world-class standardised
-                      processes; and to have a common understanding of excellent execution.
+                      Our goals are to ensure processes are structured and
+                      executed to support business performance; to run
+                      world-class standardised processes; and to have a common
+                      understanding of excellent execution.
                     </p>
                   </motion.div>
                 </div>
@@ -491,8 +910,11 @@ export default function Home() {
                   <h1 className="text-[32px] text-white"> 04</h1>
                   <h2 className="text-lg text-white">PEOPLE EXCELLENCE</h2>
                   <p className="text-body2 pb-5">
-                    Our goals are to be an employer of choice; to have the right people in the right place; to think outside the box; to continuously
-                    learn, change and improve; to provide attractive careers and to develop management and leadership capabilities.
+                    Our goals are to be an employer of choice; to have the right
+                    people in the right place; to think outside the box; to
+                    continuously learn, change and improve; to provide
+                    attractive careers and to develop management and leadership
+                    capabilities.
                   </p>
                 </motion.div>
               </div>
@@ -517,47 +939,107 @@ export default function Home() {
         </div>
         <div className="md:flex items-center space-y-8 gap-x-8">
           <div className=" relative w-full max-w-[520px] h-[320px] max-md:mx-auto">
-            <Image placeholder="blur" sizes="(max-width: 768px) 100vw,  45vw" src={values} alt="Himalayas Energy Core values" fill />
+            <Image
+              placeholder="blur"
+              sizes="(max-width: 768px) 100vw,  45vw"
+              src={values}
+              alt="Himalayas Energy Core values"
+              fill
+            />
           </div>
           <div className="items-stretch p-5 lg:p-[67px] ps-0">
             <ul className="space-y-6 max-w-[500px] max-md:mx-auto">
               <motion.li
                 initial={{ opacity: 0, y: 150 }}
-                whileInView={{ opacity: 1, y: 0, transition: { ease: "easeOut" } }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { ease: "easeOut" },
+                }}
                 viewport={{ once: true }}
                 className="flex gap-x-1 items-center"
               >
-                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+                <svg
+                  width="13"
+                  height="14"
+                  viewBox="0 0 13 14"
+                  fill="none"
+                  className="block"
+                >
+                  <circle
+                    cx="6.5"
+                    cy="7"
+                    r="4.5"
+                    fill="white"
+                    stroke="#C00000"
+                    strokeWidth="4"
+                  />
                 </svg>
                 <p>
-                  <span className="font-bold">Integrity:</span> The courage to maintain the right from the wrong without compromise.
+                  <span className="font-bold">Integrity:</span> The courage to
+                  maintain the right from the wrong without compromise.
                 </p>
               </motion.li>
               <motion.li
                 initial={{ opacity: 0, y: 150 }}
-                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2, ease: "easeOut" } }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { delay: 0.2, ease: "easeOut" },
+                }}
                 viewport={{ once: true }}
                 className="flex gap-x-1 items-center"
               >
-                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+                <svg
+                  width="13"
+                  height="14"
+                  viewBox="0 0 13 14"
+                  fill="none"
+                  className="block"
+                >
+                  <circle
+                    cx="6.5"
+                    cy="7"
+                    r="4.5"
+                    fill="white"
+                    stroke="#C00000"
+                    strokeWidth="4"
+                  />
                 </svg>
                 <p>
-                  <span className="font-bold"> Reliability:</span>The ability to deliver on what we promise, without exception.
+                  <span className="font-bold"> Reliability:</span>The ability to
+                  deliver on what we promise, without exception.
                 </p>
               </motion.li>
               <motion.li
                 initial={{ opacity: 0, y: 150 }}
-                whileInView={{ opacity: 1, y: 0, transition: { delay: 0.3, ease: "easeOut" } }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { delay: 0.3, ease: "easeOut" },
+                }}
                 viewport={{ once: true }}
                 className="flex gap-x-1 items-center"
               >
-                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block">
-                  <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+                <svg
+                  width="13"
+                  height="14"
+                  viewBox="0 0 13 14"
+                  fill="none"
+                  className="block"
+                >
+                  <circle
+                    cx="6.5"
+                    cy="7"
+                    r="4.5"
+                    fill="white"
+                    stroke="#C00000"
+                    strokeWidth="4"
+                  />
                 </svg>
                 <p>
-                  <span className="font-bold"> Accountabilty:</span>The strength to be responsible for our actions and decision.
+                  <span className="font-bold"> Accountabilty:</span>The strength
+                  to be responsible for our actions and decision.
                 </p>
               </motion.li>
             </ul>
@@ -570,7 +1052,13 @@ export default function Home() {
           <Titledash span="mx-auto">WHAT WE DO</Titledash>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-[23px]">
-          <motion.div viewport={{ once: true }} initial="hidden" whileInView="visible" variants={BlogsParentVariant()} className="col-span-1">
+          <motion.div
+            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            variants={BlogsParentVariant()}
+            className="col-span-1"
+          >
             <div className="lg:max-w-[370px] w-full ">
               <motion.div
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
@@ -588,22 +1076,39 @@ export default function Home() {
                 />
               </motion.div>
               <motion.div
-                variants={{ hidden: { opacity: 0, y: 150 }, visible: { opacity: 1, y: 0, transition: { ease: "easeOut", when: "beforeChildren" } } }}
+                variants={{
+                  hidden: { opacity: 0, y: 150 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { ease: "easeOut", when: "beforeChildren" },
+                  },
+                }}
                 className="px-[14px] relative top-[-117px]"
               >
                 <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
                 <div className="bg-white max-sm:max-w-[100%] max-lg:max-w-[80%] mx-auto px-[13px] py-[8px]  md:space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
                   <SubTitleDash>SKILLS DEVELOPMENT</SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
-                    Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form
-                    of e learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house
-                    programmes are provided to improve productivity by equipping employees with behavioural skills
+                    Himalayas Energy Consults Limited offers education and
+                    training opportunities for advancement. Employee development
+                    takes the form of e learning, on-the-job coaching and
+                    training, development projects, secondments and
+                    classroom-based training. In-house programmes are provided
+                    to improve productivity by equipping employees with
+                    behavioural skills
                   </p>
                 </div>
               </motion.div>
             </div>
           </motion.div>
-          <motion.div viewport={{ once: true }} initial="hidden" whileInView="visible" variants={BlogsParentVariant(0.4)} className="col-span-1">
+          <motion.div
+            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            variants={BlogsParentVariant(0.4)}
+            className="col-span-1"
+          >
             <div className="lg:max-w-[370px] w-full ">
               <motion.div
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
@@ -619,22 +1124,41 @@ export default function Home() {
                 />
               </motion.div>
               <motion.div
-                variants={{ hidden: { opacity: 0, y: 150 }, visible: { opacity: 1, y: 0, transition: { ease: "easeOut", when: "beforeChildren" } } }}
+                variants={{
+                  hidden: { opacity: 0, y: 150 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { ease: "easeOut", when: "beforeChildren" },
+                  },
+                }}
                 className="px-[14px] relative top-[-117px]"
               >
                 <motion.span className="block w-[55px] h-[6px] mx-auto bg-primary"></motion.span>
                 <div className="bg-white max-sm:max-w-[100%] max-lg:max-w-[80%] mx-auto px-[13px] py-[8px]  md:space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
-                  <SubTitleDash animdelay={0.2}>SOCIAL RESPONSIBILITY</SubTitleDash>
+                  <SubTitleDash animdelay={0.2}>
+                    SOCIAL RESPONSIBILITY
+                  </SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
-                    Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the
-                    environment. Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does
-                    business. Economically and socially strong communities enhance Himalayas Energy Consults Limited success.
+                    Himalayas Energy Consults Limited takes seriously the
+                    influence and impact its business has on society, the
+                    economy, and the environment. Corporate Social Investment
+                    (CSI) is an inherent part of how Himalayas Energy Consults
+                    Limited currently does business. Economically and socially
+                    strong communities enhance Himalayas Energy Consults Limited
+                    success.
                   </p>
                 </div>
               </motion.div>
             </div>
           </motion.div>
-          <motion.div viewport={{ once: true }} initial="hidden" whileInView="visible" variants={BlogsParentVariant(0.6)} className="col-span-1">
+          <motion.div
+            viewport={{ once: true }}
+            initial="hidden"
+            whileInView="visible"
+            variants={BlogsParentVariant(0.6)}
+            className="col-span-1"
+          >
             <div className="lg:max-w-[370px] w-full ">
               <motion.div
                 variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
@@ -650,16 +1174,29 @@ export default function Home() {
                 />
               </motion.div>
               <motion.div
-                variants={{ hidden: { opacity: 0, y: 150 }, visible: { opacity: 1, y: 0, transition: { ease: "easeOut", when: "beforeChildren" } } }}
+                variants={{
+                  hidden: { opacity: 0, y: 150 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { ease: "easeOut", when: "beforeChildren" },
+                  },
+                }}
                 className="px-[14px] relative top-[-117px]"
               >
                 <span className="block w-[55px] h-[6px] mx-auto bg-primary"></span>
                 <div className="bg-white max-sm:max-w-[100%] max-lg:max-w-[80%] mx-auto px-[13px] py-[8px]  md:space-y-[13px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
-                  <SubTitleDash animdelay={0.2}>ECONOMIC EMPOWERMENT INITIATIVES</SubTitleDash>
+                  <SubTitleDash animdelay={0.2}>
+                    ECONOMIC EMPOWERMENT INITIATIVES
+                  </SubTitleDash>
                   <p className="text-body1 max-lg:py-5">
-                    Himalayas Energy Consults Limited places a very high premium on Health, Safety and Environmental (HSE) considerations in all its
-                    activities. Although many companies have their own safety standards with which we are obliged to comply during our operations, it
-                    is our policy to strive towards the improvement and provision of safe and healthy working conditions for everyone.
+                    Himalayas Energy Consults Limited places a very high premium
+                    on Health, Safety and Environmental (HSE) considerations in
+                    all its activities. Although many companies have their own
+                    safety standards with which we are obliged to comply during
+                    our operations, it is our policy to strive towards the
+                    improvement and provision of safe and healthy working
+                    conditions for everyone.
                   </p>
                 </div>
               </motion.div>

@@ -1,13 +1,13 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { HomeMeta } from "@/components/meta-tags";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
-export const metadata = {
-  title: "Himalayas Energy Consult Limited",
-  authors: [{ name: "Chukwuebuka Stanley Azuka", url: "https://www.linkedin.com/in/chukwuebukastanley" }],
-  developer: "Chukwuebuka Stanley Azuka",
-};
+export const metadata = HomeMeta;
 
 export default function RootLayout({ children }) {
   return (

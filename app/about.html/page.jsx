@@ -8,7 +8,9 @@ import values from "@/public/values.png";
 import Image from "next-export-optimize-images/image";
 import * as motion from "framer-motion/client";
 import LiAnimation from "@/components/li-animation";
+import { AboutMetaData } from "@/components/metadata/about";
 
+export const metadata = AboutMetaData;
 const Page = () => {
   return (
     <main>
@@ -21,11 +23,20 @@ const Page = () => {
             <circle cx="25.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
           </svg>
           <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
-            <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
+            <circle
+              cx="4.5"
+              cy="5"
+              r="3.5"
+              fill="white"
+              stroke="#C00000"
+              strokeWidth="2"
+            />
           </svg>
           <p className="text-black text-xs">02/05</p>
         </span>
-        <TitleIntro title="WHO WE ARE">Leading the Charge in Africa's Oil & Gas Transformation</TitleIntro>
+        <TitleIntro title="WHO WE ARE">
+          Leading the Charge in Africa's Oil & Gas Transformation
+        </TitleIntro>
       </div>
       <div>
         <section className="pageMargin grid lg:grid-cols-12 max-lg:space-y-[50px] gap-x-[36px]">
@@ -41,7 +52,13 @@ const Page = () => {
           >
             <Image src={aboutIntro} fill alt="" />
             <motion.span
-              variants={{ hidden: { x: "-100%" }, visible: { x: 0, transition: { ease: "easeIn", duration: 0.8, delay: 0.5 } } }}
+              variants={{
+                hidden: { x: "-100%" },
+                visible: {
+                  x: 0,
+                  transition: { ease: "easeIn", duration: 0.8, delay: 0.5 },
+                },
+              }}
               // variants={{
               //   hidden: { backgroundColor: "red" },
               //   visible: { backgroundColor: "blue", transition: { duration: 4 } },
@@ -51,35 +68,79 @@ const Page = () => {
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 0.5 } }}
+            whileInView={{
+              opacity: 1,
+              transition: { delay: 0.3, duration: 0.5 },
+            }}
             viewport={{ once: true }}
             className="col-span-full lg:col-span-7 lg:p-[40px] text-body1"
           >
-            Himalayas Energy Consults Limited was established in 2023 in Nigeria as a full-service company providing a range of services to the Oil &
-            Gas industry. Himalayas Energy is committed to continually growing the Oil and Gas Sector on the African continent and is always looking
-            for new and innovative ways of achieving this goal. With over six (6) years’ experience in the Oil and Gas industry, our vast array of
-            services includes Pipeline Fabrication, Construction and Laying of Offshore/Onshore Pipelines, Gas Distribution, Vessel Supply, just to
-            mention a few. <br /> Himalayas Energy Consults Limited currently has its head office in Nigeria but with an ever buoyancy in the target
-            markets, spreading its wings even wider to cater for the process industries, especially in the emerging African Oil and Gas sector. The
-            management of Himalayas Energy Consults Limited is always focusing to deliver high quality projects within the scheduled time, and in full
-            compliance with the clients’ specifications and applicable standards.
+            Himalayas Energy Consults Limited was established in 2023 in Nigeria
+            as a full-service company providing a range of services to the Oil &
+            Gas industry. Himalayas Energy is committed to continually growing
+            the Oil and Gas Sector on the African continent and is always
+            looking for new and innovative ways of achieving this goal. With
+            over six (6) years’ experience in the Oil and Gas industry, our vast
+            array of services includes Pipeline Fabrication, Construction and
+            Laying of Offshore/Onshore Pipelines, Gas Distribution, Vessel
+            Supply, just to mention a few. <br /> Himalayas Energy Consults
+            Limited currently has its head office in Nigeria but with an ever
+            buoyancy in the target markets, spreading its wings even wider to
+            cater for the process industries, especially in the emerging African
+            Oil and Gas sector. The management of Himalayas Energy Consults
+            Limited is always focusing to deliver high quality projects within
+            the scheduled time, and in full compliance with the clients’
+            specifications and applicable standards.
           </motion.div>
           <div className="relative col-span-full my-[135px] max-lg:pb-20">
             <span className="absolute bottom-[20px] lg:top-1/2 right-0">
-              <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="3.5" cy="4" r="3" transform="rotate(-90 3.5 4)" fill="#181818" stroke="#D9D9D9" />
-                <rect x="26" y="6" width="3" height="59" transform="rotate(-90 26 6)" fill="#181818" />
-                <rect x="43" y="8" width="8" height="39" transform="rotate(-90 43 8)" fill="black" />
+              <svg
+                width="95"
+                height="8"
+                viewBox="0 0 95 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="3.5"
+                  cy="4"
+                  r="3"
+                  transform="rotate(-90 3.5 4)"
+                  fill="#181818"
+                  stroke="#D9D9D9"
+                />
+                <rect
+                  x="26"
+                  y="6"
+                  width="3"
+                  height="59"
+                  transform="rotate(-90 26 6)"
+                  fill="#181818"
+                />
+                <rect
+                  x="43"
+                  y="8"
+                  width="8"
+                  height="39"
+                  transform="rotate(-90 43 8)"
+                  fill="black"
+                />
               </svg>
             </span>
             <motion.p
               initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1, transition: { delay: 0.3, ease: "easeOut" } }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: { delay: 0.3, ease: "easeOut" },
+              }}
               viewport={{ once: true }}
               className="max-w-[764px] mx-auto text-center font-medium "
             >
-              We are at the fore front of providing cutting edge technology to our extensive clientele in the African Oil and Gas sector and this we
-              achieve through our unique strategic partnership alliances with world renowned industry leaders and experts.
+              We are at the fore front of providing cutting edge technology to
+              our extensive clientele in the African Oil and Gas sector and this
+              we achieve through our unique strategic partnership alliances with
+              world renowned industry leaders and experts.
             </motion.p>
           </div>
         </section>
@@ -88,12 +149,54 @@ const Page = () => {
         <section className="py-[120px] pageMargin relative">
           <span className="block absolute top-40 lg:top-20 -left-5">
             <svg width="9" height="62" viewBox="0 0 9 62" fill="none">
-              <circle cx="4.5" cy="58.5" r="3" transform="rotate(-90 4.5 58.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="47.5" r="3" transform="rotate(-90 4.5 47.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="36.5" r="3" transform="rotate(-90 4.5 36.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="25.5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
-              <circle cx="4.5" cy="14.5" r="3" transform="rotate(-90 4.5 14.5)" fill="#181818" stroke="#D9D9D9" />
-              <circle cx="4.5" cy="3.5" r="3" transform="rotate(-90 4.5 3.5)" fill="#181818" stroke="#D9D9D9" />
+              <circle
+                cx="4.5"
+                cy="58.5"
+                r="3"
+                transform="rotate(-90 4.5 58.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="47.5"
+                r="3"
+                transform="rotate(-90 4.5 47.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="36.5"
+                r="3"
+                transform="rotate(-90 4.5 36.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="25.5"
+                r="3.5"
+                fill="white"
+                stroke="#C00000"
+                strokeWidth="2"
+              />
+              <circle
+                cx="4.5"
+                cy="14.5"
+                r="3"
+                transform="rotate(-90 4.5 14.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
+              <circle
+                cx="4.5"
+                cy="3.5"
+                r="3"
+                transform="rotate(-90 4.5 3.5)"
+                fill="#181818"
+                stroke="#D9D9D9"
+              />
             </svg>
           </span>
           <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-2 gap-x-[26px]">
@@ -116,13 +219,18 @@ const Page = () => {
                 <Titledash> OUR MISSION</Titledash>
                 <motion.p
                   initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 0.5 } }}
+                  whileInView={{
+                    opacity: 1,
+                    transition: { delay: 0.3, duration: 0.5 },
+                  }}
                   viewport={{ once: true }}
                   className="text-body1"
                 >
-                  Our mission is to satisfy our customer’s requirements through conformity by utilizing proven process techniques that allow for the
-                  efficient execution of projects meeting the time, cost and quality requirements of our Clients with a commitment to continual
-                  improvement in quality.
+                  Our mission is to satisfy our customer’s requirements through
+                  conformity by utilizing proven process techniques that allow
+                  for the efficient execution of projects meeting the time, cost
+                  and quality requirements of our Clients with a commitment to
+                  continual improvement in quality.
                 </motion.p>
               </div>
             </motion.div>
@@ -145,12 +253,16 @@ const Page = () => {
                 <Titledash> OUR VISION</Titledash>
                 <motion.p
                   initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1, transition: { delay: 0.3, duration: 0.5 } }}
+                  whileInView={{
+                    opacity: 1,
+                    transition: { delay: 0.3, duration: 0.5 },
+                  }}
                   viewport={{ once: true }}
                   className="text-body1"
                 >
-                  Our vision is to be the first choice of all companies for the provision of cutting-edge technology in the upstream and downstream
-                  oil and gas sector.
+                  Our vision is to be the first choice of all companies for the
+                  provision of cutting-edge technology in the upstream and
+                  downstream oil and gas sector.
                 </motion.p>
               </div>
             </motion.div>
@@ -168,7 +280,11 @@ const Page = () => {
               <motion.ul
                 variants={{
                   hidden: { opacity: 0, y: 100 },
-                  visible: { opacity: 1, y: 0, transition: { ease: "easeOut" } },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { ease: "easeOut" },
+                  },
                 }}
                 initial="hidden"
                 whileInView="visible"
@@ -176,41 +292,130 @@ const Page = () => {
                 className="space-y-6 lg:max-w-[500px]"
               >
                 <li className="flex gap-x-2 items-center">
-                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+                  <svg
+                    width="13"
+                    height="14"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                    className="block shrink-0"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7"
+                      r="4.5"
+                      fill="white"
+                      stroke="#C00000"
+                      strokeWidth="4"
+                    />
                   </svg>
-                  <p>Expanding into exploration and production with participation in the Marginal Field BidRound.</p>
+                  <p>
+                    Expanding into exploration and production with participation
+                    in the Marginal Field BidRound.
+                  </p>
                 </li>
                 <li className="flex gap-x-2 items-center">
-                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+                  <svg
+                    width="13"
+                    height="14"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                    className="block shrink-0"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7"
+                      r="4.5"
+                      fill="white"
+                      stroke="#C00000"
+                      strokeWidth="4"
+                    />
                   </svg>
                   <p>Dedicated to growing the Oil & Gas sector in Africa.</p>
                 </li>
                 <li className="flex gap-x-2 items-center">
-                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+                  <svg
+                    width="13"
+                    height="14"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                    className="block shrink-0"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7"
+                      r="4.5"
+                      fill="white"
+                      stroke="#C00000"
+                      strokeWidth="4"
+                    />
                   </svg>
-                  <p>Collaborations with world-renowned industry leaders and experts.</p>
+                  <p>
+                    Collaborations with world-renowned industry leaders and
+                    experts.
+                  </p>
                 </li>
                 <li className="flex gap-x-2 items-center">
-                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+                  <svg
+                    width="13"
+                    height="14"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                    className="block shrink-0"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7"
+                      r="4.5"
+                      fill="white"
+                      stroke="#C00000"
+                      strokeWidth="4"
+                    />
                   </svg>
                   <p>6 Years of Experience in the Oil and Gas Industry</p>
                 </li>
                 <li className="flex gap-x-2 items-center">
-                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
-                  </svg>
-                  <p>Providing first-class solutions to enhance client operational efficiency.</p>
-                </li>
-                <li className="flex gap-x-2 items-center">
-                  <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                    <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+                  <svg
+                    width="13"
+                    height="14"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                    className="block shrink-0"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7"
+                      r="4.5"
+                      fill="white"
+                      stroke="#C00000"
+                      strokeWidth="4"
+                    />
                   </svg>
                   <p>
-                    Commitment to high-quality project delivery within scheduled timeframes and compliance with client specifications and standards.
+                    Providing first-class solutions to enhance client
+                    operational efficiency.
+                  </p>
+                </li>
+                <li className="flex gap-x-2 items-center">
+                  <svg
+                    width="13"
+                    height="14"
+                    viewBox="0 0 13 14"
+                    fill="none"
+                    className="block shrink-0"
+                  >
+                    <circle
+                      cx="6.5"
+                      cy="7"
+                      r="4.5"
+                      fill="white"
+                      stroke="#C00000"
+                      strokeWidth="4"
+                    />
+                  </svg>
+                  <p>
+                    Commitment to high-quality project delivery within scheduled
+                    timeframes and compliance with client specifications and
+                    standards.
                   </p>
                 </li>
               </motion.ul>
@@ -228,86 +433,179 @@ const Page = () => {
             <span className="text-2xl pb-1 border-b border-b-primary">01</span>
             <h1 className="font-bold">CORPORATE GOVERNANCE</h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited is totally committed to sound corporate governance. It is recognised that, besides being a valid
-              expectation of investors, good governance is fundamentally advantageous to the company’s sustainability and functioning. Inextricably
-              linked to good corporate governance is the company’s Code of Ethics. Himalayas Energy Consults Limited has always aspired to the highest
-              ethical standards and is in full compliance with applicable laws, regulations and industry standards.
+              Himalayas Energy Consults Limited is totally committed to sound
+              corporate governance. It is recognised that, besides being a valid
+              expectation of investors, good governance is fundamentally
+              advantageous to the company’s sustainability and functioning.
+              Inextricably linked to good corporate governance is the company’s
+              Code of Ethics. Himalayas Energy Consults Limited has always
+              aspired to the highest ethical standards and is in full compliance
+              with applicable laws, regulations and industry standards.
             </p>
           </LiAnimation>
           <LiAnimation>
             <span className="text-2xl pb-1 border-b border-b-primary">02</span>
-            <h1 className="font-bold">SOCIAL INVOLVEMENT (LOCAL CONTENT POLICY)</h1>
+            <h1 className="font-bold">
+              SOCIAL INVOLVEMENT (LOCAL CONTENT POLICY)
+            </h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited strongly believes in and supports the Nigerian Local Content Act. Being an indigenous African company
-              Himalayas Energy understands the demands and laws in each country, and cultivates its alliances and joint ventures accordingly.
-              Himalayas Energy Consults Limited is effective in local participation by adopting the following principles in all procurement
-              activities:
+              Himalayas Energy Consults Limited strongly believes in and
+              supports the Nigerian Local Content Act. Being an indigenous
+              African company Himalayas Energy understands the demands and laws
+              in each country, and cultivates its alliances and joint ventures
+              accordingly. Himalayas Energy Consults Limited is effective in
+              local participation by adopting the following principles in all
+              procurement activities:
             </p>
             <span className="flex gap-x-2 items-center text-body1">
-              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+              <svg
+                width="13"
+                height="14"
+                viewBox="0 0 13 14"
+                fill="none"
+                className="block shrink-0"
+              >
+                <circle
+                  cx="6.5"
+                  cy="7"
+                  r="4.5"
+                  fill="white"
+                  stroke="#C00000"
+                  strokeWidth="4"
+                />
               </svg>
               Enhancement of local participation in all activities as possible.
             </span>
             <span className="flex gap-x-2 items-center text-body1">
-              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+              <svg
+                width="13"
+                height="14"
+                viewBox="0 0 13 14"
+                fill="none"
+                className="block shrink-0"
+              >
+                <circle
+                  cx="6.5"
+                  cy="7"
+                  r="4.5"
+                  fill="white"
+                  stroke="#C00000"
+                  strokeWidth="4"
+                />
               </svg>
-              Utilization of local resources and services in all measures possible.
+              Utilization of local resources and services in all measures
+              possible.
             </span>
             <span className="flex gap-x-2 items-center text-body1">
-              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" className="block shrink-0">
-                <circle cx="6.5" cy="7" r="4.5" fill="white" stroke="#C00000" strokeWidth="4" />
+              <svg
+                width="13"
+                height="14"
+                viewBox="0 0 13 14"
+                fill="none"
+                className="block shrink-0"
+              >
+                <circle
+                  cx="6.5"
+                  cy="7"
+                  r="4.5"
+                  fill="white"
+                  stroke="#C00000"
+                  strokeWidth="4"
+                />
               </svg>
               Technology transfer to local companies.
             </span>
             <p className="text-body1">
-              Himalayas Energy Consults Limited is proud of the cultural diversity of its people. As set out in our Code of Conduct, the company
-              encourages tolerance and sensitivity to all cultures and is committed to maintaining a workplace free from discrimination for reasons of
-              race, creed, culture, nationality, gender, and sexual or marital status. Employees are selected on their ability to perform the job and
-              physical disability is not a barr
+              Himalayas Energy Consults Limited is proud of the cultural
+              diversity of its people. As set out in our Code of Conduct, the
+              company encourages tolerance and sensitivity to all cultures and
+              is committed to maintaining a workplace free from discrimination
+              for reasons of race, creed, culture, nationality, gender, and
+              sexual or marital status. Employees are selected on their ability
+              to perform the job and physical disability is not a barr
             </p>
           </LiAnimation>
           <LiAnimation>
             <span className="text-2xl pb-1 border-b border-b-primary">03</span>
-            <h1 className="font-bold">SOCIAL INVOLVEMENT (LOCAL CONTENT POLICY)</h1>
+            <h1 className="font-bold">
+              SOCIAL INVOLVEMENT (LOCAL CONTENT POLICY)
+            </h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited is totally committed to sound corporate governance. It is recognised that, besides being a valid
-              expectation of investors, good governance is fundamentally advantageous to the company’s sustainability and functioning. Inextricably
-              linked to good corporate governance is the company’s Code of Ethics. Himalayas Energy Consults Limited has always aspired to the highest
-              ethical standards and is in full compliance with applicable laws, regulations and industry standards.
+              Himalayas Energy Consults Limited is totally committed to sound
+              corporate governance. It is recognised that, besides being a valid
+              expectation of investors, good governance is fundamentally
+              advantageous to the company’s sustainability and functioning.
+              Inextricably linked to good corporate governance is the company’s
+              Code of Ethics. Himalayas Energy Consults Limited has always
+              aspired to the highest ethical standards and is in full compliance
+              with applicable laws, regulations and industry standards.
             </p>
           </LiAnimation>
           <LiAnimation>
             <span className="text-2xl pb-1 border-b border-b-primary">04</span>
             <h1 className="font-bold">SKILLS DEVELOPMENT</h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited offers education and training opportunities for advancement. Employee development takes the form of e
-              learning, on-the-job coaching and training, development projects, secondments and classroom-based training. In-house programmes are
-              provided to improve productivity by equipping employees with behavioural skills. These courses include performance and change
-              management, recruitment and selection, industrial relations, stress management, and presentation skills. In addition, individual
-              development plans assist all employees. Himalayas Energy Consults Limited also offers leaderships and graduate training programmes in
-              all areas of the business.
+              Himalayas Energy Consults Limited offers education and training
+              opportunities for advancement. Employee development takes the form
+              of e learning, on-the-job coaching and training, development
+              projects, secondments and classroom-based training. In-house
+              programmes are provided to improve productivity by equipping
+              employees with behavioural skills. These courses include
+              performance and change management, recruitment and selection,
+              industrial relations, stress management, and presentation skills.
+              In addition, individual development plans assist all employees.
+              Himalayas Energy Consults Limited also offers leaderships and
+              graduate training programmes in all areas of the business.
             </p>
           </LiAnimation>
           <LiAnimation>
             <span className="text-2xl pb-1 border-b border-b-primary">05</span>
             <h1 className="font-bold">SOCIAL RESPONSIBILITY</h1>
             <p className="text-body1">
-              Himalayas Energy Consults Limited takes seriously the influence and impact its business has on society, the economy, and the
-              environment. Corporate Social Investment (CSI) is an inherent part of how Himalayas Energy Consults Limited currently does business.
-              Economically and socially strong communities enhance Himalayas Energy Consults Limited success, and its evolving strategy is aligned to
-              long-term business objectives.
+              Himalayas Energy Consults Limited takes seriously the influence
+              and impact its business has on society, the economy, and the
+              environment. Corporate Social Investment (CSI) is an inherent part
+              of how Himalayas Energy Consults Limited currently does business.
+              Economically and socially strong communities enhance Himalayas
+              Energy Consults Limited success, and its evolving strategy is
+              aligned to long-term business objectives.
             </p>
           </LiAnimation>
         </ul>
       </div>
 
       <div className="my-[119px] flex justify-center">
-        <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="3.5" cy="4" r="3" transform="rotate(-90 3.5 4)" fill="#181818" stroke="#D9D9D9" />
-          <rect x="26" y="6" width="3" height="59" transform="rotate(-90 26 6)" fill="#181818" />
-          <rect x="43" y="8" width="8" height="39" transform="rotate(-90 43 8)" fill="black" />
+        <svg
+          width="95"
+          height="8"
+          viewBox="0 0 95 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="3.5"
+            cy="4"
+            r="3"
+            transform="rotate(-90 3.5 4)"
+            fill="#181818"
+            stroke="#D9D9D9"
+          />
+          <rect
+            x="26"
+            y="6"
+            width="3"
+            height="59"
+            transform="rotate(-90 26 6)"
+            fill="#181818"
+          />
+          <rect
+            x="43"
+            y="8"
+            width="8"
+            height="39"
+            transform="rotate(-90 43 8)"
+            fill="black"
+          />
         </svg>
       </div>
       <Footer index={0} />
