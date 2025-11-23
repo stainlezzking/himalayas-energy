@@ -18,20 +18,11 @@ const Page = () => {
             <circle cx="25.5" cy="4" r="3" fill="#181818" stroke="#D9D9D9" />
           </svg>
           <svg width="9" height="10" viewBox="0 0 9 10" fill="none">
-            <circle
-              cx="4.5"
-              cy="5"
-              r="3.5"
-              fill="white"
-              stroke="#C00000"
-              strokeWidth="2"
-            />
+            <circle cx="4.5" cy="5" r="3.5" fill="white" stroke="#C00000" strokeWidth="2" />
           </svg>
           <p className="text-xs text-black">05/05</p>
         </span>
-        <TitleIntro title="CONTACT US">
-          Connect with Us to Fuel Your Energy Needs
-        </TitleIntro>
+        <TitleIntro title="CONTACT US">Connect with Us to Fuel Your Energy Needs</TitleIntro>
         <div className="mt-[38px] space-y-[62px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <motion.div
@@ -49,9 +40,7 @@ const Page = () => {
                 viewport={{ once: true }}
               >
                 <h1 className="text-black">OUR CONTACTS OFFICE ADDRESS: </h1>
-                <p className="text-body1">
-                  33b, Alfred Rewane Road, Ikoyi, Lagos, Nigeria{" "}
-                </p>
+                <p className="text-body1">33b, Alfred Rewane Road, Ikoyi, Lagos, Nigeria </p>
               </motion.div>
               <motion.div
                 variants={{
@@ -71,7 +60,7 @@ const Page = () => {
                 viewport={{ once: true }}
               >
                 <h1 className="text-black">EMAIL ADDRESS: </h1>
-                <p className="text-body1">info@himalayasenergy.com</p>
+                <p className="text-body1">seje2k@yahoo.com</p>
               </motion.div>
             </motion.div>
             <form action="" className="space-y-8 max-lg:order-2">
@@ -122,37 +111,10 @@ const Page = () => {
         </div>
       </main>
       <div className="my-[119px] flex justify-center">
-        <svg
-          width="95"
-          height="8"
-          viewBox="0 0 95 8"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="3.5"
-            cy="4"
-            r="3"
-            transform="rotate(-90 3.5 4)"
-            fill="#181818"
-            stroke="#D9D9D9"
-          />
-          <rect
-            x="26"
-            y="6"
-            width="3"
-            height="59"
-            transform="rotate(-90 26 6)"
-            fill="#181818"
-          />
-          <rect
-            x="43"
-            y="8"
-            width="8"
-            height="39"
-            transform="rotate(-90 43 8)"
-            fill="black"
-          />
+        <svg width="95" height="8" viewBox="0 0 95 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="3.5" cy="4" r="3" transform="rotate(-90 3.5 4)" fill="#181818" stroke="#D9D9D9" />
+          <rect x="26" y="6" width="3" height="59" transform="rotate(-90 26 6)" fill="#181818" />
+          <rect x="43" y="8" width="8" height="39" transform="rotate(-90 43 8)" fill="black" />
         </svg>
       </div>
       <Footer />
