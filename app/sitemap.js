@@ -1,14 +1,8 @@
 export default async function sitemap() {
-  const pages = [
-    "",
-    "about.html",
-    "contact.html",
-    "services.html",
-    "sustainability.html",
-  ];
+  const pages = ["", "about", "contact", "services", "sustainability"];
 
   return pages.map((slug) => ({
-    url: `https://himalayasenergy.com/${slug}`,
+    url: `https://himalayasenergyltd.com/${slug}`,
     lastModified: new Date(),
   }));
 }

@@ -51,22 +51,22 @@ const Navbar = ({ whiteShade = false, index = 0 }) => {
             </NavLink>
           </li>
           <li>
-            <NavLink path="/about.html" index={index} elementIndex={1}>
+            <NavLink path="/about" index={index} elementIndex={1}>
               About
             </NavLink>
           </li>
           <li>
-            <NavLink path="/services.html" index={index} elementIndex={2}>
+            <NavLink path="/services" index={index} elementIndex={2}>
               Services
             </NavLink>
           </li>
           <li>
-            <NavLink path="/sustainability.html" index={index} elementIndex={3}>
+            <NavLink path="/sustainability" index={index} elementIndex={3}>
               Sustainability
             </NavLink>
           </li>
           <li>
-            <NavLink path="/contact.html" index={index} elementIndex={4}>
+            <NavLink path="/contact" index={index} elementIndex={4}>
               Contact
             </NavLink>
           </li>

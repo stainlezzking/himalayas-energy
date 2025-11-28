@@ -22,11 +22,10 @@ export const HomeMeta = {
     "local gas distribution",
   ],
   openGraph: {
-    title:
-      "Himalayas Energy Consults – Driving Innovation in Africa's Oil & Gas Sector",
+    title: "Himalayas Energy Consults – Driving Innovation in Africa's Oil & Gas Sector",
     description:
       "A leading oil & gas company providing exploration, pipeline installation, EPC, engineering design, and consultancy services across Africa.",
-    url: "https://himalayasenergy.com",
+    url: "https://himalayasenergyltd.com",
     siteName: "Himalayas Energy Consults",
     images: [
       {
@@ -42,8 +41,7 @@ export const HomeMeta = {
   twitter: {
     card: "summary_large_image",
     title: "Himalayas Energy Consults",
-    description:
-      "Leading provider of oil & gas exploration, production, EPC and consultancy services across Africa.",
+    description: "Leading provider of oil & gas exploration, production, EPC and consultancy services across Africa.",
     images: ["/banner.png"],
   },
   icons: {
@@ -66,11 +64,10 @@ export const AboutMetadata = {
     "Oil and gas engineering",
   ],
   openGraph: {
-    title:
-      "About Himalayas Energy Consults – Leading Oil & Gas Innovations in Africa",
+    title: "About Himalayas Energy Consults – Leading Oil & Gas Innovations in Africa",
     description:
       "Discover our mission, vision, values, and commitment to transforming Africa’s Oil & Gas sector through cutting-edge technology and industry expertise.",
-    url: "https://himalayasenergy.com/about.html",
+    url: "https://himalayasenergyltd.com/about",
     siteName: "Himalayas Energy Consults",
     type: "website",
   },
@@ -82,9 +79,8 @@ export const ContactMetaData = {
     "Get in touch with Himalayas Energy Consults for inquiries, partnership opportunities, or oil & gas service requests. We're here to assist you.",
   openGraph: {
     title: "Contact Himalayas Energy Consults",
-    description:
-      "Reach out to our team for support, service inquiries, or partnership discussions in the Oil & Gas industry.",
-    url: "https://himalayasenergy.com/contact.html",
+    description: "Reach out to our team for support, service inquiries, or partnership discussions in the Oil & Gas industry.",
+    url: "https://himalayasenergyltd.com/contact",
     type: "website",
     images: [
       {
@@ -98,8 +94,7 @@ export const ContactMetaData = {
   twitter: {
     card: "summary_large_image",
     title: "Contact Himalayas Energy Consults",
-    description:
-      "We're available to respond to all inquiries and support your oil & gas service needs.",
+    description: "We're available to respond to all inquiries and support your oil & gas service needs.",
     images: ["/banner.png"],
   },
 };
@@ -112,7 +107,7 @@ export const SustainabilityMetaData = {
     title: "Sustainability at Himalayas Energy Consults",
     description:
       "Learn about our commitment to health, safety, the environment, and sustainable energy practices that protect communities and support a greener future.",
-    url: "https://himalayasenergy.com/sustainability.html",
+    url: "https://himalayasenergyltd.com/sustainability",
     type: "website",
     images: [
       {
@@ -140,7 +135,7 @@ export const ServicesMetaData = {
     title: "Our Services | Himalayas Energy Consults",
     description:
       "Discover our full range of energy and engineering services—from pipeline installation and gas distribution to waste management, manpower support, and oil & gas field development.",
-    url: "https://himalayasenergy.com/services",
+    url: "https://himalayasenergyltd.com/services",
     type: "website",
     images: [
       {
@@ -154,8 +149,7 @@ export const ServicesMetaData = {
   twitter: {
     card: "summary_large_image",
     title: "Our Services | Himalayas Energy Consults",
-    description:
-      "Learn about our diverse portfolio of services across the oil, gas, and energy sectors.",
+    description: "Learn about our diverse portfolio of services across the oil, gas, and energy sectors.",
     images: ["/banner.png"],
   },
 };

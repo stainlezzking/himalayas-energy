@@ -18,13 +18,13 @@ export const HomeMetaData = {
   ],
   openGraph: {
     type: "website",
-    url: "https://himalayasenergy.com",
+    url: "https://himalayasenergyltd.com",
     title: "Himalayas Energy Consults Limited | Leading Oil & Gas Services in Nigeria",
     description:
       "Himalayas Energy Consults Limited offers cutting-edge technology and services in oil & gas exploration, EPCC, pipeline installation, gas distribution, and waste management across Nigeria and Africa.",
     images: [
       {
-        url: "/images/himalayas-energy-og-image.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         width: 1200,
         height: 630,
         alt: "Himalayas Energy Oil & Gas Services",
@@ -39,14 +39,14 @@ export const HomeMetaData = {
       "We specialize in providing top-quality oil and gas services, including EPCC, pipeline fabrication, and environmental management to optimize the energy sector in Nigeria and Africa.",
     images: [
       {
-        url: "/images/himalayas-energy-twitter-image.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         alt: "Himalayas Energy Consults Limited Services",
       },
     ],
     site: "@HimalayasEnergy",
   },
   alternates: {
-    canonical: "https://himalayasenergy.com",
+    canonical: "https://himalayasenergyltd.com",
   },
   robots: {
     index: true,

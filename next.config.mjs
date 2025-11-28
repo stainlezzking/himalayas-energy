@@ -3,6 +3,7 @@ import withExportImages from "next-export-optimize-images";
 
 const nextConfig = withExportImages({
   output: "export",
+  trailingSlash: true,
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.

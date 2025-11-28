@@ -19,7 +19,7 @@ const Footer = ({ index }) => {
               </svg>
 
               <li>
-                <Link prefetch={false} href="/about.html">
+                <Link prefetch={false} href="/about">
                   About
                 </Link>
               </li>
@@ -28,7 +28,7 @@ const Footer = ({ index }) => {
               </svg>
 
               <li>
-                <Link prefetch={false} href="/services.html">
+                <Link prefetch={false} href="/services">
                   Services
                 </Link>
               </li>
@@ -37,7 +37,7 @@ const Footer = ({ index }) => {
               </svg>
 
               <li>
-                <Link prefetch={false} href="/sustainability.html">
+                <Link prefetch={false} href="/sustainability">
                   Sustainability
                 </Link>
               </li>
@@ -46,7 +46,7 @@ const Footer = ({ index }) => {
               </svg>
 
               <li>
-                <Link prefetch={false} href="/contact.html">
+                <Link prefetch={false} href="/contact">
                   Contact
                 </Link>
               </li>

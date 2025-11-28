@@ -11,13 +11,13 @@ export const ContactMetaData = {
   ],
   openGraph: {
     type: "website",
-    url: "https://himalayasenergy.com/contact",
+    url: "https://himalayasenergyltd.com/contact",
     title: "Contact Us | Himalayas Energy Consults Limited",
     description:
       "Reach out to Himalayas Energy for all oil and gas service inquiries. Visit us in Lagos, Nigeria or contact us via phone or email for more information.",
     images: [
       {
-        url: "/images/himalayas-energy-contact-og.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         width: 1200,
         height: 630,
         alt: "Contact Himalayas Energy Consults Limited",
@@ -31,14 +31,14 @@ export const ContactMetaData = {
     description: "We are here to help! Get in touch with Himalayas Energy for inquiries about oil and gas services, partnerships, and more.",
     images: [
       {
-        url: "/images/himalayas-energy-contact-twitter.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         alt: "Contact Himalayas Energy Consults Limited",
       },
     ],
     site: "@HimalayasEnergy",
   },
   alternates: {
-    canonical: "https://himalayasenergy.com/contact",
+    canonical: "https://himalayasenergyltd.com/contact",
   },
   robots: {
     index: true,

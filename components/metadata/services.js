@@ -13,13 +13,13 @@ export const servicesMetaData = {
   ],
   openGraph: {
     type: "website",
-    url: "https://himalayasenergy.com/services",
+    url: "https://himalayasenergyltd.com/services",
     title: "Our Services | Himalayas Energy Consults Limited",
     description:
       "Himalayas Energy offers comprehensive oil and gas services, from engineering and procurement to field development and waste management, driving Africa’s energy future.",
     images: [
       {
-        url: "/images/himalayas-energy-services-og.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         width: 1200,
         height: 630,
         alt: "Himalayas Energy Oil and Gas Services",
@@ -34,14 +34,14 @@ export const servicesMetaData = {
       "We provide expert services in pipeline installation, exploration, field development, and waste management, helping clients meet their energy needs efficiently.",
     images: [
       {
-        url: "/images/himalayas-energy-services-twitter.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         alt: "Oil and Gas Services by Himalayas Energy",
       },
     ],
     site: "@HimalayasEnergy",
   },
   alternates: {
-    canonical: "https://himalayasenergy.com/services",
+    canonical: "https://himalayasenergyltd.com/services",
   },
   robots: {
     index: true,

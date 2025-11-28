@@ -12,13 +12,13 @@ export const AboutMetaData = {
   ],
   openGraph: {
     type: "website",
-    url: "https://himalayasenergy.com/about",
+    url: "https://himalayasenergyltd.com/about",
     title: "About Himalayas Energy Consults Limited | Leading Oil & Gas Company",
     description:
       "Discover the story behind Himalayas Energy Consults Limited, our leadership in Nigeria’s oil and gas sector, and our commitment to driving innovation in the energy industry.",
     images: [
       {
-        url: "/images/himalayas-energy-about-og.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         width: 1200,
         height: 630,
         alt: "Himalayas Energy Consults Limited Office",
@@ -33,14 +33,14 @@ export const AboutMetaData = {
       "Get to know the team and vision behind Himalayas Energy Consults Limited, offering innovative solutions to the oil and gas industry in Nigeria.",
     images: [
       {
-        url: "/images/himalayas-energy-about-twitter.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         alt: "Himalayas Energy Office",
       },
     ],
     site: "@HimalayasEnergy",
   },
   alternates: {
-    canonical: "https://himalayasenergy.com/about",
+    canonical: "https://himalayasenergyltd.com/about",
   },
   robots: {
     index: true,

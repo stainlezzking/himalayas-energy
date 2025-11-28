@@ -12,13 +12,13 @@ export const SustainabilityMetaData = {
   ],
   openGraph: {
     type: "website",
-    url: "https://himalayasenergy.com/sustainability",
+    url: "https://himalayasenergyltd.com/sustainability",
     title: "Sustainability | Himalayas Energy Consults Limited",
     description:
       "Learn about our commitment to sustainable energy practices, reducing environmental impact, and promoting eco-friendly operations in Nigeria’s oil and gas industry.",
     images: [
       {
-        url: "/images/himalayas-energy-sustainability-og.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         width: 1200,
         height: 630,
         alt: "Sustainability Initiatives by Himalayas Energy",
@@ -33,14 +33,14 @@ export const SustainabilityMetaData = {
       "We are committed to sustainability through eco-friendly oil and gas exploration, waste management, and renewable energy initiatives in Nigeria.",
     images: [
       {
-        url: "/images/himalayas-energy-sustainability-twitter.jpg",
+        url: "https://himalayasenergyltd.com/banner.png",
         alt: "Himalayas Energy Environmental Responsibility",
       },
     ],
     site: "@HimalayasEnergy",
   },
   alternates: {
-    canonical: "https://himalayasenergy.com/sustainability",
+    canonical: "https://himalayasenergyltd.com/sustainability",
   },
   robots: {
     index: true,

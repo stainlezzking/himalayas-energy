@@ -189,7 +189,7 @@ export default function Home() {
                 company providing a range of services to the Oil & Gas industry. Himalayas Energy is currently looking to spread its tentacles into
                 the Exploration and Production terrain with its recent participation in the Marginal Field Bid-Round.
               </p>
-              <Button className="max-lg:hidden" path="/about.html">
+              <Button className="max-lg:hidden" path="/about">
                 Read more
               </Button>
             </div>
@@ -240,7 +240,7 @@ export default function Home() {
             />
           </motion.div>
           <div className="col-span-full mt-[62px] flex justify-center lg:hidden">
-            <Button path="/about.html"> Read more</Button>
+            <Button path="/about"> Read more</Button>
           </div>
         </section>
       </div>
@@ -376,7 +376,7 @@ export default function Home() {
                   </WhatWeDoSections>
                 </div>
               </div>
-              <Button className="mx-auto" path="/services.html">
+              <Button className="mx-auto" path="/services">
                 Read more
               </Button>
             </div>
